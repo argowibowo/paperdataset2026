@@ -1,0 +1,183 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[]{einformatica}
+\usepackage{graphicx}
+\usepackage{soul}
+%\usepackage{lmodern} % <-- te dwa zbędne, bo przeniesione do klasy
+%\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{hyphenat}
+\usepackage[all]{nowidow}
+\usepackage{tabularx} % <-- nieużywane w przykładzie
+\usepackage{floatrow} % <-- nieużywane w przykładzie
+\floatsetup[table]{style=plain,capposition=top}
+\renewcommand\topfraction{.95}
+\renewcommand{\textfraction}{0.05}
+% \usepackage{xr-hyper} % ZBĘDNE
+\usepackage{refcount} 
+\usepackage[noadjust]{cite} %<-- parametr space czasam stwarza problemy
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    urlbordercolor = black,
+    pdfborderstyle={/S/U/W 1},
+}
+
+\usepackage{lipsum} % <-- nieużywane
+\usepackage{cleveref} % <-- ???
+%\usepackage{tabu} % <-- chyba niepotrzebne
+%\usepackage{caption}  % <-- TEN PAKIET JEST NIEKOMPATYBILNY (i chyba niepotrzebny). ZGŁĄSZA OSTRZERZENIE!
+\usepackage[newfloat]{minted}
+\setminted[R]{breaklines=true,fontsize=\footnotesize,obeytabs=true,tabsize=0}
+\setmintedinline[R]{breaklines=true,fontsize=\footnotesize}
+
+\usepackage{listings}
+\newenvironment{code}{\captionsetup{type=listing}}{}
+\SetupFloatingEnvironment{listing}{name=Listing}
+
+\usepackage[resetlabels,labeled]{multibib}
+
+%% Uncomment if you use two separate bibliography files.
+%\newcites{S}{List of Primary Studies}
+
+%% Please, add only really required packages here
+
+ \begin{document}
+%% Uncomment if you use two separate bibliography files.
+%\nociteS{*}
+
+\title{Building and Validating a Primary Dataset for Machine Learning-Based Code Smell Detection in Kotlin Applications}
+
+
+\shortauthorshead{Wibowo et al.}
+
+\eIsubmitted{1 Aug 2026} 
+\eIrevised{1 Sep 2026} 
+\eIaccepted{1 Oct 2026}
+\eIpublished{1 Nov 2026} 
+
+\EIauthorI
+   {Argo}
+   {Wibowo}
+   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
+   {argowibowo528951@mail.ugm.ac.id}
+   {0009-0000-2689-5461} % ORCiD ID
+   {} %  if star present means corresponding author
+
+\EIauthorII
+   {Adhistya}
+   {Erna Permanasari}
+   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
+   {adhistya@ugm.ac.id}
+   {0000-0002-2663-4074}
+   {*} %  if star present means corresponding author
+   
+\EIauthorIII
+   {Teguh}
+   {Bharata Adji}
+   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
+   {adji@ugm.ac.id}
+   {0000-0001-7856-1498}
+   {} % if star present means corresponding author
+ 
+ \keywordset{keyword1, keyword2, ...} 
+
+\begin{abstract}[en] 
+% DO NOT remove sections Context, Objective etc.
+% Structured abstract is obligatory !!!
+\textbf{Context}:
+Context \dots \\ 
+\textbf{Objective}: 
+Objective \dots \\
+\textbf{Method}: 
+Method \dots \\
+\textbf{Results}: 
+Results \dots \\
+\textbf{Conclusions}: 
+Conclusions \dots
+\end{abstract}
+
+\maketitle 
+ 
+
+\section{Introduction}\label{sec:Introduction}
+
+Software quality is a fundamental aspect of software engineering because it directly influences maintainability, evolvability, and long-term maintenance costs. As software systems continue to grow in size and complexity, maintaining high-quality source code becomes increasingly important to ensure efficient software evolution and reduce technical debt. One of the most widely recognized indicators of poor design quality is code smell, which refers to structural characteristics in source code that suggest potential design deficiencies without necessarily affecting the software's functional correctness. Although code smells do not immediately introduce defects, their accumulation can increase code complexity, reduce readability, complicate testing activities, and ultimately increase maintenance effort.
+
+Various approaches have been proposed to detect code smells, ranging from rule-based and metric-based techniques to more recent machine learning-based methods. Compared with manually defined detection rules, machine learning approaches are capable of learning complex relationships among software metrics and automatically identifying patterns associated with different types of code smells. Consequently, machine learning has become an increasingly popular solution for improving the scalability and adaptability of code smell detection across different software projects.
+
+Recent studies have shown that machine learning has become one of the dominant approaches for code smell detection due to its ability to learn complex relationships among software metrics. Our previous review of code smell detection research over the last decade also indicates a clear shift from traditional rule-based techniques toward machine learning and optimization-based approaches \cite{WibowoICITEE2025}, highlighting the increasing importance of high-quality datasets for model development and evaluation. Furthermore, optimization techniques such as Particle Swarm Optimization combined with Random Forest have demonstrated promising improvements in detection performance, suggesting that advances in learning algorithms should be accompanied by equally reliable datasets to achieve robust and reproducible results \cite{Wibowo2026}.
+
+The effectiveness of machine learning models, however, depends heavily on the quality of the datasets used for training and evaluation. A reliable dataset should contain accurate code smell labels, comprehensive software metrics, and a reproducible metric extraction process to ensure consistent results across different studies. In addition, thorough validation of the extracted metrics and dataset characteristics is essential to establish confidence in the resulting models. Without these properties, machine learning experiments may produce unreliable results and become difficult to reproduce or compare with previous studies.
+
+Despite the growing adoption of Kotlin as the preferred programming language for modern Android application development, publicly available datasets specifically designed for Kotlin-based code smell detection remain scarce. Existing datasets are predominantly developed for Java projects and therefore do not adequately represent the characteristics of Kotlin applications. Furthermore, currently available Kotlin datasets generally lack comprehensive classical software metrics, validated Abstract Syntax Tree (AST)-based metric extraction pipelines, and detailed documentation to support reproducibility. Some existing studies also rely on regular-expression-based techniques or parsers with limited support for Kotlin syntax, potentially reducing the accuracy and consistency of the extracted metrics. Consequently, the absence of a validated and reproducible Kotlin software metrics dataset limits the development, evaluation, and fair comparison of machine learning-based code smell detection methods. Although sophisticated learning algorithms have been proposed, their performance remains highly dependent on the quality of the underlying datasets. Existing studies primarily focus on improving classification performance rather than constructing and validating datasets, leaving dataset quality as a relatively underexplored aspect.
+
+To address these limitations, this study constructs a primary software metrics dataset for Kotlin applications using an AST-based metric extraction pipeline implemented with Kopyt. The results obtained from previous study are that the Detekt program can detect various Kotlin-based programming codes well but still has a percentage difference of 48.75\% with manual calculations for some advanced metric categories \cite{WibowoICITDA2025}. The proposed pipeline extracts a comprehensive set of classical software metrics, assigns code smell labels, and produces a machine learning-ready dataset. The study further validates the correctness of the extracted metrics, analyzes the statistical characteristics and quality of the dataset, and demonstrates its applicability through baseline machine learning experiments. The remainder of this paper is organized as follows. Section 2 reviews related work on software metrics, code smell detection, and existing datasets. Section 3 describes the dataset construction methodology, including repository selection, metric extraction, and labeling procedures. Section 4 presents comprehensive dataset validation and statistical analyses. Section 5 reports baseline machine learning experiments, while Sections 6 and 7 discuss the findings and threats to validity. Finally, Sections 8 and 9 describe dataset availability and conclude the paper.
+
+This paper makes four main contributions. First, it introduces a primary software metrics dataset for Kotlin applications with code smell labels to support machine learning research. Second, it proposes a reproducible AST-based software metric extraction pipeline using Kopyt that accurately extracts classical software metrics without relying on regular expressions. Third, it performs comprehensive dataset validation through metric verification, statistical analysis, class distribution analysis, and quality assessment. Finally, it provides baseline machine learning benchmarks that establish the usability of the proposed dataset and facilitate future research on machine learning-based code smell detection for Kotlin applications.
+
+\section{Background and Related Work}\label{sec:Background}
+
+Background \dots
+
+
+\section{Method}\label{sec:Method}
+\subsection*{Research goal and questions/hypotheses}
+
+Research goal \dots
+
+\subsection*{Research method / procedure}
+
+Research method \dots
+
+\section{Results}\label{sec:Results}
+
+Results \dots 
+
+\section{Discussion}\label{sec:Discussion}
+
+Discussion \dots
+
+
+\section{Conclusions}\label{sec:Conclusions}
+
+Conclusions \dots
+
+
+\subsection*{Acknowledgment}
+
+\Funding{Founding sources }
+
+\Data{\NA}
+
+\CompetingInterests{Completing interests}
+
+\Credits{
+Author 1: Data curation, \dots .
+Author 2: Conceptualization, \dots
+% See https://credit.niso.org/
+}
+
+%% Uncomment if you use two separate bibliography files.
+%\setbiblabelwidth{1000}
+\bibliographystyle{IEEEtran_for_EI} 
+\bibliography{eisej_paper}
+
+%% Uncomment if you use two separate bibliography files.
+%\setbiblabelwidth{1000}
+%\bibliographystyleS{IEEEtran_for_EI}
+%\bibliographyS{S}
+
+
+\appendix
+\makeatletter
+\def\mw@seccntformat#1{Appendix\ #1.\enspace}
+\makeatother
+
+\section{Exemplary appendix}\label{sec:A}
+
+Appendix content. 
+
+\end{document}

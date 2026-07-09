@@ -1,0 +1,1213 @@
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  9 JUL 2026 11:59
+ restricted system commands enabled.
+**eisej_paper.tex
+(./eisej_paper.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/ASUS/AppData/Local/MiKTeX/
+luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/fo
+ntloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/ASUS/AppData/Local/MiKTeX/
+luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (./einformatica.cls
+Document Class: einformatica 2024/11/05
+(./mwart.cls
+Document Class: mwart 2025/09/14 v0.77 A LaTeX document class (MW)
+*** Beta version. Formatting may change
+*** in future versions of this class.
+(./mw11.clo
+File: mw11.clo 2025/09/14 v0.77 A document class size option (MW)
+luaotfload | db : Font names database loaded from C:/Users/ASUS/AppData/Local/Mi
+KTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\@parindent=\dimen140
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count268
+\Gm@cntv=\count269
+\c@Gm@tempcnt=\count270
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
+\Gm@dimlist=\toks18
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/footmisc/footmisc-2022-0
+2-14.sty
+Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
+\FN@temptoken=\toks19
+\footnotemargin=\dimen150
+\@outputbox@depth=\dimen151
+Package footmisc Info: Declaring symbol style bringhurst on input line 699.
+Package footmisc Info: Declaring symbol style chicago on input line 707.
+Package footmisc Info: Declaring symbol style wiley on input line 716.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 747.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 768
+.
+))
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip51
+\f@nch@O@elh=\skip52
+\f@nch@O@erh=\skip53
+\f@nch@O@olh=\skip54
+\f@nch@O@orh=\skip55
+\f@nch@O@elf=\skip56
+\f@nch@O@erf=\skip57
+\f@nch@O@olf=\skip58
+\f@nch@O@orf=\skip59
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks20
+\MT@tempbox=\box52
+\MT@count=\count272
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks21
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen152
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count273
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype-luat
+ex.def
+File: microtype-luatex.def 2026/03/01 v3.2d Definitions specific to luatex (RS)
+
+Lua module: microtype 2026/03/01 v3.2d microtype module.
+Module microtype Info: overwriting function `keepligature' on input line 63
+LaTeX Info: Redefining \lsstyle on input line 779.
+LaTeX Info: Redefining \lslig on input line 779.
+\MT@outer@space=\skip60
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/nowidow/nowidow.sty
+Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
+Package: nowidow 
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip61
+
+For additional information on amsmath, use the `?' option.
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen153
+))
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen154
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count274
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count275
+\leftroot@=\count276
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count277
+\DOTSCASE@=\count278
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen155
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count279
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count280
+\dotsspace@=\muskip17
+\c@parentequation=\count281
+\dspbrk@lvl=\count282
+\tag@help=\toks23
+\row@=\count283
+\column@=\count284
+\maxfields@=\count285
+\andhelp@=\toks24
+\eqnshift@=\dimen156
+\alignsep@=\dimen157
+\tagshift@=\dimen158
+\tagwidth@=\dimen159
+\totwidth@=\dimen160
+\lineht@=\dimen161
+\@envbody=\toks25
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.def
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lastpage/lastpage2e.sty
+Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (H
+MM)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lastpage/lastpagemodern.
+sty
+Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count286
+) 
+)) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/silence/silence.sty
+Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error mes
+sages
+\sl@Save=\count287
+\sl@StateNumber=\count288
+\sl@MessageCount=\count289
+\sl@Casualties=\count290
+\sl@Filter=\toks27
+\sl@Message=\toks28
+\sl@UnexpandedMessage=\toks29
+\sl@Mess@ge=\toks30
+\sl@WarningCount=\count291
+\sl@WarningNumber=\count292
+\sl@WarningCasualties=\count293
+\sl@TempBOW=\toks31
+\sl@BankOfWarnings=\toks32
+LaTeX Info: Redefining \GenericWarning on input line 433.
+\sl@ErrorCount=\count294
+\sl@ErrorNumber=\count295
+\sl@ErrorCasualties=\count296
+\sl@TempBOE=\toks33
+\sl@BankOfErrors=\toks34
+LaTeX Info: Redefining \GenericError on input line 601.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/stringstrings/stringstri
+ngs.sty
+Package: stringstrings 2020/12/08 v1.24 Extensive array of string manipulation 
+routines for cosmetic and programming application
+\c@@letterindex=\count297
+\c@@@letterindex=\count298
+\c@@@@letterindex=\count299
+\c@@wordindex=\count300
+\c@@iargc=\count301
+\c@@gobblesize=\count302
+\c@@maxrotation=\count303
+\c@@stringsize=\count304
+\c@@@stringsize=\count305
+\c@@@@stringsize=\count306
+\c@@revisedstringsize=\count307
+\c@@gobbleindex=\count308
+\c@@charsfound=\count309
+\c@@alph=\count310
+\c@@alphaindex=\count311
+\c@@capstrigger=\count312
+\c@@fromindex=\count313
+\c@@toindex=\count314
+\c@@previousindex=\count315
+\c@@flag=\count316
+\c@@matchloc=\count317
+\c@@matchend=\count318
+\c@@matchsize=\count319
+\c@@matchmax=\count320
+\c@@skipped=\count321
+\c@@lcwords=\count322
+\c@@@matchloc=\count323
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.st
+y
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language2
+LaTeX Info: Redefining \_ on input line 43.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefinek
+eys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.st
+y
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds.
+sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.st
+y
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks35
+)) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/gettitl
+estring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count324
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.st
+y
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen162
+\Hy@linkcounter=\count325
+\Hy@pagecounter=\count326
+ (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count327
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `pdfa' set `true' on input line 4040.
+Package hyperref Info: Option `unicode' set `true' on input line 4040.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4040.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4040.
+Package hyperref Info: Option `hyperfootnotes' set `true' on input line 4040.
+Package hyperref Info: Option `hyperfigures' set `true' on input line 4040.
+Package hyperref Info: Option `plainpages' set `false' on input line 4040.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4040.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 404
+0.
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4040.
+Package hyperref Info: Hyper figures ON on input line 4155.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count328
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen163
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.
+sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count329
+\Field@Width=\dimen164
+\Fld@charsize=\dimen165
+Package hyperref Info: Hyper figures ON on input line 6040.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode ON on input line 6070.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count330
+\c@Item=\count331
+\c@Hfootnote=\count332
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count333
+\c@bookmark@seq@number=\count334
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfile
+check.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniqueco
+unter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip64
+)
+\c@@einumcorr=\count335
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cf
+g
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+)
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
+) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/soul/soul.sty
+Package: soul 2026-03-06 v3.2 Permit use of UTF-8 characters in soul (HO)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2026-03-06 v3.2 letterspacing/underlining (mf)
+\SOUL@word=\toks36
+\SOUL@lasttoken=\toks37
+\SOUL@syllable=\toks38
+\SOUL@cmds=\toks39
+\SOUL@buffer=\toks40
+\SOUL@token=\toks41
+\SOUL@syllgoal=\dimen168
+\SOUL@syllwidth=\dimen169
+\SOUL@charkern=\dimen170
+\SOUL@hyphkern=\dimen171
+\SOUL@dimen=\dimen172
+\SOUL@dimeni=\dimen173
+\SOUL@minus=\count336
+\SOUL@comma=\count337
+\SOUL@apo=\count338
+\SOUL@grave=\count339
+\SOUL@spaceskip=\skip65
+\SOUL@ttwidth=\dimen174
+\SOUL@uldp=\dimen175
+\SOUL@ulht=\dimen176
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count340
+\@cmidlb=\count341
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count342
+\@lastruleclass=\count343
+\@thisrulewidth=\dimen189
+) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen190
+\ar@mcellbox=\box55
+\extrarowheight=\dimen191
+\NC@list=\toks42
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box56
+)
+\TX@col@width=\dimen192
+\TX@old@table=\dimen193
+\TX@old@col=\dimen194
+\TX@target=\dimen195
+\TX@delta=\dimen196
+\TX@cols=\count344
+\TX@ftn=\toks43
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen197
+\captionmargin=\dimen198
+\caption@leftmargin=\dimen199
+\caption@rightmargin=\dimen256
+\caption@width=\dimen257
+\caption@indent=\dimen258
+\caption@parindent=\dimen259
+\caption@hangindent=\dimen260
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\addvspace \abovecaptio
+nskip \bgroup \centeredlast #1.\enspace #2\par \egroup \vskip \belowcaptionskip
+  on input line 1175.
+)
+\c@float@type=\count345
+\float@exts=\toks44
+\float@box=\box57
+\@floatcapt=\box58
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks45
+\flrow@foot=\insert252
+\FB@wd=\dimen261
+\FBo@wd=\dimen262
+\FBc@wd=\dimen263
+\FBo@ht=\skip68
+\FBc@ht=\skip69
+\FBf@ht=\skip70
+\FBo@max=\skip71
+\FBc@max=\skip72
+\FBf@max=\skip73
+\c@FBl@b=\count346
+\floatbox@depth=\count347
+\c@FRobj=\count348
+\c@FRsobj=\count349
+\Xhsize=\skip74
+\sXhsize=\skip75
+\Zhsize=\skip76
+\sZhsize=\skip77
+\flrow@rowbox=\box59
+\FR@Zunitlength=\dimen264
+\c@FBcnt=\count350
+\FPOScnt=\count351
+\LTleft=\skip78
+\LTright=\skip79
+\LTleft=\skip80
+\LTright=\skip81
+\flrow@types=\toks46
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lipsum/lipsum.sty
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/l3keys2e/l3ke
+ys2e.sty
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-11-02 L3 programming layer (loader) 
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-luat
+ex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count352
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box60
+))
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count353
+\l__lipsum_a_int=\count354
+\l__lipsum_b_int=\count355
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lipsum/lipsum.ltd.tex))
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/minted/minted.sty
+Package: minted 2026/03/03 v3.8.0 Yet another Pygments shim for LaTeX
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/catchfile/catchfile.st
+y
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+) (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2026/02/25 v1.14.0 fvextra - extensions and patches for fancyv
+rb
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2026/04/16 4.6a verbatim text (tvz,hv)
+\FV@CodeLineNo=\count356
+\FV@InFile=\read2
+\FV@TabBox=\box61
+\c@FancyVerbLine=\count357
+\FV@StepNumber=\count358
+\FV@OutFile=\write3
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+))
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lineno/lineno.sty
+Package: lineno 2026/03/08 line numbers on paragraphs v5.9
+\linenopenalty=\count359
+\output=\toks47
+\linenoprevgraf=\count360
+\linenumbersep=\dimen265
+\linenumberwidth=\dimen266
+\c@linenumber=\count361
+\c@pagewiselinenumber=\count362
+\c@LN@truepage=\count363
+\c@internallinenumber=\count364
+\c@internallinenumbers=\count365
+\quotelinenumbersep=\dimen267
+\bframerule=\dimen268
+\bframesep=\dimen269
+\bframebox=\box62
+\@LN@amsmath@ams@eqpen=\count366
+)
+\c@FancyVerbWriteLine=\count367
+\c@FancyVerbBufferLine=\count368
+\c@FV@TrueTabGroupLevel=\count369
+\c@FV@TrueTabCounter=\count370
+\FV@TabBox@Group=\box63
+\FV@bgcolorstructbox=\box64
+\FV@TmpLength=\skip82
+\c@FV@HighlightLinesStart=\count371
+\c@FV@HighlightLinesStop=\count372
+\FV@LoopCount=\count373
+\FV@NCharsBox=\box65
+\FV@BreakIndent=\dimen270
+\FV@BreakIndentNChars=\count374
+\FV@BreakSymbolSepLeft=\dimen271
+\FV@BreakSymbolSepLeftNChars=\count375
+\FV@BreakSymbolSepRight=\dimen272
+\FV@BreakSymbolSepRightNChars=\count376
+\FV@BreakSymbolIndentLeft=\dimen273
+\FV@BreakSymbolIndentLeftNChars=\count377
+\FV@BreakSymbolIndentRight=\dimen274
+\FV@BreakSymbolIndentRightNChars=\count378
+\c@FancyVerbLineBreakLast=\count379
+\FV@LineBox=\box66
+\FV@LineIndentBox=\box67
+\c@FV@BreakBufferDepth=\count380
+\FV@LineWidth=\dimen275
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/latex2pydata/latex2pydat
+a.sty
+Package: latex2pydata 2026/02/25 v0.7.0 latex2pydata - write data to file in Py
+thon literal format
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.st
+y
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys.
+code.tex
+\pgfkeys@pathtoks=\toks48
+\pgfkeys@temptoks=\toks49
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeysl
+ibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks50
+)))
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks51
+\pgfopts@list@add@b@toks=\toks52
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+Package newfloat Info: Unsupported document class, or \@chapter 
+(newfloat)             was already redefined by another package.
+Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAu
+to {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anc
+horend }}\ifnum \c@secnumdepth >\m@ne \@ifundefined {if@mainmatter}\iftrue {\cs
+name if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@cha
+pter .
+Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
+pter [{#1}]{#2}.
+Package newfloat Info: \algocf@original@chapter = undefined.
+)
+\c@minted@FancyVerbLineTemp=\count381
+Package newfloat Info: New float `listing' with options `fileext=lol,placement=
+tbp' on input line 1985.
+\c@listing=\count382
+Package newfloat Info: float type `listing'=4 on input line 1985.
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/listings/listings.sty
+\lst@mode=\count383
+\lst@gtempboxa=\box68
+\lst@token=\toks53
+\lst@length=\count384
+\lst@currlwidth=\dimen276
+\lst@column=\count385
+\lst@pos=\count386
+\lst@lostspace=\dimen277
+\lst@width=\dimen278
+\lst@newlines=\count387
+\lst@lineno=\count388
+\lst@maxwidth=\dimen279
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count389
+\lst@skipnumbers=\count390
+\lst@framebox=\box69
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/multibib/multibib.sty
+Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
+\mb@biblabelwidth=\count391
+)
+(./eisej_paper.aux)
+\openout1 = eisej_paper.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside heightrounded 
+* h-part:(L,W,R)=(99.58464pt, 426.79134pt, 71.1319pt)
+* v-part:(T,H,B)=(53.49118pt, 711.3189pt, 80.23677pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79134pt
+* \textheight=650.20029pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=-1.13809pt
+* \topmargin=-18.77881pt
+* \headheight=13.6pt
+* \headsep=15.6pt
+* \topskip=11.0pt
+* \footskip=27.20001pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=14.22636pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 47.
+Package microtype Info: Applying patch `item' on input line 47.
+Package microtype Info: Applying patch `toc' on input line 47.
+Package microtype Info: Applying patch `eqnum' on input line 47.
+Package microtype Info: Applying patch `footnote' on input line 47.
+Package microtype Info: Applying patch `verbatim' on input line 47.
+LaTeX Info: Redefining \microtypesetup on input line 47.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: ... Loading configuration file mt-LatinModernRoman.cfg.
+
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-LatinModern
+Roman.cfg
+File: mt-LatinModernRoman.cfg 2026/02/26 v1.2 microtype config. file: Latin Mod
+ern Roman (RS)
+)
+Package microtype Info: Setting up font `TU/lmr/m/n/10.95' on input line 47.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mki
+i
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count392
+\scratchdimen=\dimen280
+\scratchbox=\box70
+\nofMPsegments=\count393
+\nofMParguments=\count394
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count395
+\MPscratchDim=\dimen281
+\MPnumerator=\count396
+\makeMPintoPDFobject=\count397
+\everyMPtoPDFconversion=\toks55
+)
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-ba
+se.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cf
+g
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 47.
+ (./eisej_paper.out) (./eisej_paper.out)
+\@outlinefile=\write4
+
+\openout4 = eisej_paper.out
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: Trying Plan B...
+Package newfloat Info: `float' package detected.
+\c@lstlisting=\count398
+Package microtype Info: Setting up font `TU/lmr/bx/n/10.95' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmr/bx/n/19' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmr/m/n/12' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+<ORCID.pdf, id=72, 192.72pt x 192.72pt>
+File: ORCID.pdf Graphic file (type pdf)
+<use ORCID.pdf>
+Package luatex.def Info: ORCID.pdf  used on input line 102.
+(luatex.def)             Requested size: 10.0pt x 9.99826pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+02.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Setting up font `OT1/lmr/m/n/12' on input line 102.
+Package microtype Info: ... Loading protrusion list `OT1-default'.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmr' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+Package microtype Info: Setting up font `OT1/lmr/m/n/8' on input line 102.
+Package microtype Info: ... Loading protrusion list `OT1-default'.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+Package microtype Info: Setting up font `OT1/lmr/m/n/6' on input line 102.
+Package microtype Info: ... Loading protrusion list `OT1-default'.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+02.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Setting up font `OML/lmm/m/it/12' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `OML/lmm/m/it/8' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `OML/lmm/m/it/6' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+102.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Setting up font `OMS/lmsy/m/n/12' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/8' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/6' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+102.
+
+(C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 102.
+Package microtype Info: ... No configuration file mt-lmex.cfg.
+Package microtype Info: Setting up font `OMX/lmex/m/n/12' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 102.
+Package microtype Info: Setting up font `OMX/lmex/m/n/8' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 102.
+Package microtype Info: Setting up font `OMX/lmex/m/n/6' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `TU/lmr/m/n/8' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+File: ORCID.pdf Graphic file (type pdf)
+<use ORCID.pdf>
+Package luatex.def Info: ORCID.pdf  used on input line 102.
+(luatex.def)             Requested size: 10.0pt x 9.99826pt.
+File: ORCID.pdf Graphic file (type pdf)
+<use ORCID.pdf>
+Package luatex.def Info: ORCID.pdf  used on input line 102.
+(luatex.def)             Requested size: 10.0pt x 9.99826pt.
+Package microtype Info: Setting up font `TU/lmr/m/n/9' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `OT1/lmr/m/n/9' on input line 102.
+Package microtype Info: ... Loading protrusion list `OT1-default'.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+Package microtype Info: Setting up font `OT1/lmr/m/n/5' on input line 102.
+Package microtype Info: ... Loading protrusion list `OT1-default'.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+Package microtype Info: Setting up font `OML/lmm/m/it/9' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `OML/lmm/m/it/5' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/9' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/5' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 102.
+Package microtype Info: Setting up font `OMX/lmex/m/n/9' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 102.
+Package microtype Info: Setting up font `OMX/lmex/m/n/5' on input line 102.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `TU/lmr/m/n/6' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmtt/m/n/9' on input line 102.
+Package microtype Info: ... Loading protrusion list `T1-default'.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `TU/lmr/m/n/10' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmr/bx/n/10' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmr/bx/n/9' on input line 102.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 102--102
+[] []  
+ []
+
+\c@aaa=\count399
+\c@aab=\count400
+Package microtype Info: Setting up font `TU/lmr/bx/n/12' on input line 105.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+
+
+<EISEJ_logo.png, id=78, 36.135pt x 47.4573pt>
+File: EISEJ_logo.png Graphic file (type png)
+<use EISEJ_logo.png>
+Package luatex.def Info: EISEJ_logo.png  used on input line 112.
+(luatex.def)             Requested size: 38.41121pt x 50.44931pt.
+Package microtype Info: Setting up font `TU/lmss/m/n/10' on input line 112.
+Package microtype Info: ... Loading protrusion list `T1-default'.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmss/bx/n/10' on input line 112.
+Package microtype Info: ... Loading protrusion list `T1-default'.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmr/m/sc/10' on input line 112.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+[1{C:/Users/ASUS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+<./EISEJ_logo.png><./ORCID.pdf>]
+
+[2] (./eisej_paper.bbl
+
+[3]
+Package microtype Info: Setting up font `TU/lmr/m/it/10.95' on input line 2.
+Package microtype Info: ... Loading protrusion list `LMR-it'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 28.
+Package microtype Info: ... Loading protrusion list `LMR-it'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+)
+
+[4] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+runsystem(latexminted cleantemp  --timestamp 20260709115913 3AB7276EEF8726DC7FF0
+580FA8E02505)...(Command execution disabled via shell_escape='p').
+(./eisej_paper.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
+(rerunfilecheck)             Checksum: D189666499F44BDCB19532A6447DC179;3231.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 24069 strings out of 475664
+ 100000,1373583 words of node,token memory allocated
+ 550 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 58 glue_spec,
+ 8 attribute_list, 2 shape, 1 write nodes
+   avail lists: 1:1,2:474,3:288,4:116,5:625,6:97,7:10132,8:2,9:595,10:25,11:1023
+
+ 46454 multiletter control sequences out of 65536+600000
+ 48 fonts using 4006631 bytes
+ 86i,18n,89p,1422b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
+italic.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm
+/lmroman9-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/p
+ublic/lm/lmroman10-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/o
+pentype/public/lm/lmmono9-regular.otf><c:/users/asus/appdata/local/programs/mikt
+ex/fonts/opentype/public/lm/lmroman9-regular.otf><c:/users/asus/appdata/local/pr
+ograms/miktex/fonts/opentype/public/lm/lmroman6-regular.otf><c:/users/asus/appda
+ta/local/programs/miktex/fonts/opentype/public/lm/lmroman8-regular.otf><c:/users
+/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-regular.o
+tf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman
+12-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/l
+m/lmroman10-regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opent
+ype/public/lm/lmromancaps10-regular.otf><c:/users/asus/appdata/local/programs/mi
+ktex/fonts/opentype/public/lm/lmsans10-regular.otf><c:/users/asus/appdata/local/
+programs/miktex/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on eisej_paper.pdf (4 pages, 110714 bytes).
+
+PDF statistics: 213 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 100000000)
+
