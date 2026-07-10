@@ -38,6 +38,7 @@
 \SetupFloatingEnvironment{listing}{name=Listing}
 
 \usepackage[resetlabels,labeled]{multibib}
+\usepackage{pifont}
 
 %% Uncomment if you use two separate bibliography files.
 %\newcites{S}{List of Primary Studies}
@@ -119,9 +120,57 @@ To address these limitations, this study constructs a primary software metrics d
 This paper makes four main contributions. First, it introduces a primary software metrics dataset for Kotlin applications with code smell labels to support machine learning research. Second, it proposes a reproducible AST-based software metric extraction pipeline using Kopyt that accurately extracts classical software metrics without relying on regular expressions. Third, it performs comprehensive dataset validation through metric verification, statistical analysis, class distribution analysis, and quality assessment. Finally, it provides baseline machine learning benchmarks that establish the usability of the proposed dataset and facilitate future research on machine learning-based code smell detection for Kotlin applications.
 
 \section{Background and Related Work}\label{sec:Background}
+\subsection{Code Smell Detection and Software Metrics}
 
-Background \dots
+Initially code smell detection was mostly performed using rule-based and metric-based approaches. As software complexity increased, these approaches faced limitations in handling varying project characteristics, leading to the development of machine learning-based methods. Recent research has shown that various machine learning and deep learning algorithms can improve detection accuracy by utilizing a combination of software metrics as predictive features.
 
+\subsection{Evolution of Machine Learning-Based Code Smell Detection}
+
+Over the past decade, research on code smell detection has shifted from rule-based approaches to machine learning and optimization-based approaches. A previous review study (A Decade of Code Smells Detection: Evolution, Challenges, and Optimization Strategies) showed that improving detection performance increasingly focused on feature selection, hyperparameter optimization, and the use of more sophisticated learning models. However, the study also identified that dataset quality and availability remain key challenges, limiting the reproducibility and comparability of results between studies.
+
+These findings have served as the basis for further research focused on improving detection methods. One such study is the Enhanced Code Smell Detection Using Random Forest Optimized with Particle Swarm Variants study, which integrates feature selection and hyperparameter optimization using various Particle Swarm Optimization (PSO) variants to improve Random Forest performance. The results showed that the combination of feature selection and hyperparameter optimization significantly improved detection accuracy. However, this study used the Fontana dataset, developed for Java projects, and therefore did not adequately represent the characteristics of the Kotlin language.
+
+\subsubsection{Kotlin-Based Code Smell Detection}
+The increasing adoption of Kotlin as the primary language for Android application development has spurred research specifically addressing code smells in Kotlin projects. One previous study, "Custom Rule-Based Feature Engineering for Code Smell Detection in Kotlin Using Detekt," developed a rule-based feature extraction process using Detekt to obtain software characteristics related to code smells. This study demonstrated that Detekt can be used as a starting point for developing features for code smell detection in Kotlin.
+
+However, this research focused on the feature engineering process and did not yet produce a validated software metrics dataset or a reproducible metrics extraction pipeline. Furthermore, the features obtained relied on Detekt rules and therefore did not directly capture the extraction of classic software metrics through program syntax structure analysis.
+
+These findings indicate that research on code smell detection in Kotlin is still in the development stage of detection methods, while the development of standard datasets usable by the research community is still relatively limited.
+
+\subsection{Existing Code Smell Datasets}
+Most datasets used in code smell detection research are developed using Java projects, such as PROMISE, Qualitas Corpus, and the Fontana Dataset. These datasets have become primary references in the development of various classification methods because they provide software metrics and code smell labels. However, most of these datasets were not designed for Kotlin and therefore lack the ability to adequately represent the syntax and structure of the language.
+
+In addition to the limitations of the programming language, most datasets also lack comprehensive documentation on the metric extraction process or validation of the extraction results. As a result, research reproducibility is limited and the development of new methods requiring high-quality datasets is difficult.
+
+\subsection{Research Gap}
+Based on the review in the previous subchapter, it can be concluded that code smell detection research has progressed through three stages. The first stage focused on the development of rule-based detection methods and software metrics. The next stage focused on utilizing machine learning and model optimization to improve classification performance. More recent research has begun exploring code smell detection in Kotlin, but still focuses on developing detection methods and feature engineering.
+
+However, there is no public dataset available for Kotlin that simultaneously provides comprehensive classical software metrics, a validated and reproducible Abstract Syntax Tree (AST)-based extraction pipeline, comprehensive dataset quality analysis, and initial benchmarks using machine learning. This gap is the primary motivation for this research: to build a primary dataset of software metrics for Kotlin and an AST-based extraction pipeline using Kopyt so that it can serve as a reference in future machine learning-based code smell detection research.
+
+\begin{table}[ht]
+	\centering
+	\caption{Comparison of Existing Code Smell Datasets}
+	\label{tab:dataset_comparison}
+	\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.8cm} c
+			>{\centering\arraybackslash}p{2.2cm}
+			>{\centering\arraybackslash}p{2.2cm}
+			c
+			>{\centering\arraybackslash}p{2.8cm}}
+		\toprule
+		\textbf{Dataset} &
+		\textbf{Language} &
+		\textbf{Classical Metrics} &
+		\textbf{Code Smell Labels} &
+		\textbf{Public} &
+		\textbf{Reproducible Pipeline} \\
+		\midrule
+		PROMISE          & Java   & \ding{51} & \ding{55} & \ding{51} & \ding{55} \\
+		Qualitas Corpus  & Java   & \ding{51} & \ding{51} & \ding{51} & \ding{55} \\
+		Fontana          & Java   & \ding{51} & \ding{51} & \ding{51} & \ding{55} \\
+		\textbf{Our Dataset} & \textbf{Kotlin} & \textbf{\ding{51}} & \textbf{\ding{51}} & \textbf{\ding{51}} & \textbf{\ding{51}} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
 
 \section{Method}\label{sec:Method}
 \subsection*{Research goal and questions/hypotheses}
