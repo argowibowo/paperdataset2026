@@ -172,14 +172,43 @@ However, there is no public dataset available for Kotlin that simultaneously pro
 	\end{tabularx}
 \end{table}
 
-\section{Method}\label{sec:Method}
-\subsection*{Research goal and questions/hypotheses}
+\section{Dataset Construction Methodology}\label{sec:Method}
+This chapter explains the methodology used to build a primary dataset of software metrics for code smell detection in Kotlin applications. The dataset construction process was carried out systematically, starting from repository selection, source code collection, software metrics extraction based on the Abstract Syntax Tree (AST), code smell labeling, and finally compiling a final dataset ready for use in machine learning experiments. All stages were designed to be reproducible using the same pipeline, resulting in a consistent dataset that can be reused by other researchers.
 
-Research goal \dots
+\subsection{Repository Selection}
 
-\subsection*{Research method / procedure}
+The first step in dataset development was selecting open-source Kotlin projects to serve as data sources. GitHub was selected for this repository, as it offers a diverse range of projects with varying characteristics and open documentation and development history. To ensure the quality and representativeness of the dataset, each repository was selected based on a series of inclusion and exclusion criteria, such as Kotlin language dominance, active project status, and source code completeness. This selection process aims to obtain a collection of projects that reflect real-world software development practices, ensuring that the extracted software metrics can represent the characteristics of Kotlin applications in general.
 
-Research method \dots
+\subsection{Data Collection}
+
+Once a repository is selected, all source code is collected and processed through the dataset development pipeline. The process begins with cloning the repository, followed by parsing Kotlin files using the Kopyt library to create an Abstract Syntax Tree (AST). The AST structure is then used as the basis for extracting software metrics for each analyzed code entity. Next, each entity is assigned a code smell label based on the detection rules used before all information is compiled into a final dataset. This dataset development pipeline is designed to be automated so that the extraction process can be carried out consistently across all analyzed repositories.
+
+\subsection{Metric Extraction}
+
+Software metrics extraction is a key step in this research because it determines the quality of the resulting dataset. Unlike approaches that rely on regular expressions or text pattern matching, this research uses an Abstract Syntax Tree (AST)-based approach through the Kopyt library to obtain a structural representation of Kotlin source code. All software metrics are calculated through an AST traversal process, thus recognizing various Kotlin syntax constructs more accurately and reducing errors due to code variations. This pipeline is used to calculate various classic software metrics, including complexity, size, cohesion, and coupling metrics. In addition to explaining the definition of each metric, this subsection also outlines the implementation mechanism of the extraction algorithm used so that the calculation process can be reproduced in future research.
+
+\subsubsection{AST Generation Using Kopyt}
+The first step in the software metrics extraction process is to build a structural representation of the source code using an Abstract Syntax Tree (AST). This research utilizes Kopyt, a Python-based Kotlin parser capable of generating ASTs in accordance with Kotlin grammar. Each source file is parsed into a tree structure that represents syntactic elements, such as class declarations, functions, properties, expressions, and control structures. AST representation allows the analysis process to be based on program structure, rather than simply matching text patterns, resulting in more accurate and consistent information. Furthermore, using Kopyt allows the extraction pipeline to be run automatically without relying on the Android development environment or the project's compilation process.
+
+\subsubsection{Software Metrics Extraction}
+
+Once the AST is successfully created, the next step is to extract software metrics from each analyzed code entity. The extraction pipeline is designed to calculate various classic software metrics commonly used in code smell detection research, including size metrics, complexity metrics, coupling, cohesion, inheritance, and response metrics. All metrics are calculated through an AST traversal of relevant nodes, enabling comprehensive recognition of Kotlin's syntax characteristics. This approach avoids various limitations of regular expression-based methods, such as misidentification due to variations in writing format or the use of more complex Kotlin syntax features.
+
+\subsubsection{Implementation of Metric Extraction Algorithms}
+
+Each software metric is implemented as an extraction module that operates independently on the AST structure. The extraction algorithm utilizes a traversal process through specific nodes according to the definition of each metric. For example, the size metric is calculated based on the number of relevant declarations and lines of code, while the complexity metric is obtained by identifying branching and looping structures in the AST. The coupling metric is analyzed by tracing relationships between classes through object declarations, inheritance, interface implementations, and method calls. This modular approach allows each algorithm to be validated separately and simplifies the addition of new software metrics without changing the entire extraction pipeline.
+
+\subsubsection{Pipeline Reproducibility}
+
+One of the main goals of this research is to produce a software metrics extraction pipeline that can be reproduced by other researchers. The entire process, from source code parsing and AST generation to software metrics extraction and dataset construction, is implemented in a deterministic pipeline. By using the same configuration, parser, and extraction algorithm, the pipeline will produce consistent software metrics values ​​for identical source code. Furthermore, comprehensive documentation regarding the extraction stages, metric definitions, and dataset structure is provided so that other researchers can replicate the dataset construction process or develop the pipeline for different metrics or code smells.
+
+\subsection{Code Smell Labeling}
+
+After all software metrics have been successfully extracted, each code entity is assigned a code smell label to form a classification dataset. The labeling process is performed using predefined detection rules based on the characteristics of each code smell type. The labeling results are then verified to ensure consistency between the obtained software metrics values ​​and the resulting code smell categories. This stage aims to produce accurate labels so that the dataset can be used reliably in the development and evaluation of machine learning models.
+
+\subsection{Dataset Schema}
+
+The final stage is organizing the dataset into an organized and user-friendly structure. The dataset contains project identity attributes, information about the classes or methods analyzed, all extracted software metrics, and code smell labels that are the target classification targets. Each attribute is documented along with its data type to facilitate interpretation and use of the dataset by other researchers. With a well-structured and documented schema, the dataset is not only ready for use in machine learning experiments but also supports reproducibility and further research development.
 
 \section{Results}\label{sec:Results}
 
