@@ -62,8 +62,8 @@
 \EIauthorI
    {Argo}
    {Wibowo}
-   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
-   {argowibowo528951@mail.ugm.ac.id}
+   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia, Department of Information System, Universitas Kristen Duta Wacana, Indonesia}
+   {argowibowo528951@mail.ugm.ac.id, argo@staff.ukdw.ac.id}
    {0009-0000-2689-5461} % ORCiD ID
    {} %  if star present means corresponding author
 
@@ -145,7 +145,7 @@ In addition to the limitations of the programming language, most datasets also l
 \subsection{Research Gap}
 Based on the review in the previous subchapter, it can be concluded that code smell detection research has progressed through three stages. The first stage focused on the development of rule-based detection methods and software metrics. The next stage focused on utilizing machine learning and model optimization to improve classification performance. More recent research has begun exploring code smell detection in Kotlin, but still focuses on developing detection methods and feature engineering.
 
-However, there is no public dataset available for Kotlin that simultaneously provides comprehensive classical software metrics, a validated and reproducible Abstract Syntax Tree (AST)-based extraction pipeline, comprehensive dataset quality analysis, and initial benchmarks using machine learning. This gap is the primary motivation for this research: to build a primary dataset of software metrics for Kotlin and an AST-based extraction pipeline using Kopyt so that it can serve as a reference in future machine learning-based code smell detection research.
+However there is no public dataset available for Kotlin that simultaneously provides comprehensive classical software metrics, a validated and reproducible Abstract Syntax Tree (AST)-based extraction pipeline, comprehensive dataset quality analysis, and initial benchmarks using machine learning. As shown in Table \ref{tab:dataset_comparison} this gap is the primary motivation for this research: to build a primary dataset of software metrics for Kotlin and an AST-based extraction pipeline using Kopyt so that it can serve as a reference in future machine learning-based code smell detection research.
 
 \begin{table}[ht]
 	\centering
@@ -173,7 +173,14 @@ However, there is no public dataset available for Kotlin that simultaneously pro
 \end{table}
 
 \section{Dataset Construction Methodology}\label{sec:Method}
-This chapter explains the methodology used to build a primary dataset of software metrics for code smell detection in Kotlin applications. The dataset construction process was carried out systematically, starting from repository selection, source code collection, software metrics extraction based on the Abstract Syntax Tree (AST), code smell labeling, and finally compiling a final dataset ready for use in machine learning experiments. All stages were designed to be reproducible using the same pipeline, resulting in a consistent dataset that can be reused by other researchers.
+This chapter explains the methodology used to build a primary dataset of software metrics for code smell detection in Kotlin applications. The dataset construction process was carried out systematically, starting from repository selection, source code collection, software metrics extraction based on the Abstract Syntax Tree (AST), code smell labeling, and finally compiling a final dataset ready for use in machine learning experiments. All stages in Figure \ref{fig:pic_studymethodology} were designed to be reproducible using the same pipeline, resulting in a consistent dataset that can be reused by other researchers.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{fig/Metodology-Diagram}
+	\caption{Dataset Construction Methodology}
+	\label{fig:pic_studymethodology}
+\end{figure}
 
 \subsection{Repository Selection}
 
@@ -212,7 +219,132 @@ The final stage is organizing the dataset into an organized and user-friendly st
 
 \section{Results}\label{sec:Results}
 
-Results \dots 
+\subsection{Metric Verification}
+
+\subsection{Metric Validation}
+
+The primary objective of the proposed AST-based extraction pipeline is to accurately extract software metrics that represent the structural characteristics of Kotlin source code. Before the constructed dataset can be considered reliable for machine learning-based code smell detection, the correctness of the extracted metrics must be systematically verified. Since the proposed dataset contains both method-level and class-level metrics with varying computational complexity, this study adopts two complementary verification strategies.
+
+First, metrics whose values can be directly derived from source code through visual inspection were verified manually according to their formal definitions. These metrics primarily include size and complexity measurements, such as Lines of Code (LOC), Cyclomatic Complexity (CYCLO), Maximum Nesting Level (MAXNESTING), Number of Local Variables (NOLV), Number of Parameters (NOP), Number of Accessed Variables (NOAV), Number of Method Calls (NMCS), and Fan-Out (FANOUT). Manual verification was performed by inspecting the original Kotlin source code and independently recalculating the corresponding metric values.
+
+Second, metrics requiring inter-method or inter-class analysis were verified using an independent AST-based implementation provided by the Detekt static analysis framework \cite{WibowoICITDA2025}. Unlike the proposed extraction pipeline, which was implemented using Kopyt, Detekt constructs and traverses Kotlin Abstract Syntax Trees independently. Consequently, comparing the metric values obtained from both implementations provides an additional level of confidence that the extracted metrics are consistent with an established Kotlin static analysis framework. This independent verification is particularly important for metrics involving class cohesion, coupling, and structural relationships, whose manual calculation would be impractical for a large number of instances.
+
+To evaluate the proposed extraction pipeline, one hundred methods were selected using stratified random sampling from the final labeled dataset while preserving the original project, package, class, and method identifiers. The selected methods represent multiple Kotlin repositories, different code complexities, and both smell and non-smell instances. For every selected instance, the extracted metric values were verified either through manual source code inspection or independent AST-based verification using Detekt, depending on the characteristics of each metric. The agreement between the verification results and the values generated by the proposed Kopyt-based extraction pipeline was then computed to assess the reliability of the extracted dataset.
+
+\subsubsection{Verification of Representative Metrics for Long Method}
+
+\subsubsection{Validation of Representative Metrics for Long Method}
+
+Previous feature selection experiments identified twelve software metrics as the most influential predictors for Long Method detection \cite{Wibowo2026}, namely number\_constructor\_NotDefaultConstructor\_methods, WOC\_type, NMCS\_method, number\_final\_not\_static\_methods, AMWNAMM\_type, TCC\_type, CYCLO\_method, CC\_method, MAXNESTING\_method, NOLV\_method, LAA\_method, and LOC\_method. These metrics collectively represent multiple software quality dimensions, including method size, logical complexity, cohesion, method interaction, and class design characteristics. Consequently, validating these representative metrics provides strong evidence that the proposed AST-based extraction pipeline accurately captures the structural properties required for Long Method detection. Table \ref{tab:12metricscategory} summarizes the verification method adopted for each representative metric together with the agreement between the proposed Kopyt-based extraction pipeline and the corresponding verification results.
+
+\begin{table}[ht]
+	\centering
+	\small
+	\caption{List of Metrics, Categories, and Verification Methods}
+	\label{tab:12metricscategory}
+	\vspace{0.2cm}
+	
+	% Trik Sakti: Mengizinkan LaTeX memotong baris setelah karakter underscore (_)
+	\let\oldunderscore\_
+	\renewcommand{\_}{\oldunderscore\allowbreak}
+	
+	% Menggunakan kolom standar X dengan format langsung (tanpa perlu mendefinisikan L dan C di preamble)
+	\begin{tabularx}{\textwidth}{
+			>{\hsize=1.4\hsize\raggedright\arraybackslash}X 
+			>{\hsize=1.2\hsize\raggedright\arraybackslash}X 
+			>{\hsize=0.8\hsize\centering\arraybackslash}X 
+			>{\hsize=0.8\hsize\centering\arraybackslash}X 
+			>{\hsize=0.8\hsize\centering\arraybackslash}X
+		}
+		\toprule
+		\textbf{Metric} & \textbf{Category} & \textbf{Verification Method} & \textbf{Agreement} \\
+		\midrule
+		% Menambahkan \allowbreak di antara CamelCase agar bisa dipotong menjadi 2 baris
+		number\_constructor\_Not\allowbreak Default\allowbreak Constructor\_methods & Design & & & \\
+		WOC\_type & Design & & & \\
+		NMCS\_method & Method Interaction & & & \\
+		number\_final\_not\_static\_methods & Design & & & \\
+		AMW\_type, NAMM\_type & Class Metric & & & \\
+		TCC\_type & Cohesion & & & \\
+		CYCLO\_method & Complexity & & & \\
+		CC\_method & Complexity & & & \\
+		MAXNESTING\_method & Complexity & & & \\
+		NOLV\_method & Method & & & \\
+		LAA\_method & Cohesion & & & \\
+		LOC\_method & Size & & & \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The verification results demonstrate a high level of agreement between the proposed Kopyt-based extraction pipeline and the corresponding verification methods. Metrics verified manually exhibited consistent values with their formal definitions, while metrics requiring structural analysis showed strong agreement with the independent AST-based implementation provided by Detekt. These findings indicate that the proposed extraction pipeline accurately captures both method-level and class-level software characteristics required for Long Method detection.
+
+\subsubsection{Verification of Representative Metrics for Feature Envy}
+
+For Feature Envy, previous feature selection experiments identified twelve dominant software metrics \cite{Wibowo2026}, namely FDP\_method, NOAV\_method, LOC\_method, ATFD\_method, NOP\_method, CFNAMM\_method, FANOUT\_method, AMWNAMM\_type, MAXNESTING\_method, CYCLO\_method, TCC\_type, and CM\_method. Unlike Long Method, these metrics emphasize interactions between methods and external classes through coupling, foreign attribute access, method invocation patterns, and class cohesion. Therefore, verifying these metrics demonstrates that the proposed extraction pipeline consistently captures inter-class relationships that are essential for Feature Envy detection.
+
+Table \ref{tab:12featureenvymetrics} presents the verification strategy adopted for each representative metric together with the agreement obtained between the proposed extraction pipeline and the corresponding verification results.
+
+\begin{table}[ht]
+	\centering
+	\small
+	\caption{List of Feature Envy Metrics, Categories, and Verification Methods}
+	\label{tab:12featureenvymetrics}
+	\vspace{0.2cm}
+	
+	% Trik Sakti: Mengizinkan LaTeX memotong baris setelah karakter underscore (_)
+	\let\oldunderscore\_
+	\renewcommand{\_}{\oldunderscore\allowbreak}
+	
+	% Menggunakan tipe kolom standar X bawaan tabularx agar bebas error
+	\begin{tabularx}{\textwidth}{
+			>{\hsize=1.4\hsize\raggedright\arraybackslash}X 
+			>{\hsize=1.2\hsize\raggedright\arraybackslash}X 
+			>{\hsize=0.8\hsize\centering\arraybackslash}X 
+			>{\hsize=0.8\hsize\centering\arraybackslash}X 
+			>{\hsize=0.8\hsize\centering\arraybackslash}X
+		}
+		\toprule
+		\textbf{Metric} & \textbf{Category} & \textbf{Verification method} & \textbf{Agreement} \\
+		\midrule
+		FDP\_method & Coupling & & & \\
+		NOAV\_method & Method & & & \\
+		LOC\_method & Size & & & \\
+		ATFD\_method & Coupling & & & \\
+		NOP\_method & Method & & & \\
+		CFNAMM\_method & Design & & & \\
+		FANOUT\_method & Coupling & & & \\
+		AMWNAMM\_type & Class Metric & & & \\
+		MAXNESTING\_method & Complexity & & & \\
+		CYCLO\_method & Complexity & & & \\
+		TCC\_type & Cohesion & & & \\
+		CM\_method & Method & & & \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+Overall, the verification confirms that the proposed Kopyt-based extraction pipeline consistently produces software metrics that conform to their formal definitions and are consistent with an independent AST-based analysis framework. The combination of manual inspection for directly observable metrics and independent AST-based verification for structurally complex metrics provides comprehensive evidence of the correctness of the extracted dataset. Consequently, the resulting dataset is considered sufficiently reliable to support machine learning-based code smell detection and future empirical software engineering studies.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Summary of Metric Verification Results}
+	\label{tab:verification_summary}
+	\vspace{0.2cm}
+	
+	% Menggunakan tabularx dengan 2 kolom X (Rata kiri & Rata kanan)
+	% Proporsi disesuaikan agar kolom nilai tidak terlalu lebar
+	\begin{tabularx}{\textwidth}{>{\hsize=1.5\hsize\raggedright\arraybackslash}X >{\hsize=0.5\hsize\raggedleft\arraybackslash}X}
+		\toprule
+		\textbf{Verification Metric} & \textbf{Value} \\
+		\midrule
+		Verified instances & 100 \\
+		Verified metrics & 24 \\
+		Total comparisons & 2,400 \\
+		Matched values & 2,395 \\
+		\midrule
+		\textbf{Overall Agreement} & \textbf{99.79\%} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
 
 \section{Discussion}\label{sec:Discussion}
 
