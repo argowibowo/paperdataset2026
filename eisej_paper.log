@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  14 JUL 2026 19:29
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  15 JUL 2026 11:19
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -983,7 +983,7 @@ Package microtype Info: ... Applying non-selected expansion (no list).
 Package microtype Info: Setting up font `TU/lmr/m/n/12' on input line 103.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-<ORCID.pdf, id=136, 192.72pt x 192.72pt>
+<ORCID.pdf, id=148, 192.72pt x 192.72pt>
 File: ORCID.pdf Graphic file (type pdf)
 <use ORCID.pdf>
 Package luatex.def Info: ORCID.pdf  used on input line 103.
@@ -1138,7 +1138,7 @@ Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
 
-<EISEJ_logo.png, id=142, 36.135pt x 47.4573pt>
+<EISEJ_logo.png, id=154, 36.135pt x 47.4573pt>
 File: EISEJ_logo.png Graphic file (type png)
 <use EISEJ_logo.png>
 Package luatex.def Info: EISEJ_logo.png  used on input line 113.
@@ -1175,7 +1175,7 @@ Underfull \vbox (badness 4886) has occurred while \output is active []
 
 
 [4]
-<fig/Metodology-Diagram.png, id=192, 221.82875pt x 332.24126pt>
+<fig/Metodology-Diagram.png, id=204, 221.82875pt x 332.24126pt>
 File: fig/Metodology-Diagram.png Graphic file (type png)
 <use fig/Metodology-Diagram.png>
 Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 180.
@@ -1189,8 +1189,8 @@ Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 180.
 [7]
 
 [8]
-Underfull \hbox (badness 10000) in alignment at lines 316--316
-[][][][][]
+Underfull \hbox (badness 10000) in alignment at lines 301--301
+[][][][]
  []
 
 
@@ -1199,8 +1199,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [9]
+Underfull \hbox (badness 10000) in alignment at lines 337--337
+[][][][]
+ []
 
-[10] (./eisej_paper.bbl
+
+
+[10]
+Underfull \hbox (badness 10000) in alignment at lines 370--370
+[][][][]
+ []
+
+(./eisej_paper.bbl
+
+[11]
 Package microtype Info: Setting up font `TU/lmr/m/it/10.95' on input line 2.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
@@ -1208,12 +1220,15 @@ Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 28.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 )
+Underfull \vbox (badness 1365) has occurred while \output is active []
 
-[11]
 
-[12] 
+
+[12]
+
+[13] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260714192910 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260715111904 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
 (./eisej_paper.aux)
  ***********
@@ -1221,18 +1236,18 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
-(rerunfilecheck)             Checksum: C865E787B74413E12BB8BC73329176DD;6519.
+(rerunfilecheck)             Checksum: 004B2C4CF62A9CF8AD66BC1BE0975922;7080.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24207 strings out of 475664
+ 24220 strings out of 475664
  125009,1373583 words of node,token memory allocated
  560 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 9 attribute, 58 glue_spec,
  9 attribute_list, 2 shape, 1 write, 1 pdf_action nodes
-   avail lists: 1:9,2:2045,3:590,4:121,5:626,6:261,7:10134,8:4,9:1730,10:25,11:1
+   avail lists: 1:3,2:1104,3:417,4:122,5:630,6:169,7:10136,8:3,9:1131,10:25,11:1
 023
- 46550 multiletter control sequences out of 65536+600000
+ 46557 multiletter control sequences out of 65536+600000
  59 fonts using 4772879 bytes
  86i,18n,89p,1422b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
@@ -1251,9 +1266,9 @@ ype/public/lm/lmromancaps10-regular.otf><c:/users/asus/appdata/local/programs/mi
 ktex/fonts/opentype/public/lm/lmsans10-regular.otf><c:/users/asus/appdata/local/
 programs/miktex/fonts/opentype/public/lm/lmsans10-bold.otf><C:/Users/ASUS/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (12 pages, 165513 bytes).
+Output written on eisej_paper.pdf (13 pages, 169894 bytes).
 
-PDF statistics: 349 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 131072)
- 265 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 368 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 131072)
+ 289 words of extra memory for PDF output out of 10000 (max. 100000000)
 
