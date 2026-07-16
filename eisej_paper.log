@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  15 JUL 2026 11:19
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  16 JUL 2026 20:39
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -852,7 +852,16 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-(./eisej_paper.aux)
+(./eisej_paper.aux
+
+LaTeX Warning: Label `tab:metrics_detekt_verification_methods' multiply defined
+.
+
+
+LaTeX Warning: Label `tab:metrics_detekt_verification_methods@cref' multiply de
+fined.
+
+)
 \openout1 = eisej_paper.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -1199,57 +1208,56 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [9]
-Underfull \hbox (badness 10000) in alignment at lines 337--337
-[][][][]
- []
-
-
 
 [10]
-Underfull \hbox (badness 10000) in alignment at lines 370--370
+Underfull \hbox (badness 10000) in alignment at lines 383--383
 [][][][]
  []
 
-(./eisej_paper.bbl
 
-[11]
+
+[11] (./eisej_paper.bbl
 Package microtype Info: Setting up font `TU/lmr/m/it/10.95' on input line 2.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
+
+
+[12]
 Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 28.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 )
-Underfull \vbox (badness 1365) has occurred while \output is active []
-
-
-
-[12]
 
 [13] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260715111904 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260716203919 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
 (./eisej_paper.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 004B2C4CF62A9CF8AD66BC1BE0975922;7080.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24220 strings out of 475664
+ 24222 strings out of 475664
  125009,1373583 words of node,token memory allocated
  560 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 9 attribute, 58 glue_spec,
  9 attribute_list, 2 shape, 1 write, 1 pdf_action nodes
-   avail lists: 1:3,2:1104,3:417,4:122,5:630,6:169,7:10136,8:3,9:1131,10:25,11:1
-023
- 46557 multiletter control sequences out of 65536+600000
+   avail lists: 1:11,2:1396,3:535,4:119,5:626,6:199,7:10134,8:3,9:1324,10:25,11:
+1023
+ 46558 multiletter control sequences out of 65536+600000
  59 fonts using 4772879 bytes
  86i,18n,89p,1422b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'table.7'
 <c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
 italic.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm
 /lmroman9-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/p
@@ -1266,9 +1274,9 @@ ype/public/lm/lmromancaps10-regular.otf><c:/users/asus/appdata/local/programs/mi
 ktex/fonts/opentype/public/lm/lmsans10-regular.otf><c:/users/asus/appdata/local/
 programs/miktex/fonts/opentype/public/lm/lmsans10-bold.otf><C:/Users/ASUS/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (13 pages, 169894 bytes).
+Output written on eisej_paper.pdf (13 pages, 172387 bytes).
 
-PDF statistics: 368 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 131072)
+PDF statistics: 369 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 131072)
  289 words of extra memory for PDF output out of 10000 (max. 100000000)
 
