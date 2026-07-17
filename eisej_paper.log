@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  16 JUL 2026 20:39
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  17 JUL 2026 13:18
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -853,37 +853,131 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 (./eisej_paper.aux
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.57 ...onCreate pada BaseActivity}{lstlisting.1}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-LaTeX Warning: Label `tab:metrics_detekt_verification_methods' multiply defined
-.
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.57 ...onCreate pada BaseActivity}{lstlisting.1}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
 
-LaTeX Warning: Label `tab:metrics_detekt_verification_methods@cref' multiply de
-fined.
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \expandafter \ifx \lastnamedcs \rel...
+l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+LaTeX Warning: Label `lst:oncreate\_smell@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.60 ... proceed pada SplashScreen}{lstlisting.2}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.60 ... proceed pada SplashScreen}{lstlisting.2}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \expandafter \ifx \lastnamedcs \rel...
+l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+LaTeX Warning: Label `lst:proceed\_smell@cref' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+LaTeX Warning: Label `tab:manual_vs_kopyt' multiply defined.
+
+
+LaTeX Warning: Label `tab:manual_vs_kopyt@cref' multiply defined.
 
 )
 \openout1 = eisej_paper.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -919,13 +1013,13 @@ LaTeX Font Info:    ... okay on input line 48.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 48.
-Package microtype Info: Applying patch `item' on input line 48.
-Package microtype Info: Applying patch `toc' on input line 48.
-Package microtype Info: Applying patch `eqnum' on input line 48.
-Package microtype Info: Applying patch `footnote' on input line 48.
-Package microtype Info: Applying patch `verbatim' on input line 48.
-LaTeX Info: Redefining \microtypesetup on input line 48.
+LaTeX Info: Redefining \microtypecontext on input line 97.
+Package microtype Info: Applying patch `item' on input line 97.
+Package microtype Info: Applying patch `toc' on input line 97.
+Package microtype Info: Applying patch `eqnum' on input line 97.
+Package microtype Info: Applying patch `footnote' on input line 97.
+Package microtype Info: Applying patch `verbatim' on input line 97.
+LaTeX Info: Redefining \microtypesetup on input line 97.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -944,7 +1038,7 @@ Roman.cfg
 File: mt-LatinModernRoman.cfg 2026/02/26 v1.2 microtype config. file: Latin Mod
 ern Roman (RS)
 )
-Package microtype Info: Setting up font `TU/lmr/m/n/10.95' on input line 48.
+Package microtype Info: Setting up font `TU/lmr/m/n/10.95' on input line 97.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
@@ -973,7 +1067,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 97.
  (./eisej_paper.out) (./eisej_paper.out)
 \@outlinefile=\write4
 
@@ -983,27 +1077,27 @@ Package caption Info: End \AtBeginDocument code.
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
 \c@lstlisting=\count398
-Package microtype Info: Setting up font `TU/lmr/bx/n/10.95' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/bx/n/10.95' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmr/bx/n/19' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/bx/n/19' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmr/m/n/12' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/m/n/12' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 <ORCID.pdf, id=148, 192.72pt x 192.72pt>
 File: ORCID.pdf Graphic file (type pdf)
 <use ORCID.pdf>
-Package luatex.def Info: ORCID.pdf  used on input line 103.
+Package luatex.def Info: ORCID.pdf  used on input line 152.
 (luatex.def)             Requested size: 10.0pt x 9.99826pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-03.
+52.
 
 (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Package microtype Info: Setting up font `OT1/lmr/m/n/12' on input line 103.
+Package microtype Info: Setting up font `OT1/lmr/m/n/12' on input line 152.
 Package microtype Info: ... Loading protrusion list `OT1-default'.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmr' (encoding: OT1).
@@ -1011,114 +1105,114 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (list `default').
-Package microtype Info: Setting up font `OT1/lmr/m/n/8' on input line 103.
+Package microtype Info: Setting up font `OT1/lmr/m/n/8' on input line 152.
 Package microtype Info: ... Loading protrusion list `OT1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (list `default').
-Package microtype Info: Setting up font `OT1/lmr/m/n/6' on input line 103.
+Package microtype Info: Setting up font `OT1/lmr/m/n/6' on input line 152.
 Package microtype Info: ... Loading protrusion list `OT1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (list `default').
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-03.
+52.
 
 (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Package microtype Info: Setting up font `OML/lmm/m/it/12' on input line 103.
+Package microtype Info: Setting up font `OML/lmm/m/it/12' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `OML/lmm/m/it/8' on input line 103.
+Package microtype Info: Setting up font `OML/lmm/m/it/8' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `OML/lmm/m/it/6' on input line 103.
+Package microtype Info: Setting up font `OML/lmm/m/it/6' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-103.
+152.
 
 (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Package microtype Info: Setting up font `OMS/lmsy/m/n/12' on input line 103.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/12' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `OMS/lmsy/m/n/8' on input line 103.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/8' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `OMS/lmsy/m/n/6' on input line 103.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/6' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-103.
+152.
 
 (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 103.
+(Font)              <12> on input line 152.
 Package microtype Info: ... No configuration file mt-lmex.cfg.
-Package microtype Info: Setting up font `OMX/lmex/m/n/12' on input line 103.
+Package microtype Info: Setting up font `OMX/lmex/m/n/12' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 103.
-Package microtype Info: Setting up font `OMX/lmex/m/n/8' on input line 103.
+(Font)              <8> on input line 152.
+Package microtype Info: Setting up font `OMX/lmex/m/n/8' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 103.
-Package microtype Info: Setting up font `OMX/lmex/m/n/6' on input line 103.
+(Font)              <6> on input line 152.
+Package microtype Info: Setting up font `OMX/lmex/m/n/6' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `TU/lmr/m/n/8' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/m/n/8' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 File: ORCID.pdf Graphic file (type pdf)
 <use ORCID.pdf>
-Package luatex.def Info: ORCID.pdf  used on input line 103.
+Package luatex.def Info: ORCID.pdf  used on input line 152.
 (luatex.def)             Requested size: 10.0pt x 9.99826pt.
 File: ORCID.pdf Graphic file (type pdf)
 <use ORCID.pdf>
-Package luatex.def Info: ORCID.pdf  used on input line 103.
+Package luatex.def Info: ORCID.pdf  used on input line 152.
 (luatex.def)             Requested size: 10.0pt x 9.99826pt.
-Package microtype Info: Setting up font `TU/lmr/m/n/9' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/m/n/9' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `OT1/lmr/m/n/9' on input line 103.
+Package microtype Info: Setting up font `OT1/lmr/m/n/9' on input line 152.
 Package microtype Info: ... Loading protrusion list `OT1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (list `default').
-Package microtype Info: Setting up font `OT1/lmr/m/n/5' on input line 103.
+Package microtype Info: Setting up font `OT1/lmr/m/n/5' on input line 152.
 Package microtype Info: ... Loading protrusion list `OT1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (list `default').
-Package microtype Info: Setting up font `OML/lmm/m/it/9' on input line 103.
+Package microtype Info: Setting up font `OML/lmm/m/it/9' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `OML/lmm/m/it/5' on input line 103.
+Package microtype Info: Setting up font `OML/lmm/m/it/5' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `OMS/lmsy/m/n/9' on input line 103.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/9' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `OMS/lmsy/m/n/5' on input line 103.
-Package microtype Info: ... No protrusion.
-Package microtype Info: ... No expansion.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 103.
-Package microtype Info: Setting up font `OMX/lmex/m/n/9' on input line 103.
+Package microtype Info: Setting up font `OMS/lmsy/m/n/5' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 103.
-Package microtype Info: Setting up font `OMX/lmex/m/n/5' on input line 103.
+(Font)              <9> on input line 152.
+Package microtype Info: Setting up font `OMX/lmex/m/n/9' on input line 152.
 Package microtype Info: ... No protrusion.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `TU/lmr/m/n/6' on input line 103.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 152.
+Package microtype Info: Setting up font `OMX/lmex/m/n/5' on input line 152.
+Package microtype Info: ... No protrusion.
+Package microtype Info: ... No expansion.
+Package microtype Info: Setting up font `TU/lmr/m/n/6' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmtt/m/n/9' on input line 103.
+Package microtype Info: Setting up font `TU/lmtt/m/n/9' on input line 152.
 Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
@@ -1126,23 +1220,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... No expansion.
-Package microtype Info: Setting up font `TU/lmr/m/n/10' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/m/n/10' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmr/bx/n/10' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/bx/n/10' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmr/bx/n/9' on input line 103.
+Package microtype Info: Setting up font `TU/lmr/bx/n/9' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 103--103
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 152--152
 [] []  
  []
 
 \c@aaa=\count399
 \c@aab=\count400
-Package microtype Info: Setting up font `TU/lmr/bx/n/12' on input line 106.
+Package microtype Info: Setting up font `TU/lmr/bx/n/12' on input line 155.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
@@ -1150,9 +1244,9 @@ Package microtype Info: ... Applying non-selected expansion (no list).
 <EISEJ_logo.png, id=154, 36.135pt x 47.4573pt>
 File: EISEJ_logo.png Graphic file (type png)
 <use EISEJ_logo.png>
-Package luatex.def Info: EISEJ_logo.png  used on input line 113.
+Package luatex.def Info: EISEJ_logo.png  used on input line 162.
 (luatex.def)             Requested size: 38.41121pt x 50.44931pt.
-Package microtype Info: Setting up font `TU/lmss/m/n/10' on input line 113.
+Package microtype Info: Setting up font `TU/lmss/m/n/10' on input line 162.
 Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
@@ -1160,11 +1254,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmss/bx/n/10' on input line 113.
+Package microtype Info: Setting up font `TU/lmss/bx/n/10' on input line 162.
 Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmr/m/sc/10' on input line 113.
+Package microtype Info: Setting up font `TU/lmr/m/sc/10' on input line 162.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 [1{C:/Users/ASUS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
@@ -1174,7 +1268,7 @@ Package microtype Info: ... Applying non-selected expansion (no list).
 [2]
 
 [3]
-Overfull \hbox (17.0953pt too wide) in alignment at lines 172--172
+Overfull \hbox (17.0953pt too wide) in alignment at lines 221--221
 [][][][][][]
  []
 
@@ -1187,7 +1281,7 @@ Underfull \vbox (badness 4886) has occurred while \output is active []
 <fig/Metodology-Diagram.png, id=204, 221.82875pt x 332.24126pt>
 File: fig/Metodology-Diagram.png Graphic file (type png)
 <use fig/Metodology-Diagram.png>
-Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 180.
+Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 229.
 (luatex.def)             Requested size: 128.0387pt x 191.76724pt.
 
 
@@ -1198,7 +1292,7 @@ Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 180.
 [7]
 
 [8]
-Underfull \hbox (badness 10000) in alignment at lines 301--301
+Underfull \hbox (badness 10000) in alignment at lines 350--350
 [][][][]
  []
 
@@ -1210,33 +1304,162 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [9]
 
 [10]
-Underfull \hbox (badness 10000) in alignment at lines 383--383
-[][][][]
- []
+Package microtype Info: Setting up font `TU/lmtt/m/n/10.95' on input line 410.
+Package microtype Info: ... Loading protrusion list `T1-default'.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... No expansion.
 
 
+LaTeX Warning: Reference `lst:oncreate_smell' on page 11 undefined on input lin
+e 410.
 
-[11] (./eisej_paper.bbl
-Package microtype Info: Setting up font `TU/lmr/m/it/10.95' on input line 2.
-Package microtype Info: ... Loading protrusion list `LMR-it'.
-Package microtype Info: ... Applying non-selected expansion (no list).
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 412.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 413.
+Package microtype Info: Setting up font `TU/lmtt/b/n/9' on input line 413.
+Package microtype Info: ... Loading protrusion list `T1-default'.
+Package microtype Info: ... : First loading protrusion list `default'.
+Package microtype Info: ... No expansion.
+
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 [12]
+
+LaTeX Warning: Reference `lst:oncreate_smell' on page 13 undefined on input lin
+e 493.
+
+Package microtype Info: Setting up font `TU/lmr/m/it/10.95' on input line 495.
+Package microtype Info: ... Loading protrusion list `LMR-it'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+Package microtype Info: |<< adding left margin kern for `\textbf {Ti}':
+(microtype)             -0.438pt on input line 496.
+
+Overfull \hbox (9.93098pt too wide) in paragraph at lines 496--497
+\TU/lmr/m/n/10.95 er-ence classes (\TU/lmtt/m/n/10.95 AppearancePreferences\TU/
+lmr/m/n/10.95 , \TU/lmtt/m/n/10.95 TrialPreferences\TU/lmr/m/n/10.95 , \TU/lmtt
+/m/n/10.95 DevelopmentPreferences\TU/lmr/m/n/10.95 ,
+ []
+
+
+LaTeX Warning: Reference `lst:proceed_smell' on page 13 undefined on input line
+ 499.
+
+
+
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[14]
+
+LaTeX Warning: Reference `list:proceed smell' on page 15 undefined on input lin
+e 585.
+
+Package microtype Info: Setting up font `OT1/lmr/m/it/10.95' on input line 596.
+
+Package microtype Info: ... Loading protrusion list `OT1-it'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+Package microtype Info: Setting up font `OT1/lmr/m/it/8' on input line 596.
+Package microtype Info: ... Loading protrusion list `OT1-it'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+Package microtype Info: Setting up font `OT1/lmr/m/it/6' on input line 596.
+Package microtype Info: ... Loading protrusion list `OT1-it'.
+Package microtype Info: ... Applying non-selected expansion (list `default').
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding left margin kern for `(':
+(microtype)             -1.28114pt on input line 596.
+Package microtype Info: |<< adding right margin kern for `)':
+(microtype)             -1.28114pt on input line 596.
+
+
+[15]
+
+[16] (./eisej_paper.bbl
+
+[17]
 Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 28.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 )
 
-[13] 
+[18] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260716203919 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260717131810 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
-(./eisej_paper.aux)
+(./eisej_paper.aux
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.57 ...onCreate pada BaseActivity}{lstlisting.1}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.60 ... proceed pada SplashScreen}{lstlisting.2}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+\protect 
+l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1246,37 +1469,43 @@ Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24222 strings out of 475664
- 125009,1373583 words of node,token memory allocated
- 560 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 9 attribute, 58 glue_spec,
- 9 attribute_list, 2 shape, 1 write, 1 pdf_action nodes
-   avail lists: 1:11,2:1396,3:535,4:119,5:626,6:199,7:10134,8:3,9:1324,10:25,11:
-1023
- 46558 multiletter control sequences out of 65536+600000
- 59 fonts using 4772879 bytes
- 86i,18n,89p,1422b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 24736 strings out of 475664
+ 381556,1373583 words of node,token memory allocated
+ 611 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
+rn, 3 glyph, 11 attribute, 58 glue_spec, 11 attribute_list, 2 shape, 1 write, 1 
+pdf_action nodes
+   avail lists: 1:3,2:4959,3:535,4:6716,5:6308,6:198,7:15244,8:14,9:19484,10:25,
+11:1023
+ 46897 multiletter control sequences out of 65536+600000
+ 67 fonts using 5521519 bytes
+ 86i,18n,89p,1422b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
+:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<c:/user
+s/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-italic.o
+tf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmonol
+t10-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/
+lm/lmmono10-regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opent
+ype/public/lm/lmroman9-bold.otf><c:/users/asus/appdata/local/programs/miktex/fon
+ts/opentype/public/lm/lmroman10-bold.otf><c:/users/asus/appdata/local/programs/m
+iktex/fonts/opentype/public/lm/lmmono9-regular.otf><c:/users/asus/appdata/local/
+programs/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><c:/users/asus/app
+data/local/programs/miktex/fonts/opentype/public/lm/lmroman6-regular.otf><c:/use
+rs/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman8-regular.
+otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroma
+n12-regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/publ
+ic/lm/lmroman12-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/open
+type/public/lm/lmroman10-regular.otf><c:/users/asus/appdata/local/programs/mikte
+x/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/users/asus/appdata/loca
+l/programs/miktex/fonts/opentype/public/lm/lmsans10-regular.otf><c:/users/asus/a
+ppdata/local/programs/miktex/fonts/opentype/public/lm/lmsans10-bold.otf><C:/User
+s/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/
+ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASU
+S/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/
+AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on eisej_paper.pdf (18 pages, 248677 bytes).
 
-warning  (pdf backend): unreferenced destination with name 'table.7'
-<c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
-italic.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm
-/lmroman9-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/p
-ublic/lm/lmroman10-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/o
-pentype/public/lm/lmmono9-regular.otf><c:/users/asus/appdata/local/programs/mikt
-ex/fonts/opentype/public/lm/lmroman9-regular.otf><c:/users/asus/appdata/local/pr
-ograms/miktex/fonts/opentype/public/lm/lmroman6-regular.otf><c:/users/asus/appda
-ta/local/programs/miktex/fonts/opentype/public/lm/lmroman8-regular.otf><c:/users
-/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-regular.o
-tf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman
-12-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/l
-m/lmroman10-regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opent
-ype/public/lm/lmromancaps10-regular.otf><c:/users/asus/appdata/local/programs/mi
-ktex/fonts/opentype/public/lm/lmsans10-regular.otf><c:/users/asus/appdata/local/
-programs/miktex/fonts/opentype/public/lm/lmsans10-bold.otf><C:/Users/ASUS/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (13 pages, 172387 bytes).
-
-PDF statistics: 369 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 131072)
+PDF statistics: 604 PDF objects out of 1000 (max. 8388607)
+ 236 named destinations out of 1000 (max. 131072)
  289 words of extra memory for PDF output out of 10000 (max. 100000000)
 
