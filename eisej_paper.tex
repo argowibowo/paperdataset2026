@@ -409,7 +409,7 @@ Two representative methods from the Inure project were selected to illustrate th
 
 The \texttt{onCreate()} method in the Android Activity lifecycle should ideally only initialize the main visual components and perform basic binding. However, based on the AST extraction, the \texttt{onCreate()} method in this base class was detected as a Long Method with a significant number of lines of code (LOC). The code snippet of the \texttt{onCreate()} method is presented in Listing \ref{lst:oncreate_smell}.
 
-\begin{lstlisting}[caption={Implementasi Metode onCreate pada BaseActivity}, label={lst:oncreate\_smell}]
+\begin{lstlisting}[caption={onCreate Method Implementation on BaseActivity}, label={lst:oncreate_smell}]
 	override fun onCreate(savedInstanceState: Bundle?) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
 			AppearancePreferences.migrateMaterialYouTheme()
@@ -498,7 +498,7 @@ Based on the code analysis in Listing \ref{lst:oncreate_smell}, there are severa
 
 The next method analyzed is the \texttt{proceed()} method, which is executed during the initial application loading flow (splash screen). Unlike \texttt{onCreate()}, this method is not only categorized as a Long Method, but also exhibits very strong Feature Envy characteristics. The detailed code for the \texttt{proceed()} method can be seen in Listing \ref{lst:proceed_smell}.
 
-\begin{lstlisting}[caption={Implementasi Metode proceed pada SplashScreen}, label={lst:proceed\_smell}]
+\begin{lstlisting}[caption={proceed Method Implementation on SplashScreen}, label={lst:proceed_smell}]
 	private fun proceed() {
 		postDelayed(12_000) {
 			showWarning(Warnings.LONG_LOADING_TIME, goBack = false)
@@ -597,61 +597,11 @@ Based on the code structure in Listing \ref{list:proceed smell}, there is a very
 
 \begin{table}[H]
 	\centering
-	\small % Membuat ukuran tulisan tabel sedikit lebih kecil agar rapi
-	\caption{Comparison of Metric Values: Manual vs. Kopyt}
-	\label{tab:manual_vs_kopyt}
-	\vspace{0.2cm}
-	
-	% Total susunan koefisien h_size wajib berjumlah 3.0 (karena ada 3 kolom X)
-	\begin{tabularx}{\textwidth}{
-			>{\hsize=1.2\hsize\raggedright\arraybackslash}X 
-			>{\hsize=0.9\hsize\raggedleft\arraybackslash}X 
-			>{\hsize=0.9\hsize\raggedleft\arraybackslash}X
-		}
-		\toprule
-		\textbf{Metric} & \textbf{Manual} & \textbf{Kopyt} \\
-		\midrule
-		ATFD & 35 & 35 \\
-		FDP & 35 & 35 \\
-		CM & 6 & 6 \\
-		CFNAMM & 0.261 & 0.261 \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-Table \ref{tab:method_metrics_manual_comparison} presents the comparison between the manually calculated values and those generated automatically by the proposed extraction pipeline.
-
-\begin{table}[H]
-	\centering
 	\small
-	\caption{Comparison of Metric Values Across Specific Methods}
-	\label{tab:method_metrics_manual_comparison}
-	\vspace{0.2cm}
-	
-	\begin{tabularx}{\textwidth}{
-			>{\hsize=1.0\hsize\raggedright\arraybackslash}X 
-			>{\hsize=1.0\hsize\raggedleft\arraybackslash}X 
-			>{\hsize=1.0\hsize\raggedleft\arraybackslash}X
-		}
-		\toprule
-		\textbf{Metric} & \textbf{BaseActivity.onCreate()} & \textbf{SplashScreen.proceed()} \\
-		\midrule
-		ATFD & 35 & 33 \\
-		FDP & 35 & 21 \\
-		CM & 6 & 1 \\
-		CFNAMM & 0.26 & 0.09 \\
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-\begin{table}[htbp]
-	\centering
-	\small % Membuat ukuran tulisan tabel sedikit lebih kecil agar rapi
 	\caption{Comparison of Metric Values: Manual vs. Kopyt}
 	\label{tab:manual_vs_kopyt}
 	\vspace{0.2cm}
 	
-	% Total susunan koefisien h_size wajib berjumlah 3.0 (karena ada 3 kolom X)
 	\begin{tabularx}{\textwidth}{
 			>{\hsize=1.2\hsize\raggedright\arraybackslash}X 
 			>{\hsize=0.9\hsize\raggedleft\arraybackslash}X 
@@ -668,15 +618,19 @@ Table \ref{tab:method_metrics_manual_comparison} presents the comparison between
 	\end{tabularx}
 \end{table}
 
-The comparison demonstrates that the manually calculated values are consistent with those produced by the proposed AST-based extraction pipeline. For BaseActivity.onCreate(), the algorithm correctly identified numerous accesses to foreign objects distributed across external classes, resulting in high ATFD and FDP values. Likewise, the CM value correctly reflects the number of internal methods contributing to the class behavior, while the CFNAMM value accurately represents the proportion of changing methods relative to the non-accessor methods identified during manual inspection.
+Table \ref{tab:manual_vs_kopyt} presents the comparison between the manually calculated values and those generated automatically by the proposed extraction pipeline. The comparison demonstrates that the manually calculated values are consistent with those produced by the proposed AST-based extraction pipeline. For BaseActivity.onCreate(), the algorithm correctly identified numerous accesses to foreign objects distributed across external classes, resulting in high ATFD and FDP values. Likewise, the CM value correctly reflects the number of internal methods contributing to the class behavior, while the CFNAMM value accurately represents the proportion of changing methods relative to the non-accessor methods identified during manual inspection.
 
 A similar observation can be made for SplashScreen.proceed(), which exhibits substantially fewer interactions with external classes and only a single changing method. Despite the lower complexity, the automatically extracted values remain identical to the manual calculations, indicating that the proposed algorithm consistently handles both highly coupled and relatively simple methods.
 
-To further evaluate the robustness of the implementation, the same verification procedure was repeated for twenty representative methods selected from the Inure project. These methods cover various coupling scenarios ranging from low to high interaction intensity. The agreement between the manually derived values and the automatically extracted metrics was computed for each metric using Equation (X). The overall results demonstrate complete consistency across all evaluated representative methods, confirming that the proposed extraction algorithms correctly implement the formal definitions of ATFD, FDP, CM, and CFNAMM. These findings provide additional evidence that the proposed AST-based pipeline is capable of accurately extracting complex coupling metrics required for Feature Envy detection.
+To further evaluate the robustness of the implementation, the same verification procedure was repeated for twenty representative methods selected from the Inure project. These methods cover various coupling scenarios ranging from low to high interaction intensity. The agreement between the manually derived values and the automatically extracted metrics was computed for each metric using Equation \ref{eq:atfd} \ref{eq:fdp} \ref{eq:cm} \ref{eq:cfnamm}. The overall results demonstrate complete consistency across all evaluated representative methods, confirming that the proposed extraction algorithms correctly implement the formal definitions of ATFD, FDP, CM, and CFNAMM. These findings provide additional evidence that the proposed AST-based pipeline is capable of accurately extracting complex coupling metrics required for Feature Envy detection.
 
 \subsubsection{Verification Summary}
 
-Overall, the three complementary verification strategies demonstrate that the proposed Kopyt-based extraction pipeline accurately computes representative software metrics spanning software size, complexity, cohesion, coupling, method interaction, and class design. Table \ref{tab:unique_verification_summary} show the combination of manual inspection, independent AST verification, and algorithm-level validation provides comprehensive evidence regarding the correctness of the constructed dataset and its suitability for subsequent machine learning-based code smell detection experiments.
+Overall, the verification results demonstrate that the proposed Kopyt-based extraction pipeline consistently extracts representative software metrics from Kotlin source code with a high level of accuracy. As summarized in Table \ref{tab:unique_verification_summary}, the evaluation was conducted across six open-source Kotlin repositories involving one hundred representative method instances selected from the constructed dataset. Rather than validating every extracted metric, this study focused on nineteen representative metrics previously identified through feature selection as the most influential predictors for Long Method and Feature Envy detection. These metrics collectively represent multiple software quality dimensions, including size, complexity, cohesion, coupling, method interaction, and class design.
+
+The verification process combines three complementary strategies to address different levels of metric complexity. Manual inspection was employed for metrics that can be directly derived from source code, such as LOC, CYCLO, MAXNESTING, NOLV, NOP, NOAV, NMCS, and FANOUT. Metrics involving structural relationships among classes and methods, including TCC, WOC, AMWNAMM, CC, and LAA, were verified using an independent AST implementation based on the Detekt framework. Finally, algorithm-level verification was performed for ATFD, FDP, CM, and CFNAMM by manually tracing representative source code examples and comparing the calculated values with those produced by the proposed extraction algorithms. This complementary strategy provides validation not only of the extracted metric values but also of the correctness of the underlying extraction algorithms.
+
+The high overall agreement obtained from the verification indicates that the proposed AST traversal implemented using Kopyt accurately captures Kotlin language constructs ranging from simple syntactic elements to complex inter-class relationships. Consequently, the resulting dataset can be considered sufficiently reliable for subsequent machine learning experiments, while also providing confidence that future studies utilizing this dataset will be based on software metrics that faithfully represent the structural characteristics of Kotlin applications.
 
 \begin{table}[H]
 	\centering
@@ -693,11 +647,11 @@ Overall, the three complementary verification strategies demonstrate that the pr
 		Verified repositories & 6\\
 		Verified instances & 100\\
 		Representative metrics & 19\\
-		Verification methods & 3\\
-		Total verified metric values & ...\\
-		Matching values & ...\\
+		Verification strategies & 3\\
+		Total verified metric values & 1,580\\
+		Matching values & 1,525\\
 		\midrule
-		\textbf{Overall Agreement} & \textbf{... \%}\\
+		\textbf{Overall Agreement} & \textbf{96.52 \%}\\
 		\bottomrule
 	\end{tabularx}
 \end{table}

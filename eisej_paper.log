@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  17 JUL 2026 13:18
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  19 JUL 2026 20:40
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -852,110 +852,7 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-(./eisej_paper.aux
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.57 ...onCreate pada BaseActivity}{lstlisting.1}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.57 ...onCreate pada BaseActivity}{lstlisting.1}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Extra \endcsname.
-\@ifundefined #1->\ifcsname #1\endcsname 
-                                         \expandafter \ifx \lastnamedcs \rel...
-l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-
-LaTeX Warning: Label `lst:oncreate\_smell@cref' multiply defined.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.60 ... proceed pada SplashScreen}{lstlisting.2}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.60 ... proceed pada SplashScreen}{lstlisting.2}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\@ifundefined #1->\ifcsname #1\endcsname 
-                                         \expandafter \ifx \lastnamedcs \rel...
-l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-
-LaTeX Warning: Label `lst:proceed\_smell@cref' multiply defined.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-LaTeX Warning: Label `tab:manual_vs_kopyt' multiply defined.
-
-
-LaTeX Warning: Label `tab:manual_vs_kopyt@cref' multiply defined.
-
-)
+(./eisej_paper.aux)
 \openout1 = eisej_paper.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -1308,11 +1205,6 @@ Package microtype Info: Setting up font `TU/lmtt/m/n/10.95' on input line 410.
 Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... No expansion.
-
-
-LaTeX Warning: Reference `lst:oncreate_smell' on page 11 undefined on input lin
-e 410.
-
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 412.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
@@ -1329,10 +1221,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [12]
-
-LaTeX Warning: Reference `lst:oncreate_smell' on page 13 undefined on input lin
-e 493.
-
 Package microtype Info: Setting up font `TU/lmr/m/it/10.95' on input line 495.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
@@ -1344,10 +1232,6 @@ Overfull \hbox (9.93098pt too wide) in paragraph at lines 496--497
 lmr/m/n/10.95 , \TU/lmtt/m/n/10.95 TrialPreferences\TU/lmr/m/n/10.95 , \TU/lmtt
 /m/n/10.95 DevelopmentPreferences\TU/lmr/m/n/10.95 ,
  []
-
-
-LaTeX Warning: Reference `lst:proceed_smell' on page 13 undefined on input line
- 499.
 
 
 
@@ -1406,6 +1290,9 @@ Package microtype Info: |<< adding right margin kern for `)':
 
 
 [15]
+Underfull \vbox (badness 3919) has occurred while \output is active []
+
+
 
 [16] (./eisej_paper.bbl
 
@@ -1417,42 +1304,9 @@ Package microtype Info: ... Applying non-selected expansion (no list).
 
 [18] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260717131810 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260719204015 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
-(./eisej_paper.aux
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.57 ...onCreate pada BaseActivity}{lstlisting.1}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.58 ...ef}{{[lstlisting][1][]1}{[1][11][]11}{}{}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.60 ... proceed pada SplashScreen}{lstlisting.2}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-\protect 
-l.61 ...ef}{{[lstlisting][2][]2}{[1][13][]13}{}{}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-)
+(./eisej_paper.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1461,23 +1315,20 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 004B2C4CF62A9CF8AD66BC1BE0975922;7080.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24736 strings out of 475664
- 381556,1373583 words of node,token memory allocated
+ 24731 strings out of 475664
+ 381546,1373583 words of node,token memory allocated
  611 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 3 glyph, 11 attribute, 58 glue_spec, 11 attribute_list, 2 shape, 1 write, 1 
 pdf_action nodes
-   avail lists: 1:3,2:4959,3:535,4:6716,5:6308,6:198,7:15244,8:14,9:19484,10:25,
+   avail lists: 1:7,2:4959,3:535,4:6716,5:6308,6:198,7:15244,8:14,9:19484,10:25,
 11:1023
- 46897 multiletter control sequences out of 65536+600000
+ 46894 multiletter control sequences out of 65536+600000
  67 fonts using 5521519 bytes
  86i,18n,89p,1422b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
@@ -1503,9 +1354,9 @@ s/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/
 ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASU
 S/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (18 pages, 248677 bytes).
+Output written on eisej_paper.pdf (18 pages, 251007 bytes).
 
-PDF statistics: 604 PDF objects out of 1000 (max. 8388607)
- 236 named destinations out of 1000 (max. 131072)
+PDF statistics: 609 PDF objects out of 1000 (max. 8388607)
+ 234 named destinations out of 1000 (max. 131072)
  289 words of extra memory for PDF output out of 10000 (max. 100000000)
 
