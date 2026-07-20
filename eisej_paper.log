@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  19 JUL 2026 20:40
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  20 JUL 2026 15:15
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -852,7 +852,14 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-(./eisej_paper.aux)
+(./eisej_paper.aux
+
+LaTeX Warning: Label `fig:LOC_histogram' multiply defined.
+
+
+LaTeX Warning: Label `fig:LOC_histogram@cref' multiply defined.
+
+)
 \openout1 = eisej_paper.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -983,7 +990,7 @@ Package microtype Info: ... Applying non-selected expansion (no list).
 Package microtype Info: Setting up font `TU/lmr/m/n/12' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-<ORCID.pdf, id=148, 192.72pt x 192.72pt>
+<ORCID.pdf, id=188, 192.72pt x 192.72pt>
 File: ORCID.pdf Graphic file (type pdf)
 <use ORCID.pdf>
 Package luatex.def Info: ORCID.pdf  used on input line 152.
@@ -1138,7 +1145,7 @@ Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
 
-<EISEJ_logo.png, id=154, 36.135pt x 47.4573pt>
+<EISEJ_logo.png, id=194, 36.135pt x 47.4573pt>
 File: EISEJ_logo.png Graphic file (type png)
 <use EISEJ_logo.png>
 Package luatex.def Info: EISEJ_logo.png  used on input line 162.
@@ -1175,7 +1182,7 @@ Underfull \vbox (badness 4886) has occurred while \output is active []
 
 
 [4]
-<fig/Metodology-Diagram.png, id=204, 221.82875pt x 332.24126pt>
+<fig/Metodology-Diagram.png, id=244, 221.82875pt x 332.24126pt>
 File: fig/Metodology-Diagram.png Graphic file (type png)
 <use fig/Metodology-Diagram.png>
 Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 229.
@@ -1294,17 +1301,81 @@ Underfull \vbox (badness 3919) has occurred while \output is active []
 
 
 
-[16] (./eisej_paper.bbl
+[16]
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+
 
 [17]
+<fig/Figure4_Boxplot.png, id=524, 1004.553pt x 425.4294pt>
+File: fig/Figure4_Boxplot.png Graphic file (type png)
+<use fig/Figure4_Boxplot.png>
+Package luatex.def Info: fig/Figure4_Boxplot.png  used on input line 731.
+(luatex.def)             Requested size: 426.79134pt x 180.74991pt.
+
+Underfull \vbox (badness 4518) has occurred while \output is active []
+
+
+
+[18<./fig/Figure4_Boxplot.png>]
+<fig/Figure4_LOC_Histogram.png, id=536, 571.1739pt x 353.1594pt>
+File: fig/Figure4_LOC_Histogram.png Graphic file (type png)
+<use fig/Figure4_LOC_Histogram.png>
+Package luatex.def Info: fig/Figure4_LOC_Histogram.png  used on input line 747.
+
+(luatex.def)             Requested size: 426.79134pt x 263.89351pt.
+<fig/Figure4_CYCLO_Histogram.png, id=537, 571.1739pt x 353.1594pt>
+File: fig/Figure4_CYCLO_Histogram.png Graphic file (type png)
+<use fig/Figure4_CYCLO_Histogram.png>
+Package luatex.def Info: fig/Figure4_CYCLO_Histogram.png  used on input line 75
+4.
+(luatex.def)             Requested size: 426.79134pt x 263.89351pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19<./fig/Figure4_LOC_Histogram.png>]
+<fig/Figure4_Heatmap.png, id=546, 957.5775pt x 876.3942pt>
+File: fig/Figure4_Heatmap.png Graphic file (type png)
+<use fig/Figure4_Heatmap.png>
+Package luatex.def Info: fig/Figure4_Heatmap.png  used on input line 786.
+(luatex.def)             Requested size: 426.79134pt x 390.60265pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[20<./fig/Figure4_CYCLO_Histogram.png>]
+<fig/Figure4_PieChart.png, id=556, 410.2527pt x 425.4294pt>
+File: fig/Figure4_PieChart.png Graphic file (type png)
+<use fig/Figure4_PieChart.png>
+Package luatex.def Info: fig/Figure4_PieChart.png  used on input line 819.
+(luatex.def)             Requested size: 426.79134pt x 442.57893pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[21<./fig/Figure4_Heatmap.png>]
+
+[22<./fig/Figure4_PieChart.png>]
+
+[23]
+
+[24]
+
+[25] (./eisej_paper.bbl
 Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 28.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-)
 
-[18] 
+
+[26])
+
+[27] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260719204015 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260720151511 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
 (./eisej_paper.aux)
  ***********
@@ -1315,12 +1386,21 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
-(rerunfilecheck)             Checksum: 004B2C4CF62A9CF8AD66BC1BE0975922;7080.
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package rerunfilecheck Warning: File `eisej_paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `eisej_paper.out':
+(rerunfilecheck)             Before: AE4440449B42C1E87F2C19D5955922DE;8784
+(rerunfilecheck)             After:  D9AFCC25AA528A31A4496B9CEFE750F8;10593.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24731 strings out of 475664
+ 24845 strings out of 475664
  381546,1373583 words of node,token memory allocated
  611 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
@@ -1328,35 +1408,39 @@ rn, 3 glyph, 11 attribute, 58 glue_spec, 11 attribute_list, 2 shape, 1 write, 1
 pdf_action nodes
    avail lists: 1:7,2:4959,3:535,4:6716,5:6308,6:198,7:15244,8:14,9:19484,10:25,
 11:1023
- 46894 multiletter control sequences out of 65536+600000
+ 46958 multiletter control sequences out of 65536+600000
  67 fonts using 5521519 bytes
  86i,18n,89p,1422b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
-:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<c:/user
-s/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-italic.o
-tf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmonol
-t10-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/
-lm/lmmono10-regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opent
-ype/public/lm/lmroman9-bold.otf><c:/users/asus/appdata/local/programs/miktex/fon
-ts/opentype/public/lm/lmroman10-bold.otf><c:/users/asus/appdata/local/programs/m
-iktex/fonts/opentype/public/lm/lmmono9-regular.otf><c:/users/asus/appdata/local/
-programs/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><c:/users/asus/app
-data/local/programs/miktex/fonts/opentype/public/lm/lmroman6-regular.otf><c:/use
-rs/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman8-regular.
-otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroma
-n12-regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/publ
-ic/lm/lmroman12-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/open
-type/public/lm/lmroman10-regular.otf><c:/users/asus/appdata/local/programs/mikte
-x/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/users/asus/appdata/loca
-l/programs/miktex/fonts/opentype/public/lm/lmsans10-regular.otf><c:/users/asus/a
-ppdata/local/programs/miktex/fonts/opentype/public/lm/lmsans10-bold.otf><C:/User
-s/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/
-ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASU
-S/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (18 pages, 251007 bytes).
+{C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
+:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/
+Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Us
+ers/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<c:/users/as
+us/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-italic.otf><
+c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmonolt10-
+bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/l
+mmono10-regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/
+public/lm/lmroman9-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/o
+pentype/public/lm/lmroman10-bold.otf><c:/users/asus/appdata/local/programs/mikte
+x/fonts/opentype/public/lm/lmmono9-regular.otf><c:/users/asus/appdata/local/prog
+rams/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><c:/users/asus/appdata
+/local/programs/miktex/fonts/opentype/public/lm/lmroman6-regular.otf><c:/users/a
+sus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman8-regular.otf>
+<c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-
+regular.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype/public/l
+m/lmroman12-bold.otf><c:/users/asus/appdata/local/programs/miktex/fonts/opentype
+/public/lm/lmroman10-regular.otf><c:/users/asus/appdata/local/programs/miktex/fo
+nts/opentype/public/lm/lmromancaps10-regular.otf><c:/users/asus/appdata/local/pr
+ograms/miktex/fonts/opentype/public/lm/lmsans10-regular.otf><c:/users/asus/appda
+ta/local/programs/miktex/fonts/opentype/public/lm/lmsans10-bold.otf><C:/Users/AS
+US/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/ASUS
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/ASUS/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASUS/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/ASUS/AppData/
+Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on eisej_paper.pdf (27 pages, 1046628 bytes).
 
-PDF statistics: 609 PDF objects out of 1000 (max. 8388607)
- 234 named destinations out of 1000 (max. 131072)
- 289 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 744 PDF objects out of 1000 (max. 8388607)
+ 269 named destinations out of 1000 (max. 131072)
+ 369 words of extra memory for PDF output out of 10000 (max. 100000000)
 

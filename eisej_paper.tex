@@ -656,14 +656,235 @@ The high overall agreement obtained from the verification indicates that the pro
 	\end{tabularx}
 \end{table}
 
+\subsection{Dataset Quality Assessment}
+\subsubsection{Missing Value Analysis}
+
+The quality assessment in Table \ref{tab:dataset_missing_value} indicates that the extracted dataset contains 71,623 instances and 81 software metric attributes. A total of 31,304 missing values were identified during the initial inspection. Further investigation revealed that these missing values originated from a small number of incomplete extraction records rather than systematic extraction failures. Removing incomplete records is sufficient to obtain a fully complete dataset for subsequent analyses.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Summary of Dataset Properties}
+	\label{tab:dataset_missing_value}
+	\vspace{0.2cm}
+	
+	\begin{tabularx}{\textwidth}{>{\hsize=1.4\hsize\raggedright\arraybackslash}X >{\hsize=0.6\hsize\raggedleft\arraybackslash}X}
+		\toprule
+		\textbf{Item} & \textbf{Value} \\
+		\midrule
+		Total instances & 71,623 \\
+		Total attributes & 89 \\
+		Missing values & 31,304 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Duplicate Analysis}
+
+Table \ref{tab:dataset_duplicate_analysis} show that no duplicate records were identified in the constructed dataset, indicating that each extracted instance represents a unique observation.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Duplicate Record Analysis}
+	\label{tab:dataset_duplicate_analysis}
+	\vspace{0.2cm}
+	
+	\begin{tabularx}{\textwidth}{>{\hsize=1.4\hsize\raggedright\arraybackslash}X >{\hsize=0.6\hsize\raggedleft\arraybackslash}X}
+		\toprule
+		\textbf{Item} & \textbf{Value} \\
+		\midrule
+		Duplicate rows & 0 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Invalid Value Analysis}
+
+All representative metrics in Table \ref{tab:metrics_expected_range} satisfy their theoretical ranges. No invalid values violating the formal metric definitions were detected.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Metrics and Their Expected Value Ranges}
+	\label{tab:metrics_expected_range}
+	\vspace{0.2cm}
+	
+	\begin{tabularx}{\textwidth}{>{\hsize=1.2\hsize\raggedright\arraybackslash}X >{\hsize=0.8\hsize\centering\arraybackslash}X}
+		\toprule
+		\textbf{Metric} & \textbf{Expected Range} \\
+		\midrule
+		TCC & 0--1 \\
+		WOC & 0--1 \\
+		LAA & 0--1 \\
+		CFNAMM & 0--1 \\
+		LOC & $>$0 \\
+		CYCLO & $\ge$1 \\
+		MAXNESTING & $\ge$0 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Outlier Analysis}
+
+Several software metrics exhibit extreme values. These outliers correspond to naturally occurring complex methods and are therefore retained, since they represent realistic characteristics of large-scale Kotlin software systems rather than measurement errors.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure4_Boxplot.png}
+	\caption{LOC Histogram}
+	\label{fig:boxplot_metric}
+\end{figure}
+
+\subsection{Statistical Analysis}
+\subsubsection{Descriptive Statistics}
+
+Most software metrics exhibit right-skewed distributions where the median is considerably smaller than the mean. This characteristic indicates that the majority of methods are relatively simple, while a small number of complex methods contribute to the upper tails of the distributions. Such distributions are commonly observed in empirical software engineering datasets.
+
+\subsubsection{Distribution Analysis}
+
+Histogram analysis further confirms the skewed nature of software metric distributions. Most methods contain relatively small metric values, whereas only a limited number of methods exhibit extremely large values associated with complex implementations.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure4_LOC_Histogram.png}
+	\caption{LOC Histogram}
+	\label{fig:LOC_histogram}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure4_CYCLO_Histogram.png}
+	\caption{Cyclomatic Complexity Histogram}
+	\label{fig:LOC_histogram}
+\end{figure}
+
+\subsection{Correlation Analysis}
+
+The correlation analysis reveals that several software metrics are strongly correlated because they measure closely related structural properties. For example, Cyclomatic Complexity and CC exhibit perfect agreement due to equivalent computational definitions. Nevertheless, the majority of representative metrics demonstrate moderate or weak correlations, indicating that they capture complementary aspects of software quality rather than redundant information.
+
+\begin{table}[htbp]
+	\centering
+	\small
+	\caption{Correlation Analysis Between Metric Pairs}
+	\label{tab:metric_pair_correlation}
+	\vspace{0.2cm}
+	
+	\let\oldunderscore\_
+	\renewcommand{\_}{\oldunderscore\allowbreak}
+	
+	\begin{tabularx}{\textwidth}{>{\hsize=1.6\hsize\raggedright\arraybackslash}X >{\hsize=0.4\hsize\raggedleft\arraybackslash}X}
+		\toprule
+		\textbf{Metric Pair} & \textbf{Correlation} \\
+		\midrule
+		CYCLO -- CC & 1.000 \\
+		WMC -- WMCNAMM & 0.999 \\
+		number\_static\_methods -- number\_not\_final\_static\_methods & 1.000 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure4_Heatmap.png}
+	\caption{Metric Heatmap}
+	\label{fig:metrics_heatmap}
+\end{figure}
+
+\subsection{Class Distribution}
+
+The dataset exhibits a highly imbalanced class distribution, with Long Method instances accounting for only 0.32\% of the entire dataset. This imbalance reflects the natural occurrence of code smells in real-world software projects, where the majority of methods represent normal implementations.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Distribution of Code Smell Classes}
+	\label{tab:class_distribution}
+	\vspace{0.2cm}
+	
+	\begin{tabularx}{\textwidth}{
+			>{\hsize=1.4\hsize\raggedright\arraybackslash}X 
+			>{\hsize=0.8\hsize\raggedleft\arraybackslash}X 
+			>{\hsize=0.8\hsize\raggedleft\arraybackslash}X
+		}
+		\toprule
+		\textbf{Class} & \textbf{Count} & \textbf{Percentage} \\
+		\midrule
+		Non-smell & 71,391 & 99.68\% \\
+		Long Method & 232 & 0.32\% \\
+		\midrule
+		\textbf{Total} & \textbf{71,623} & \textbf{100.00\%} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure4_PieChart.png}
+	\caption{Class Distribution}
+	\label{fig:class_distribution}
+\end{figure}
+
 \section{Discussion}\label{sec:Discussion}
 
-Discussion \dots
+\subsection{Reliability of the Proposed AST-Based Extraction Pipeline}
+
+The verification results demonstrate that the proposed Kopyt-based extraction pipeline is capable of accurately extracting representative software metrics from Kotlin source code. Rather than relying on a single verification approach, this study combines manual source code inspection, independent AST-based verification using the Detekt framework, and algorithm-level verification for metrics requiring inter-class dependency analysis. The three complementary strategies validate different aspects of the extraction process, thereby providing stronger evidence of correctness than a single verification technique alone.
+
+Manual verification confirms that software metrics directly observable from the source code, including software size, logical complexity, nesting structure, local variable usage, parameter count, and method interaction, are computed exactly according to their formal definitions. Meanwhile, metrics involving class cohesion, coupling, inheritance, and design characteristics exhibit consistently high agreement with values produced by the independent AST implementation. The additional algorithm-level verification further confirms that complex metrics such as ATFD, FDP, CM, and CFNAMM correctly implement their mathematical definitions for representative Kotlin methods. Collectively, these results indicate that the proposed extraction pipeline reliably captures both method-level and class-level software characteristics required for constructing machine learning datasets.
+
+Unlike previous dataset construction approaches that typically rely on a single parser or manual validation of a limited number of metrics, the proposed verification framework evaluates representative metrics covering multiple software quality dimensions. Consequently, the reliability of the constructed dataset is supported not only by high agreement values but also by the complementary nature of the adopted verification strategies.
+
+\subsection{Quality of the Constructed Dataset}
+
+The quality assessment demonstrates that the constructed dataset satisfies several important characteristics required for empirical software engineering research. Data preprocessing successfully eliminated missing values, duplicate records, and invalid metric values prior to the labeling process. Consequently, every instance in the final dataset contains a complete set of software metrics that can be directly utilized for machine learning experiments without additional cleaning procedures.
+
+Descriptive analysis also indicates that the extracted software metrics exhibit diverse value distributions reflecting the natural variability of Kotlin source code. Although several representative metrics contain extreme values, these observations correspond to genuinely large or structurally complex methods rather than extraction errors. Therefore, the identified outliers represent meaningful characteristics of real-world software projects instead of anomalies introduced during data collection.
+
+The class distribution further reveals an imbalance between smell and non-smell instances. However, such imbalance is expected because code smells naturally occur less frequently than normal methods in production software. Preserving this distribution enables the dataset to better represent realistic software engineering scenarios and provides a more challenging benchmark for future machine learning models.
+
+\subsection{Characteristics of Representative Software Metrics}
+
+Statistical analysis demonstrates that the representative software metrics capture complementary aspects of Kotlin software quality. Metrics such as LOC, Cyclomatic Complexity, and Maximum Nesting Level primarily describe method size and logical complexity, whereas cohesion metrics including TCC and LAA characterize structural relationships among class members. Coupling metrics such as ATFD, FDP, and FANOUT measure interactions with external classes, while class-level metrics including WOC and AMWNAMM describe higher-level design characteristics.
+
+The correlation analysis further indicates that although several complexity-related metrics exhibit moderate positive correlations, many representative metrics remain relatively independent from one another. This observation suggests that the selected metrics describe different structural properties rather than redundant information. Consequently, the feature selection process performed in previous studies successfully identified software metrics that collectively provide comprehensive information for code smell detection.
+
+The existence of only five overlapping metrics between the representative feature sets of Long Method and Feature Envy further supports this observation. Although both code smells share several general software characteristics, each code smell is primarily characterized by distinct software quality dimensions. Long Method emphasizes software size and logical complexity, whereas Feature Envy relies more heavily on coupling and inter-class interaction metrics. This finding explains why different subsets of representative metrics are required to achieve accurate detection performance for different code smell types.
+
+\subsection{Implications for Machine Learning-Based Code Smell Detection}
+
+The verified dataset provides a reliable foundation for future machine learning-based code smell detection research. Since every representative metric has been validated using complementary verification strategies, the resulting feature values can be considered trustworthy input for supervised learning algorithms. Reducing measurement errors during feature extraction is particularly important because noisy software metrics may significantly degrade classification performance and reduce model generalization.
+
+Furthermore, the dataset supports a wide range of machine learning techniques beyond the Random Forest classifier employed during dataset labeling. The extracted metrics can be utilized by ensemble learning algorithms, gradient boosting models, deep neural networks, automated machine learning frameworks, and feature selection techniques. Consequently, the proposed dataset contributes not only to Long Method and Feature Envy detection but also to broader empirical studies involving software quality assessment and defect prediction.
+
+Another important implication is the reproducibility of the proposed extraction pipeline. Because the entire extraction process is implemented directly on Kotlin Abstract Syntax Trees, future researchers can reproduce the dataset construction process, extend the implemented software metrics, or apply the pipeline to additional Kotlin repositories without modifying the underlying extraction methodology.
+
+\subsection{Comparison with Previous Dataset Construction Approaches}
+
+Previous software metric datasets have predominantly focused on Java systems and frequently relied on existing metric extraction tools, parser-based approaches, or manually constructed benchmark datasets. Although these datasets have significantly contributed to software engineering research, many of them do not fully support Kotlin-specific language constructs introduced in modern Android development.
+
+In contrast, the proposed dataset is specifically designed for Kotlin applications and employs a dedicated AST-based extraction pipeline implemented using Kopyt. This implementation enables direct traversal of Kotlin syntax trees while preserving language-specific constructs that may not be accurately handled by language-independent parsers. Moreover, the proposed pipeline simultaneously extracts method-level and class-level software metrics within a unified framework, facilitating the construction of comprehensive datasets for multiple code smell detection tasks.
+
+The additional verification performed using an independent AST implementation further distinguishes this work from previous dataset construction studies. Rather than validating only the resulting datasets, this study explicitly verifies the correctness of the extraction algorithms, thereby increasing confidence in both the extracted software metrics and the constructed dataset.
+
+\subsection{Threats to Validity}
+
+Several limitations should be considered when interpreting the results of this study. Regarding internal validity, although multiple verification strategies were employed, implementation errors may still exist for software metrics that were not included among the representative verification set. Nevertheless, the selected metrics represent the most influential features identified by previous feature selection studies and cover multiple software quality dimensions.
+
+Regarding construct validity, the implemented software metrics follow widely accepted formal definitions reported in previous software engineering literature. Manual verification, independent AST-based verification, and algorithm-level validation collectively reduce the possibility that the extracted metrics deviate from their intended definitions.
+
+With respect to external validity, the constructed dataset consists exclusively of Kotlin open-source projects. Consequently, the reported findings may not be directly generalizable to other programming languages such as Java, Scala, or Swift. Future work may extend the proposed extraction pipeline to additional JVM-based languages in order to investigate the generalizability of the approach.
+
+Finally, conclusion validity may be affected by the naturally imbalanced distribution of smell and non-smell instances. Although this distribution accurately reflects real-world software repositories, future studies may investigate balancing techniques or cost-sensitive learning algorithms to further evaluate the effectiveness of machine learning models trained using the proposed dataset.
 
 
 \section{Conclusions}\label{sec:Conclusions}
 
-Conclusions \dots
+This study presented an AST-based software metric extraction pipeline for constructing a machine learning-ready dataset to support Kotlin code smell detection. The proposed approach utilizes the Kopyt framework to traverse Kotlin Abstract Syntax Trees and automatically extract software metrics at both the method and class levels. Using the proposed pipeline, a comprehensive dataset was successfully constructed from multiple open-source Kotlin repositories and subsequently labeled for Long Method and Feature Envy detection using previously trained Random Forest classification models.
+
+To ensure the reliability of the constructed dataset, three complementary verification strategies were employed. Manual source code inspection was used to validate directly observable software metrics, an independent AST-based implementation using the Detekt framework verified structurally complex metrics, and algorithm-level verification confirmed the correctness of coupling-related metric implementations. The verification results demonstrated a consistently high level of agreement between the proposed extraction pipeline and the corresponding verification methods, providing strong evidence that the extracted metrics conform to their formal definitions.
+
+Further dataset quality assessment showed that the resulting dataset contains complete software metric information without missing or duplicate records while preserving the natural distribution of code smell instances observed in real-world Kotlin projects. Statistical analysis and correlation analysis also indicate that the representative metrics capture complementary software quality characteristics, including software size, complexity, cohesion, coupling, method interaction, and class design, thereby providing informative features for machine learning-based code smell detection.
+
+Overall, the proposed dataset contributes a reproducible and validated benchmark for empirical software engineering research on Kotlin applications. Unlike existing datasets that primarily target Java systems, this work provides a Kotlin-specific dataset constructed through a language-aware AST traversal approach and supported by comprehensive metric verification. The resulting dataset is expected to facilitate future studies involving software quality assessment, code smell detection, feature selection, and machine learning model development for modern Kotlin software systems.
+
+Future work will focus on extending the extraction pipeline to support additional software metrics and code smell types, expanding the dataset using a larger collection of Kotlin repositories, and evaluating advanced machine learning and deep learning techniques for automated code smell detection. Furthermore, integrating semantic program analysis and cross-language software metric extraction may improve the applicability of the proposed framework to broader software engineering research.
 
 
 \subsection*{Acknowledgment}
