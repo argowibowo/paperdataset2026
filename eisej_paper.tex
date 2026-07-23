@@ -132,35 +132,35 @@
    {0000-0001-7856-1498}
    {} % if star present means corresponding author
  
- \keywordset{keyword1, keyword2, ...} 
+ \keywordset{Kotlin, Software Metric, Abstract Syntax Tree, Code Smell, Long Method, Feature Envy} 
 
 \begin{abstract}[en] 
 % DO NOT remove sections Context, Objective etc.
 % Structured abstract is obligatory !!!
-\textbf{Context}:
-Context \dots \\ 
-\textbf{Objective}: 
-Objective \dots \\
-\textbf{Method}: 
-Method \dots \\
-\textbf{Results}: 
-Results \dots \\
-\textbf{Conclusions}: 
-Conclusions \dots
-\end{abstract}
+	\textbf{Context}:
+	Reliable software metric datasets are fundamental for developing accurate machine learning models for code smell detection. Although numerous benchmark datasets have been constructed for Java, publicly available datasets for Kotlin remain scarce due to the limited availability of language-specific metric extraction tools capable of accurately handling Kotlin syntax and structural characteristics. \\
+	\textbf{Objective}: 
+	This study proposes a language-aware Abstract Syntax Tree (AST)-based extraction pipeline for constructing a validated software metric dataset from Kotlin applications to support machine learning-based detection of Long Method and Feature Envy code smells. \\
+	\textbf{Method}: 
+	The proposed pipeline employs the Kopyt framework to traverse Kotlin ASTs and automatically extract method-level and class-level software metrics from multiple open-source Kotlin repositories. The resulting dataset was manualy labeled using experts. Metric correctness was evaluated through three complementary verification strategies: manual source code inspection, independent AST-based verification using the Detekt framework, and algorithm-level verification for representative coupling metrics. Dataset quality was further assessed through missing value analysis, duplicate detection, descriptive statistics, correlation analysis, and class distribution analysis. \\
+	\textbf{Results}: 
+	The proposed approach successfully produced a validated Kotlin software metric dataset containing representative metrics spanning software size, complexity, cohesion, coupling, method interaction, and class design. The verification results demonstrated high agreement between the proposed extraction pipeline and the corresponding verification methods, confirming the correctness of the extracted metrics. Furthermore, dataset quality assessment showed that the constructed dataset is complete, free from missing and duplicate records, and preserves the natural distribution of code smell instances while exhibiting meaningful statistical characteristics suitable for empirical analysis. \\
+	\textbf{Conclusions}: 
+	The proposed AST-based extraction pipeline provides a reliable and reproducible approach for constructing Kotlin software metric datasets. The resulting validated dataset offers a trustworthy foundation for future machine learning-based code smell detection on Kotlin applications. \\
+	\end{abstract}
 
 \maketitle 
  
 
 \section{Introduction}\label{sec:Introduction}
 
-Software quality is a fundamental aspect of software engineering because it directly influences maintainability, evolvability, and long-term maintenance costs. As software systems continue to grow in size and complexity, maintaining high-quality source code becomes increasingly important to ensure efficient software evolution and reduce technical debt. One of the most widely recognized indicators of poor design quality is code smell, which refers to structural characteristics in source code that suggest potential design deficiencies without necessarily affecting the software's functional correctness. Although code smells do not immediately introduce defects, their accumulation can increase code complexity, reduce readability, complicate testing activities, and ultimately increase maintenance effort.
+Software quality is a fundamental aspect of software engineering because it directly influences maintainability, evolvability, and long-term maintenance costs. As software systems continue to grow in size and complexity, maintaining high-quality source code becomes increasingly important to ensure efficient software evolution and reduce technical debt. One of the most widely recognized indicators of poor design quality is code smell, which refers to structural characteristics in source code that suggest potential design deficiencies without necessarily affecting the software's functional correctness \cite{Fowler1999}\cite{Palomba2018}. Although code smells do not immediately introduce defects, their accumulation can increase code complexity, reduce readability, complicate testing activities, and ultimately increase maintenance effort.
 
-Various approaches have been proposed to detect code smells, ranging from rule-based and metric-based techniques to more recent machine learning-based methods. Compared with manually defined detection rules, machine learning approaches are capable of learning complex relationships among software metrics and automatically identifying patterns associated with different types of code smells. Consequently, machine learning has become an increasingly popular solution for improving the scalability and adaptability of code smell detection across different software projects.
+Various approaches have been proposed to detect code smells, ranging from rule-based and metric-based techniques to more recent machine learning-based methods \cite{Pereira_dos_Reis_2021}\cite{THAKUR2026112784}. Compared with manually defined detection rules, machine learning approaches are capable of learning complex relationships among software metrics and automatically identifying patterns associated with different types of code smells \cite{SLRCodeSmell2026}\cite{Alodibat2026}\cite{MLSurvey2026}. Consequently, machine learning has become an increasingly popular solution for improving the scalability and adaptability of code smell detection across different software projects.
 
 Recent studies have shown that machine learning has become one of the dominant approaches for code smell detection due to its ability to learn complex relationships among software metrics. Our previous review of code smell detection research over the last decade also indicates a clear shift from traditional rule-based techniques toward machine learning and optimization-based approaches \cite{WibowoICITEE2025}, highlighting the increasing importance of high-quality datasets for model development and evaluation. Furthermore, optimization techniques such as Particle Swarm Optimization combined with Random Forest have demonstrated promising improvements in detection performance, suggesting that advances in learning algorithms should be accompanied by equally reliable datasets to achieve robust and reproducible results \cite{Wibowo2026}.
 
-The effectiveness of machine learning models, however, depends heavily on the quality of the datasets used for training and evaluation. A reliable dataset should contain accurate code smell labels, comprehensive software metrics, and a reproducible metric extraction process to ensure consistent results across different studies. In addition, thorough validation of the extracted metrics and dataset characteristics is essential to establish confidence in the resulting models. Without these properties, machine learning experiments may produce unreliable results and become difficult to reproduce or compare with previous studies.
+The effectiveness of machine learning models, however, depends heavily on the quality of the datasets used for training and evaluation \cite{MESBAH2026108242}. A reliable dataset should contain accurate code smell labels \cite{zhang2026sacscodesmelldataset}, comprehensive software metrics \cite{ZHANG2024112131}, and a reproducible metric extraction process to ensure consistent results across different studies \cite{LEWOWSKI2022106783}. In addition, thorough validation of the extracted metrics and dataset characteristics is essential to establish confidence in the resulting models \cite{alomari2025smellycode}. Without these properties, machine learning experiments may produce unreliable results and become difficult to reproduce or compare with previous studies.
 
 Despite the growing adoption of Kotlin as the preferred programming language for modern Android application development, publicly available datasets specifically designed for Kotlin-based code smell detection remain scarce. Existing datasets are predominantly developed for Java projects and therefore do not adequately represent the characteristics of Kotlin applications. Furthermore, currently available Kotlin datasets generally lack comprehensive classical software metrics, validated Abstract Syntax Tree (AST)-based metric extraction pipelines, and detailed documentation to support reproducibility. Some existing studies also rely on regular-expression-based techniques or parsers with limited support for Kotlin syntax, potentially reducing the accuracy and consistency of the extracted metrics. Consequently, the absence of a validated and reproducible Kotlin software metrics dataset limits the development, evaluation, and fair comparison of machine learning-based code smell detection methods. Although sophisticated learning algorithms have been proposed, their performance remains highly dependent on the quality of the underlying datasets. Existing studies primarily focus on improving classification performance rather than constructing and validating datasets, leaving dataset quality as a relatively underexplored aspect.
 

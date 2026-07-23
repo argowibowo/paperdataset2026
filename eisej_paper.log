@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  20 JUL 2026 15:15
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  23 JUL 2026 21:06
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -990,7 +990,7 @@ Package microtype Info: ... Applying non-selected expansion (no list).
 Package microtype Info: Setting up font `TU/lmr/m/n/12' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-<ORCID.pdf, id=188, 192.72pt x 192.72pt>
+<ORCID.pdf, id=212, 192.72pt x 192.72pt>
 File: ORCID.pdf Graphic file (type pdf)
 <use ORCID.pdf>
 Package luatex.def Info: ORCID.pdf  used on input line 152.
@@ -1134,23 +1134,57 @@ Package microtype Info: Setting up font `TU/lmr/bx/n/9' on input line 152.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
+Underfull \hbox (badness 1009) in paragraph at lines 152--152
+[]\TU/lmr/bx/n/9 Con-text\TU/lmr/m/n/9 : Re-li-able soft-ware met-ric datasets 
+are fun-da-men-tal
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 152--152
+\TU/lmr/m/n/9 and class-level soft-ware met-rics from mul-ti-ple open-source
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 152--152
+\TU/lmr/m/n/9 com-ple-men-tary ver-i-fi-ca-tion strate-gies: man-ual source code
+
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 152--152
+\TU/lmr/m/n/9 frame-work, and algorithm-level ver-i-fi-ca-tion for rep-re-sen-ta
+-tive
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 152--152
+\TU/lmr/bx/n/9 Conclusions\TU/lmr/m/n/9 : The pro-posed AST-based ex-trac-tion 
+pipeline
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+
+ []
+
+
 Overfull \hbox (2.43088pt too wide) in paragraph at lines 152--152
 [] []  
  []
 
 \c@aaa=\count399
 \c@aab=\count400
-Package microtype Info: Setting up font `TU/lmr/bx/n/12' on input line 155.
-Package microtype Info: ... Loading protrusion list `LMR-default'.
-Package microtype Info: ... Applying non-selected expansion (no list).
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<EISEJ_logo.png, id=194, 36.135pt x 47.4573pt>
+
+<EISEJ_logo.png, id=216, 36.135pt x 47.4573pt>
 File: EISEJ_logo.png Graphic file (type png)
 <use EISEJ_logo.png>
-Package luatex.def Info: EISEJ_logo.png  used on input line 162.
+Package luatex.def Info: EISEJ_logo.png  used on input line 155.
 (luatex.def)             Requested size: 38.41121pt x 50.44931pt.
-Package microtype Info: Setting up font `TU/lmss/m/n/10' on input line 162.
+Package microtype Info: Setting up font `TU/lmss/m/n/10' on input line 155.
 Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
@@ -1158,31 +1192,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmss/bx/n/10' on input line 162.
+Package microtype Info: Setting up font `TU/lmss/bx/n/10' on input line 155.
 Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
-Package microtype Info: Setting up font `TU/lmr/m/sc/10' on input line 162.
+Package microtype Info: Setting up font `TU/lmr/m/sc/10' on input line 155.
 Package microtype Info: ... Loading protrusion list `LMR-default'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 [1{C:/Users/ASUS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 <./EISEJ_logo.png><./ORCID.pdf>]
+Package microtype Info: Setting up font `TU/lmr/bx/n/12' on input line 155.
+Package microtype Info: ... Loading protrusion list `LMR-default'.
+Package microtype Info: ... Applying non-selected expansion (no list).
+
 
 [2]
 
 [3]
+
+[4]
 Overfull \hbox (17.0953pt too wide) in alignment at lines 221--221
 [][][][][][]
  []
 
-
-Underfull \vbox (badness 4886) has occurred while \output is active []
-
-
-
-[4]
-<fig/Metodology-Diagram.png, id=244, 221.82875pt x 332.24126pt>
+<fig/Metodology-Diagram.png, id=290, 221.82875pt x 332.24126pt>
 File: fig/Metodology-Diagram.png Graphic file (type png)
 <use fig/Metodology-Diagram.png>
 Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 229.
@@ -1196,6 +1230,11 @@ Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 229.
 [7]
 
 [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[9]
 Underfull \hbox (badness 10000) in alignment at lines 350--350
 [][][][]
  []
@@ -1205,9 +1244,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[9]
-
 [10]
+
+[11]
 Package microtype Info: Setting up font `TU/lmtt/m/n/10.95' on input line 410.
 Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
@@ -1221,13 +1260,16 @@ Package microtype Info: ... Loading protrusion list `T1-default'.
 Package microtype Info: ... : First loading protrusion list `default'.
 Package microtype Info: ... No expansion.
 
-
-[11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[13]
 Package microtype Info: Setting up font `TU/lmr/m/it/10.95' on input line 495.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
@@ -1241,8 +1283,6 @@ lmr/m/n/10.95 , \TU/lmtt/m/n/10.95 TrialPreferences\TU/lmr/m/n/10.95 , \TU/lmtt
  []
 
 
-
-[13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1252,6 +1292,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: Reference `list:proceed smell' on page 15 undefined on input lin
 e 585.
 
+
+
+[15]
 Package microtype Info: Setting up font `OT1/lmr/m/it/10.95' on input line 596.
 
 Package microtype Info: ... Loading protrusion list `OT1-it'.
@@ -1296,35 +1339,33 @@ Package microtype Info: |<< adding right margin kern for `)':
 (microtype)             -1.28114pt on input line 596.
 
 
-[15]
-Underfull \vbox (badness 3919) has occurred while \output is active []
-
-
-
 [16]
-Underfull \vbox (badness 2035) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [17]
-<fig/Figure4_Boxplot.png, id=524, 1004.553pt x 425.4294pt>
+<fig/Figure4_Boxplot.png, id=570, 1004.553pt x 425.4294pt>
 File: fig/Figure4_Boxplot.png Graphic file (type png)
 <use fig/Figure4_Boxplot.png>
 Package luatex.def Info: fig/Figure4_Boxplot.png  used on input line 731.
 (luatex.def)             Requested size: 426.79134pt x 180.74991pt.
 
-Underfull \vbox (badness 4518) has occurred while \output is active []
 
-
-
-[18<./fig/Figure4_Boxplot.png>]
-<fig/Figure4_LOC_Histogram.png, id=536, 571.1739pt x 353.1594pt>
+[18]
+<fig/Figure4_LOC_Histogram.png, id=582, 571.1739pt x 353.1594pt>
 File: fig/Figure4_LOC_Histogram.png Graphic file (type png)
 <use fig/Figure4_LOC_Histogram.png>
 Package luatex.def Info: fig/Figure4_LOC_Histogram.png  used on input line 747.
 
 (luatex.def)             Requested size: 426.79134pt x 263.89351pt.
-<fig/Figure4_CYCLO_Histogram.png, id=537, 571.1739pt x 353.1594pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19<./fig/Figure4_Boxplot.png>]
+<fig/Figure4_CYCLO_Histogram.png, id=591, 571.1739pt x 353.1594pt>
 File: fig/Figure4_CYCLO_Histogram.png Graphic file (type png)
 <use fig/Figure4_CYCLO_Histogram.png>
 Package luatex.def Info: fig/Figure4_CYCLO_Histogram.png  used on input line 75
@@ -1335,19 +1376,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[19<./fig/Figure4_LOC_Histogram.png>]
-<fig/Figure4_Heatmap.png, id=546, 957.5775pt x 876.3942pt>
+[20<./fig/Figure4_LOC_Histogram.png><./fig/Figure4_CYCLO_Histogram.png>]
+<fig/Figure4_Heatmap.png, id=602, 957.5775pt x 876.3942pt>
 File: fig/Figure4_Heatmap.png Graphic file (type png)
 <use fig/Figure4_Heatmap.png>
 Package luatex.def Info: fig/Figure4_Heatmap.png  used on input line 786.
 (luatex.def)             Requested size: 426.79134pt x 390.60265pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[20<./fig/Figure4_CYCLO_Histogram.png>]
-<fig/Figure4_PieChart.png, id=556, 410.2527pt x 425.4294pt>
+[21<./fig/Figure4_Heatmap.png>]
+<fig/Figure4_PieChart.png, id=613, 410.2527pt x 425.4294pt>
 File: fig/Figure4_PieChart.png Graphic file (type png)
 <use fig/Figure4_PieChart.png>
 Package luatex.def Info: fig/Figure4_PieChart.png  used on input line 819.
@@ -1357,25 +1395,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[21<./fig/Figure4_Heatmap.png>]
+[22]
 
-[22<./fig/Figure4_PieChart.png>]
-
-[23]
+[23<./fig/Figure4_PieChart.png>]
 
 [24]
 
-[25] (./eisej_paper.bbl
-Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 28.
+[25]
+
+[26] (./eisej_paper.bbl
+Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 25.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
 
-[26])
+[27])
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[27] 
+
+
+[28]
+
+[29] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260720151511 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260723210615 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
 (./eisej_paper.aux)
  ***********
@@ -1389,26 +1432,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `eisej_paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `eisej_paper.out':
-(rerunfilecheck)             Before: AE4440449B42C1E87F2C19D5955922DE;8784
-(rerunfilecheck)             After:  D9AFCC25AA528A31A4496B9CEFE750F8;10593.
+Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
+(rerunfilecheck)             Checksum: D9AFCC25AA528A31A4496B9CEFE750F8;10593.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24845 strings out of 475664
+ 24877 strings out of 475664
  381546,1373583 words of node,token memory allocated
- 611 words of node memory still in use:
+ 631 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 11 attribute, 58 glue_spec, 11 attribute_list, 2 shape, 1 write, 1 
+rn, 3 glyph, 13 attribute, 58 glue_spec, 13 attribute_list, 2 shape, 1 write, 3 
 pdf_action nodes
-   avail lists: 1:7,2:4959,3:535,4:6716,5:6308,6:198,7:15244,8:14,9:19484,10:25,
-11:1023
- 46958 multiletter control sequences out of 65536+600000
+   avail lists: 1:12,2:4316,3:525,4:5739,5:5431,6:151,7:14295,8:67,9:16803,10:25
+,11:993
+ 46976 multiletter control sequences out of 65536+600000
  67 fonts using 5521519 bytes
  86i,18n,89p,1422b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
@@ -1438,9 +1475,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASUS/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/ASUS/AppData/
 Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (27 pages, 1046628 bytes).
+Output written on eisej_paper.pdf (29 pages, 1064280 bytes).
 
-PDF statistics: 744 PDF objects out of 1000 (max. 8388607)
- 269 named destinations out of 1000 (max. 131072)
- 369 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 806 PDF objects out of 1000 (max. 8388607)
+ 283 named destinations out of 1000 (max. 131072)
+ 417 words of extra memory for PDF output out of 10000 (max. 100000000)
 
