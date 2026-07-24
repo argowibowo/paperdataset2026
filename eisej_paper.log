@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  23 JUL 2026 21:06
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  24 JUL 2026 15:33
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -1216,23 +1216,23 @@ Overfull \hbox (17.0953pt too wide) in alignment at lines 221--221
 [][][][][][]
  []
 
-<fig/Metodology-Diagram.png, id=290, 221.82875pt x 332.24126pt>
+<fig/Metodology-Diagram.png, id=327, 221.82875pt x 332.24126pt>
 File: fig/Metodology-Diagram.png Graphic file (type png)
 <use fig/Metodology-Diagram.png>
 Package luatex.def Info: fig/Metodology-Diagram.png  used on input line 229.
 (luatex.def)             Requested size: 128.0387pt x 191.76724pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5<./fig/Metodology-Diagram.png>]
 
-[6]
+
+[5]
+
+[6<./fig/Metodology-Diagram.png>]
 
 [7]
 
 [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [9]
 Underfull \hbox (badness 10000) in alignment at lines 350--350
@@ -1240,11 +1240,11 @@ Underfull \hbox (badness 10000) in alignment at lines 350--350
  []
 
 
+
+[10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-[10]
 
 [11]
 Package microtype Info: Setting up font `TU/lmtt/m/n/10.95' on input line 410.
@@ -1283,18 +1283,17 @@ lmr/m/n/10.95 , \TU/lmtt/m/n/10.95 TrialPreferences\TU/lmr/m/n/10.95 , \TU/lmtt
  []
 
 
+
+[14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[14]
+[15]
 
-LaTeX Warning: Reference `list:proceed smell' on page 15 undefined on input lin
+LaTeX Warning: Reference `list:proceed smell' on page 16 undefined on input lin
 e 585.
 
-
-
-[15]
 Package microtype Info: Setting up font `OT1/lmr/m/it/10.95' on input line 596.
 
 Package microtype Info: ... Loading protrusion list `OT1-it'.
@@ -1345,7 +1344,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [17]
-<fig/Figure4_Boxplot.png, id=570, 1004.553pt x 425.4294pt>
+<fig/Figure4_Boxplot.png, id=607, 1004.553pt x 425.4294pt>
 File: fig/Figure4_Boxplot.png Graphic file (type png)
 <use fig/Figure4_Boxplot.png>
 Package luatex.def Info: fig/Figure4_Boxplot.png  used on input line 731.
@@ -1353,7 +1352,7 @@ Package luatex.def Info: fig/Figure4_Boxplot.png  used on input line 731.
 
 
 [18]
-<fig/Figure4_LOC_Histogram.png, id=582, 571.1739pt x 353.1594pt>
+<fig/Figure4_LOC_Histogram.png, id=617, 571.1739pt x 353.1594pt>
 File: fig/Figure4_LOC_Histogram.png Graphic file (type png)
 <use fig/Figure4_LOC_Histogram.png>
 Package luatex.def Info: fig/Figure4_LOC_Histogram.png  used on input line 747.
@@ -1365,7 +1364,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [19<./fig/Figure4_Boxplot.png>]
-<fig/Figure4_CYCLO_Histogram.png, id=591, 571.1739pt x 353.1594pt>
+<fig/Figure4_CYCLO_Histogram.png, id=628, 571.1739pt x 353.1594pt>
 File: fig/Figure4_CYCLO_Histogram.png Graphic file (type png)
 <use fig/Figure4_CYCLO_Histogram.png>
 Package luatex.def Info: fig/Figure4_CYCLO_Histogram.png  used on input line 75
@@ -1376,16 +1375,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[20<./fig/Figure4_LOC_Histogram.png><./fig/Figure4_CYCLO_Histogram.png>]
-<fig/Figure4_Heatmap.png, id=602, 957.5775pt x 876.3942pt>
+[20<./fig/Figure4_LOC_Histogram.png>]
+<fig/Figure4_Heatmap.png, id=637, 957.5775pt x 876.3942pt>
 File: fig/Figure4_Heatmap.png Graphic file (type png)
 <use fig/Figure4_Heatmap.png>
 Package luatex.def Info: fig/Figure4_Heatmap.png  used on input line 786.
 (luatex.def)             Requested size: 426.79134pt x 390.60265pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[21<./fig/Figure4_Heatmap.png>]
-<fig/Figure4_PieChart.png, id=613, 410.2527pt x 425.4294pt>
+
+
+[21<./fig/Figure4_CYCLO_Histogram.png>]
+<fig/Figure4_PieChart.png, id=648, 410.2527pt x 425.4294pt>
 File: fig/Figure4_PieChart.png Graphic file (type png)
 <use fig/Figure4_PieChart.png>
 Package luatex.def Info: fig/Figure4_PieChart.png  used on input line 819.
@@ -1395,7 +1397,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[22]
+[22<./fig/Figure4_Heatmap.png>]
 
 [23<./fig/Figure4_PieChart.png>]
 
@@ -1409,16 +1411,16 @@ Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
 
 
-[27])
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[27]
+Underfull \vbox (badness 2818) has occurred while \output is active []
 
 
 
-[28]
+[28])
 
 [29] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260723210615 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260724153321 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
 (./eisej_paper.aux)
  ***********
@@ -1437,17 +1439,17 @@ Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24877 strings out of 475664
- 381546,1373583 words of node,token memory allocated
- 631 words of node memory still in use:
+ 24899 strings out of 475664
+ 381571,1373583 words of node,token memory allocated
+ 691 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 13 attribute, 58 glue_spec, 13 attribute_list, 2 shape, 1 write, 3 
+rn, 3 glyph, 19 attribute, 58 glue_spec, 19 attribute_list, 2 shape, 1 write, 9 
 pdf_action nodes
-   avail lists: 1:12,2:4316,3:525,4:5739,5:5431,6:151,7:14295,8:67,9:16803,10:25
-,11:993
- 46976 multiletter control sequences out of 65536+600000
+   avail lists: 1:5,2:4725,3:705,4:6317,5:5974,6:167,7:15372,8:67,9:18513,10:28,
+11:1042
+ 46987 multiletter control sequences out of 65536+600000
  67 fonts using 5521519 bytes
- 86i,18n,89p,1422b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,18n,89p,2242b,1000s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
 :/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/
 Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Us
@@ -1475,9 +1477,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASUS/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/ASUS/AppData/
 Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (29 pages, 1064280 bytes).
+Output written on eisej_paper.pdf (29 pages, 1078970 bytes).
 
-PDF statistics: 806 PDF objects out of 1000 (max. 8388607)
- 283 named destinations out of 1000 (max. 131072)
+PDF statistics: 859 PDF objects out of 1000 (max. 8388607)
+ 294 named destinations out of 1000 (max. 131072)
  417 words of extra memory for PDF output out of 10000 (max. 100000000)
 

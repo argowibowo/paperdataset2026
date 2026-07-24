@@ -42,18 +42,16 @@ P.S.~Thakur, S.S.~Chouhan, S.S.~Rathore, and J.~Parmar, ``Systematic literature
   Systems and Software}, Vol.~235, 2026, p.~112784. [Online].
   \url{https://www.sciencedirect.com/science/article/pii/S016412122600018X}
 
-\bibitem{SLRCodeSmell2026}
-``Systematic literature review on software code smell detection approaches,''
-  \emph{Journal of Systems and Software}, Vol.~235, 2026, p.~112784.
-
 \bibitem{Alodibat2026}
 S.~Alodibat and M.~Azzeh, ``A systematic review on code smell detection
   approaches in open source projects,'' \emph{Software: Practice and
   Experience}, Vol.~56, No.~7, 2026, pp.~847--877.
 
-\bibitem{MLSurvey2026}
-``A survey on code smells detection using machine learning techniques,''
-  \emph{Information and Software Technology}, Vol.~198, 2026, p.~108242.
+\bibitem{MESBAH2026108242}
+D.~Mesbah, N.~{El Madhoun}, K.~{Al Agha}, and A.~Zouaoui, ``A survey on code
+  smells detection using machine learning techniques,'' \emph{Information and
+  Software Technology}, Vol.~198, 2026, p.~108242. [Online].
+  \url{https://www.sciencedirect.com/science/article/pii/S0950584926002314}
 
 \bibitem{WibowoICITEE2025}
 A.~Wibowo, A.E.~Permanasari, and T.B.~Adji, ``A decade of code smells
@@ -65,12 +63,6 @@ A.~Wibowo, A.E.~Permanasari, and T.B.~Adji, ``A decade of code smells
 A.~Wibowo, A.~Erna, and T.~Bharata, ``{Enhanced code smell detection using
   random forest optimized with particle swarm variants},'' \emph{Results in
   Engineering}, Vol.~29, No.~September 2025, 2026, p.~109729.
-
-\bibitem{MESBAH2026108242}
-D.~Mesbah, N.~{El Madhoun}, K.~{Al Agha}, and A.~Zouaoui, ``A survey on code
-  smells detection using machine learning techniques,'' \emph{Information and
-  Software Technology}, Vol.~198, 2026, p.~108242. [Online].
-  \url{https://www.sciencedirect.com/science/article/pii/S0950584926002314}
 
 \bibitem{zhang2026sacscodesmelldataset}
 H.~Zhang and T.~Kishi, ``Sacs: A code smell dataset using semi-automatic
@@ -88,15 +80,86 @@ T.~Lewowski and L.~Madeyski, ``How far are we from reproducible research on
   Software Technology}, Vol.~144, 2022, p.~106783. [Online].
   \url{https://www.sciencedirect.com/science/article/pii/S095058492100224X}
 
-\bibitem{alomari2025smellycode}
+\bibitem{Alomari2025}
 N.~Alomari, A.~Alazba, H.~Aljamaan, and M.~Alshayeb, ``{SmellyCode++}:
   Multi-label dataset for code smell detection,'' \emph{Scientific Data},
-  Vol.~12, No.~1, jul 2025, p.~1207.
+  Vol.~12, No.~1, jul 2025, p.~1207. [Online].
+  \url{https://doi.org/10.1038/s41597-025-05465-z}
+
+\bibitem{Zakeri_Nasrabadi_2023}
+M.~Zakeri-Nasrabadi, S.~Parsa, E.~Esmaili, and F.~Palomba, ``A systematic
+  literature review on the code smells datasets and validation mechanisms,''
+  \emph{ACM Computing Surveys}, Vol.~55, No.~13s, 2023, p.~1–48. [Online].
+  \url{http://dx.doi.org/10.1145/3596908}
+
+\bibitem{app14146149}
+P.S.~Yadav, R.S.~Rao, A.~Mishra, and M.~Gupta, ``Machine learning-based methods
+  for code smell detection: A survey,'' \emph{Applied Sciences}, Vol.~14,
+  No.~14, 2024. [Online]. \url{https://www.mdpi.com/2076-3417/14/14/6149}
+
+\bibitem{11316404}
+H.M.~Alhadeaf and M.~Alrashoud, ``A unified multi-label code smell dataset for
+  code smell detection at different granularities,'' \emph{IEEE Access},
+  Vol.~14, 2026, pp.~714--737.
+
+\bibitem{madeyski_2020_3666840}
+L.~Madeyski and T.~Lewowski, ``Mlcq: Industry-relevant code smell data set,''
+  Feb. 2020. [Online]. \url{https://doi.org/10.5281/zenodo.3666840}
+
+\bibitem{ZHANG2024127014}
+Y.~Zhang, C.~Ge, H.~Liu, and K.~Zheng, ``Code smell detection based on
+  supervised learning models: A survey,'' \emph{Neurocomputing}, Vol.~565,
+  2024, p.~127014. [Online].
+  \url{https://www.sciencedirect.com/science/article/pii/S0925231223011372}
 
 \bibitem{WibowoICITDA2025}
 A.~Wibowo, A.E.~Permanasari, T.B.~Adji, and A.~Wibowo, ``Custom rule-based
   feature engineering for code smell detection in kotlin using detekt,'' in
   \emph{2025 10th International Conference on Information Technology and
   Digital Application (ICITDA)}, 2025, pp.~1--8.
+
+\bibitem{Dewangan2022}
+S.~Dewangan, R.S.~Rao, A.~Mishra, and M.~Gupta, ``Code smell detection using
+  ensemble machine learning algorithms,'' \emph{Applied Sciences}, Vol.~12,
+  No.~20, 2022. [Online]. \url{https://www.mdpi.com/2076-3417/12/20/10321}
+
+\bibitem{Liu2021}
+H.~Liu, J.~Jin, Z.~Xu, Y.~Zou, Y.~Bu et~al., ``{ Deep Learning Based Code Smell
+  Detection },'' \emph{IEEE Transactions on Software Engineering}, Vol.~47,
+  No.~09, Sep. 2021, pp.~1811--1837. [Online].
+  \url{https://doi.ieeecomputersociety.org/10.1109/TSE.2019.2936376}
+
+\bibitem{abdelkader2025novel}
+M.~Abdelkader, ``A novel approach for enhancing code smell detection using
+  random convolutional kernel transform,'' \emph{e-Informatica Software
+  Engineering Journal}, Vol.~19, 2025, p.~250106.
+
+\bibitem{Fontana2017}
+F.~Arcelli~Fontana and M.~Zanoni, ``Code smell severity classification using
+  machine learning techniques,'' \emph{Know.-Based Syst.}, Vol.~128, No.~C,
+  Jul. 2017, p.~43–58. [Online].
+  \url{https://doi.org/10.1016/j.knosys.2017.04.014}
+
+\bibitem{Mhawish2020}
+M.~Mhawish and M.~Gupta, ``Predicting code smells and analysis of predictions:
+  Using machine learning techniques and software metrics,'' \emph{Journal of
+  Computer Science and Technology}, Vol.~35, 11 2020, pp.~1428--1445.
+
+\bibitem{Zellagui2026}
+S.~Zellagui, A.~Kenniche, S.~Fadloun, and S.~Meshoul, ``Leveraging code
+  language models for code smells detection,'' \emph{Applied Sciences},
+  Vol.~16, No.~14, 2026. [Online].
+  \url{https://www.mdpi.com/2076-3417/16/14/7040}
+
+\bibitem{Dewangan2023}
+S.~Dewangan, R.S.~Rao, S.~Chowdhuri, and M.~Gupta, ``Severity classification of
+  code smells using machine-learning methods,'' \emph{SN Computer Science},
+  Vol.~4, 07 2023.
+
+\bibitem{ugli2025codesmells}
+I.S.R.~Ugli, J.~Cheon, and G.~Woo, ``Code smells and development efficiency in
+  native and cross-platform mobile applications: A study of java, kotlin, and
+  flutter,'' \emph{Journal of Information Processing Systems}, Vol.~21, No.~4,
+  2025, pp.~401--412.
 
 \end{thebibliography}

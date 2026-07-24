@@ -81,15 +81,6 @@
 	author={Pereira dos Reis, José and Brito e Abreu, Fernando and de Figueiredo Carneiro, Glauco and Anslow, Craig},
 	year={2021},
 	month=Mar, pages={47–94} }
-	
-@article{SLRCodeSmell2026,
-	title={Systematic literature review on software code smell detection approaches},
-	journal={Journal of Systems and Software},
-	volume={235},
-	pages={112784},
-	year={2026},
-	doi={10.1016/j.jss.2026.112784}
-}
 
 @article{Alodibat2026,
 	author={Alodibat, Sawsan and Azzeh, Mohammad},
@@ -100,15 +91,6 @@
 	pages={847--877},
 	year={2026},
 	doi={10.1002/spe.70074}
-}
-
-@article{MLSurvey2026,
-	title={A survey on code smells detection using machine learning techniques},
-	journal={Information and Software Technology},
-	volume={198},
-	pages={108242},
-	year={2026},
-	doi={10.1016/j.infsof.2026.108242}
 }
 
 @article{MESBAH2026108242,
@@ -172,17 +154,194 @@
 	url={https://arxiv.org/abs/2602.15342}, 
 }
 
-@article{alomari2025smellycode,
+@article{Zakeri_Nasrabadi_2023,
+	title={A Systematic Literature Review on the Code Smells Datasets and Validation Mechanisms},
+	volume={55},
+	ISSN={1557-7341},
+	url={http://dx.doi.org/10.1145/3596908},
+	DOI={10.1145/3596908},
+	number={13s},
+	journal={ACM Computing Surveys},
+	publisher={Association for Computing Machinery (ACM)},
+	author={Zakeri-Nasrabadi, Morteza and Parsa, Saeed and Esmaili, Ehsan and Palomba, Fabio},
+	year={2023},
+	month=July, pages={1–48} 
+}
+
+
+@Article{app14146149,
+	AUTHOR = {Yadav, Pravin Singh and Rao, Rajwant Singh and Mishra, Alok and Gupta, Manjari},
+	TITLE = {Machine Learning-Based Methods for Code Smell Detection: A Survey},
+	JOURNAL = {Applied Sciences},
+	VOLUME = {14},
+	YEAR = {2024},
+	NUMBER = {14},
+	ARTICLE-NUMBER = {6149},
+	URL = {https://www.mdpi.com/2076-3417/14/14/6149},
+	ISSN = {2076-3417},
+	ABSTRACT = {Code smells are early warning signs of potential issues in software quality. Various techniques are used in code smell detection, including the Bayesian approach, rule-based automatic antipattern detection, antipattern identification utilizing B-splines, Support Vector Machine direct, SMURF (Support Vector Machines for design smell detection using relevant feedback), and immune-based detection strategy. Machine learning (ML) has taken a great stride in this area. This study includes relevant studies applying ML algorithms from 2005 to 2024 in a comprehensive manner for the survey to provide insight regarding code smell, ML algorithms frequently applied, and software metrics. Forty-two pertinent studies allow us to assess the efficacy of ML algorithms on selected datasets. After evaluating various studies based on open-source and project datasets, this study evaluated additional threats and obstacles to code smell detection, such as the lack of standardized code smell definitions, the difficulty of feature selection, and the challenges of handling large-scale datasets. The current studies only considered a few factors in identifying code smells, while in this study, several potential contributing factors to code smells are included. Several ML algorithms are examined, and various approaches, datasets, dataset languages, and software metrics are presented. This study provides the potential of ML algorithms to produce better results and fills a gap in the body of knowledge by providing class-wise distributions of the ML algorithms. Support Vector Machine, J48, Naive Bayes, and Random Forest models are the most common for detecting code smells. Researchers can find this study helpful in better anticipating and taking care of software development design and implementation issues. The findings from this study, which highlight the practical implications of ML algorithms in software quality improvement, will help software engineers fix problems during software design and development to ensure software quality.},
+	DOI = {10.3390/app14146149}
+}
+
+@article{Alomari2025,
+	author    = {Alomari, Nawaf and Alazba, Amal and Aljamaan, Hamoud and Alshayeb, Mohammad},
 	title     = {{SmellyCode++}: Multi-Label Dataset for Code Smell Detection},
-	author    = {Alomari, N. and Alazba, A. and Aljamaan, H. and Alshayeb, M.},
 	journal   = {Scientific Data},
+	year      = {2025},
+	month     = {jul},
 	volume    = {12},
 	number    = {1},
 	pages     = {1207},
-	year      = {2025},
-	month     = {jul},
-	publisher = {Nature Publishing Group},
+	issn      = {2052-4463},
 	doi       = {10.1038/s41597-025-05465-z},
-	pmid      = {40652014},
-	pmcid     = {PMC12255726}
+	url       = {https://doi.org/10.1038/s41597-025-05465-z},
+	abstract  = {Context: Code smells indicate poor software design, affecting maintainability. Accurate detection is vital for refactoring and quality improvement. However, existing datasets often frame detection as single-label classification, limiting realism. Objective: This paper develops a multi-label dataset for code smell detection, integrating textual features and numerical metrics from open-source Java projects. Method: We collected code from 103 Java projects, parsed it into Abstract Syntax Trees (ASTs), extracted features, and annotated samples based on prior studies. Data cleaning, unification, and merging techniques were applied to support four code smells: God Class, Data Class, Feature Envy, and Long Method. Results: The dataset comprises 107,554 samples with multi-label annotations, improving detection realism. Evaluation shows F1 scores of 95.89\% (Data Class), 94.48\% (God Class), 88.68\% (Feature Envy), and 88.87\% (Long Method). Conclusion: This dataset aids advanced studies on code smell detection, particularly for fine-tuning LLMs. Future work can expand it to other languages and additional smells, enhancing diversity and applicability.}
+}
+
+@ARTICLE{11316404,
+	author={Alhadeaf, Haneen M. and Alrashoud, Mubarak},
+	journal={IEEE Access}, 
+	title={A Unified Multi-Label Code Smell Dataset for Code Smell Detection at Different Granularities}, 
+	year={2026},
+	volume={14},
+	number={},
+	pages={714-737},
+	keywords={Codes;Iron;Measurement;Feature extraction;Merging;Correlation;Multi label classification;Complexity theory;Software quality;Software engineering;Code smells;code smell correlation;code smells detection;feature importance;multi-label classification;software quality},
+	doi={10.1109/ACCESS.2025.3648907}
+}
+
+@dataset{madeyski_2020_3666840,
+	author       = {Madeyski, Lech and
+	Lewowski, Tomasz},
+	title        = {MLCQ: Industry-relevant code smell data set},
+	month        = feb,
+	year         = 2020,
+	publisher    = {Zenodo},
+	version      = {1.1},
+	doi          = {10.5281/zenodo.3666840},
+	url          = {https://doi.org/10.5281/zenodo.3666840},
+}
+
+@article{ZHANG2024127014,
+	title = {Code smell detection based on supervised learning models: A survey},
+	journal = {Neurocomputing},
+	volume = {565},
+	pages = {127014},
+	year = {2024},
+	issn = {0925-2312},
+	doi = {https://doi.org/10.1016/j.neucom.2023.127014},
+	url = {https://www.sciencedirect.com/science/article/pii/S0925231223011372},
+	author = {Yang Zhang and Chuyan Ge and Haiyang Liu and Kun Zheng},
+	keywords = {Code smell, Supervised learning, Feature selection, Dataset, Data balancing},
+	abstract = {Supervised learning-based code smell detection has become one of the dominant approaches to identify code smell. Existing works optimize the process of code smell detection from multiple aspects, such as high-quality dataset, feature selection, and model, etc. Although the accuracy is improved continuously, researchers are confused about what model are the most suitable ones to detect code smell when considering dataset construction and feature selection. Furthermore, existing surveys for code smell mainly analyze the impact of code smell, categorize the concerns of code smell, and repair code smell. There is a lack of systematic analysis and classification of code smell detection based on supervised learning. To this end, we collect 86 papers of code smell detection based on supervised learning ranging from January 2010 to April 2023. A total of 7 research questions is empirically evaluated from different aspects, such as datasets construction, data pre-processing, feature selection, and model training, etc. We conclude that existing works suffer from issues such as sample imbalance, different attention to types of code smell, and limited feature selection. Finally, we suggest possible future research directions.}
+}
+
+
+@Article{Dewangan2022,
+	AUTHOR = {Dewangan, Seema and Rao, Rajwant Singh and Mishra, Alok and Gupta, Manjari},
+	TITLE = {Code Smell Detection Using Ensemble Machine Learning Algorithms},
+	JOURNAL = {Applied Sciences},
+	VOLUME = {12},
+	YEAR = {2022},
+	NUMBER = {20},
+	ARTICLE-NUMBER = {10321},
+	URL = {https://www.mdpi.com/2076-3417/12/20/10321},
+	ISSN = {2076-3417},
+	ABSTRACT = {Code smells are the result of not following software engineering principles during software development, especially in the design and coding phase. It leads to low maintainability. To evaluate the quality of software and its maintainability, code smell detection can be helpful. Many machine learning algorithms are being used to detect code smells. In this study, we applied five ensemble machine learning and two deep learning algorithms to detect code smells. Four code smell datasets were analyzed: the Data class, the God class, the Feature-envy, and the Long-method datasets. In previous works, machine learning and stacking ensemble learning algorithms were applied to this dataset and the results found were acceptable, but there is scope of improvement. A class balancing technique (SMOTE) was applied to handle the class imbalance problem in the datasets. The Chi-square feature extraction technique was applied to select the more relevant features in each dataset. All five algorithms obtained the highest accuracy—100% for the Long-method dataset with the different selected sets of metrics, and the poorest accuracy, 91.45%, was achieved by the Max voting method for the Feature-envy dataset for the selected twelve sets of metrics.},
+	DOI = {10.3390/app122010321}
+}
+
+@ARTICLE{Liu2021,
+	author={Liu, Hui and Jin, Jiahao and Xu, Zhifeng and Zou, Yanzhen and Bu, Yifan and Zhang, Lu},
+	journal={ IEEE Transactions on Software Engineering },
+	title={{ Deep Learning Based Code Smell Detection }},
+	year={2021},
+	volume={47},
+	number={09},
+	ISSN={1939-3520},
+	pages={1811-1837},
+	abstract={ Code smells are structures in the source code that suggest the possibility of refactorings. Consequently, developers may identify refactoring opportunities by detecting code smells. However, manual identification of code smells is challenging and tedious. To this end, a number of approaches have been proposed to identify code smells automatically or semi-automatically. Most of such approaches rely on manually designed heuristics to map manually selected source code metrics into predictions. However, it is challenging to manually select the best features. It is also difficult to manually construct the optimal heuristics. To this end, in this paper we propose a deep learning based novel approach to detecting code smells. The key insight is that deep neural networks and advanced deep learning techniques could automatically select features of source code for code smell detection, and could automatically build the complex mapping between such features and predictions. A big challenge for deep learning based smell detection is that deep learning often requires a large number of labeled training data (to tune a large number of parameters within the employed deep neural network) whereas existing datasets for code smell detection are rather small. To this end, we propose an automatic approach to generating labeled training data for the neural network based classifier, which does not require any human intervention. As an initial try, we apply the proposed approach to four common and well-known code smells, i.e., feature envy, long method, large class, and misplaced class. Evaluation results on open-source applications suggest that the proposed approach significantly improves the state-of-the-art. },
+	keywords={Software;Deep learning;Feature extraction;Training data;Neural networks;Measurement},
+	doi={10.1109/TSE.2019.2936376},
+	url = {https://doi.ieeecomputersociety.org/10.1109/TSE.2019.2936376},
+	publisher={IEEE Computer Society},
+	address={Los Alamitos, CA, USA},
+	month=sep
+}
+
+@article{abdelkader2025novel,
+	author  = {Abdelkader, M.},
+	title   = {A Novel Approach for Enhancing Code Smell Detection Using Random Convolutional Kernel Transform},
+	journal = {e-Informatica Software Engineering Journal},
+	volume  = {19},
+	pages   = {250106},
+	year    = {2025}
+}
+
+
+@Article{Zellagui2026,
+	AUTHOR = {Zellagui, Soumia and Kenniche, Abderrezak and Fadloun, Samiha and Meshoul, Souham},
+	TITLE = {Leveraging Code Language Models for Code Smells Detection},
+	JOURNAL = {Applied Sciences},
+	VOLUME = {16},
+	YEAR = {2026},
+	NUMBER = {14},
+	ARTICLE-NUMBER = {7040},
+	URL = {https://www.mdpi.com/2076-3417/16/14/7040},
+	ISSN = {2076-3417},
+	ABSTRACT = {Improving software quality remains a major challenge in modern software engineering. Among the different techniques used to address this issue, code smell detection plays an important role, as code smells may negatively affect software maintainability, readability, and evolution. Recent advances in machine learning, particularly pre-trained code representation models, have opened new perspectives for automating this task. In this study, code smell detection is formulated as a multi-label classification problem in order to reflect realistic scenarios where multiple smells may co-occur within the same code fragment. To enable the evaluation of pre-trained code representation models in a multi-label setting, six multi-label datasets containing source code were derived from two existing datasets, namely MLCQ and Fontana, by merging instances sharing common code smells. The study investigates multiple experimental configurations based on CodeBERT, GraphCodeBERT, and CodeT5, including direct transformer-based classification, sliding window processing for long code sequences, and hybrid approaches combining transformer embeddings with classical machine learning classifiers. Among the evaluated configurations, the hybrid approach based on CodeBERT embeddings combined with a Random Forest classifier achieved the best overall performance, reaching an accuracy of 0.91 and a micro-F1 score of 0.90 on the Fontana datasets.},
+	DOI = {10.3390/app16147040}
+}
+
+@article{Mhawish2020,
+	author = {Mhawish, Mohammad and Gupta, Manjari},
+	year = {2020},
+	month = {11},
+	pages = {1428-1445},
+	title = {Predicting Code Smells and Analysis of Predictions: Using Machine Learning Techniques and Software Metrics},
+	volume = {35},
+	journal = {Journal of Computer Science and Technology},
+	doi = {10.1007/s11390-020-0323-7}
+}
+
+@article{Fontana2017,
+	author = {Arcelli Fontana, Francesca and Zanoni, Marco},
+	title = {Code smell severity classification using machine learning techniques},
+	year = {2017},
+	issue_date = {July 2017},
+	publisher = {Elsevier Science Publishers B. V.},
+	address = {NLD},
+	volume = {128},
+	number = {C},
+	issn = {0950-7051},
+	url = {https://doi.org/10.1016/j.knosys.2017.04.014},
+	doi = {10.1016/j.knosys.2017.04.014},
+	abstract = {Several code smells detection tools have been developed providing different results, because smells can be subjectively interpreted and hence detected in different ways. Machine learning techniques have been used for different topics in software engineering, e.g., design pattern detection, code smell detection, bug prediction, recommending systems. In this paper, we focus our attention on the classification of code smell severity through the use of machine learning techniques in different experiments. The severity of code smells is an important factor to take into consideration when reporting code smell detection results, since it allows the prioritization of refactoring efforts. In fact, code smells with high severity can be particularly large and complex, and create larger issues to the maintainability of software a system. In our experiments, we apply several machine learning models, spanning from multinomial classification to regression, plus a method to apply binary classifiers for ordinal classification. In fact, we model code smell severity as an ordinal variable. We take the baseline models from previous work, where we applied binary classification models for code smell detection with good results. We report and compare the performance of the models according to their accuracy and four different performance measures used for the evaluation of ordinal classification techniques. From our results, while the accuracy of the classification of severity is not high as in the binary classification of absence or presence of code smells, the ranking correlation of the actual and predicted severity for the best models reaches 0.880.96, measured through Spearmans .},
+	journal = {Know.-Based Syst.},
+	month = jul,
+	pages = {43–58},
+	numpages = {16},
+	keywords = {Code smell severity, Code smells detection, Machine learning, Ordinal classification, Refactoring prioritization}
+}
+
+@article{Dewangan2023,
+	author = {Dewangan, Seema and Rao, Rajwant Singh and Chowdhuri, Sripriya and Gupta, Manjari},
+	year = {2023},
+	month = {07},
+	pages = {},
+	title = {Severity Classification of Code Smells Using Machine-Learning Methods},
+	volume = {4},
+	journal = {SN Computer Science},
+	doi = {10.1007/s42979-023-01979-8}
+}
+
+@article{ugli2025codesmells,
+	author  = {Ugli, I. S. R. and Cheon, J. and Woo, G.},
+	title   = {Code Smells and Development Efficiency in Native and Cross-Platform Mobile Applications: A Study of Java, Kotlin, and Flutter},
+	journal = {Journal of Information Processing Systems},
+	volume  = {21},
+	number  = {4},
+	pages   = {401--412},
+	year    = {2025},
+	doi     = {10.3745/JIPS.01.0113}
 }
