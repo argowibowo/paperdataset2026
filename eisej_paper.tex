@@ -182,14 +182,12 @@ These findings have served as the basis for further research focused on improvin
 \subsubsection{Kotlin-Based Code Smell Detection}
 The increasing adoption of Kotlin as the primary language for Android application development has spurred research specifically addressing code smells in Kotlin projects \cite{Dewangan2023}\cite{ugli2025codesmells}. One previous study, "Custom Rule-Based Feature Engineering for Code Smell Detection in Kotlin Using Detekt," \cite{WibowoICITDA2025} developed a rule-based feature extraction process using Detekt to obtain software characteristics related to code smells. This study demonstrated that Detekt can be used as a starting point for developing features for code smell detection in Kotlin.
 
-However, this research focused on the feature engineering process and did not yet produce a validated software metrics dataset or a reproducible metrics extraction pipeline. Furthermore, the features obtained relied on Detekt rules and therefore did not directly capture the extraction of classic software metrics through program syntax structure analysis.
-
-These findings indicate that research on code smell detection in Kotlin is still in the development stage of detection methods, while the development of standard datasets usable by the research community is still relatively limited.
+This study focused on the feature engineering process and did not yet produce a validated software metrics dataset or a reproducible metrics extraction pipeline. Furthermore, the features obtained relied on Detekt rules and therefore did not directly capture the extraction of classic software metrics through program syntax structure analysis. These findings indicate that research on code smell detection in Kotlin is still in the development stage of detection methods, while the development of standard datasets usable by the research community is still relatively limited. Despite the growing interest in machine learning-based code smell detection, the availability of standardized, high-quality benchmark datasets that can be reliably shared and reused by the research community remains limited. Recent studies have emphasized the need for reproducible datasets, consistent annotation procedures, and publicly accessible benchmarks to enable fair comparison and reproducible evaluation of detection approaches. \cite{PROKIC2024103168}\cite{SLIVKA2023102999}\cite{zhang2026sacscodesmelldataset}\cite{Alomari2025}.
 
 \subsection{Existing Code Smell Datasets}
-Most datasets used in code smell detection research are developed using Java projects, such as PROMISE, Qualitas Corpus, and the Fontana Dataset. These datasets have become primary references in the development of various classification methods because they provide software metrics and code smell labels. However, most of these datasets were not designed for Kotlin and therefore lack the ability to adequately represent the syntax and structure of the language.
+Most datasets used in code smell detection research are developed using Java projects, such as PROMISE \cite{Gupta2025}, Qualitas Corpus \cite{Tempero2010}\cite{Terra2013}, and the Fontana Dataset \cite{Fontana2017}. These datasets have become primary references in the development of various classification methods because they provide software metrics and code smell labels. Most of these datasets were not designed for Kotlin and therefore lack the ability to adequately represent the syntax and structure of the language. Consequently, the availability of validated datasets specifically designed for Kotlin applications remains limited, creating a gap for research on language-specific software metric extraction and machine learning-based code smell detection.
 
-In addition to the limitations of the programming language, most datasets also lack comprehensive documentation on the metric extraction process or validation of the extraction results. As a result, research reproducibility is limited and the development of new methods requiring high-quality datasets is difficult.
+In addition to the limitations of the programming language, most datasets also lack comprehensive documentation on the metric extraction process or validation of the extraction results. As a result, research reproducibility is limited and the development of new methods requiring high-quality datasets is difficult \cite{Bosu_2013}\cite{Gupta2025}\cite{Alomari2025}. Limited availability of validated benchmark datasets restricts the reproducibility of empirical software engineering studies and makes it difficult to develop, evaluate, and compare new machine learning-based code smell detection methods in a reliable and consistent manner.
 
 \subsection{Research Gap}
 Based on the review in the previous subchapter, it can be concluded that code smell detection research has progressed through three stages. The first stage focused on the development of rule-based detection methods and software metrics. The next stage focused on utilizing machine learning and model optimization to improve classification performance. More recent research has begun exploring code smell detection in Kotlin, but still focuses on developing detection methods and feature engineering.
@@ -213,9 +211,9 @@ However there is no public dataset available for Kotlin that simultaneously prov
 		\textbf{Public} &
 		\textbf{Reproducible Pipeline} \\
 		\midrule
-		PROMISE          & Java   & \ding{51} & \ding{55} & \ding{51} & \ding{55} \\
-		Qualitas Corpus  & Java   & \ding{51} & \ding{51} & \ding{51} & \ding{55} \\
-		Fontana          & Java   & \ding{51} & \ding{51} & \ding{51} & \ding{55} \\
+		PROMISE \cite{Gupta2025}  & Java   & \ding{51} & \ding{55} & \ding{51} & \ding{55} \\
+		Qualitas Corpus \cite{Tempero2010}\cite{Terra2013}  & Java   & \ding{51} & \ding{51} & \ding{51} & \ding{55} \\
+		Fontana \cite{Fontana2017}         & Java   & \ding{51} & \ding{51} & \ding{51} & \ding{55} \\
 		\textbf{Our Dataset} & \textbf{Kotlin} & \textbf{\ding{51}} & \textbf{\ding{51}} & \textbf{\ding{51}} & \textbf{\ding{51}} \\
 		\bottomrule
 	\end{tabularx}

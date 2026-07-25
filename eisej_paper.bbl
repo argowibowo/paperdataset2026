@@ -162,4 +162,38 @@ I.S.R.~Ugli, J.~Cheon, and G.~Woo, ``Code smells and development efficiency in
   flutter,'' \emph{Journal of Information Processing Systems}, Vol.~21, No.~4,
   2025, pp.~401--412.
 
+\bibitem{PROKIC2024103168}
+S.~Prokić, N.~Luburić, J.~Slivka, and A.~Kovačević, ``Prescriptive
+  procedure for manual code smell annotation,'' \emph{Science of Computer
+  Programming}, Vol.~238, 2024, p.~103168. [Online].
+  \url{https://www.sciencedirect.com/science/article/pii/S0167642324000911}
+
+\bibitem{SLIVKA2023102999}
+J.~Slivka, N.~Luburić, S.~Prokić, K.G.~Grujić, A.~Kovačević et~al.,
+  ``Towards a systematic approach to manual annotation of code smells,''
+  \emph{Science of Computer Programming}, Vol.~230, 2023, p.~102999. [Online].
+  \url{https://www.sciencedirect.com/science/article/pii/S0167642323000813}
+
+\bibitem{Gupta2025}
+R.~Gupta, J.K.~Seth, A.~Sharma, and A.~Goyal, ``{Can Public Code Smells
+  Datasets Be Trusted?}'' \emph{Journal of Communications Software and
+  Systems}, Vol.~21, No.~4, 2025, pp.~477--488.
+
+\bibitem{Tempero2010}
+E.~Tempero, C.~Anslow, J.~Dietrich, T.~Han, J.~Li et~al., ``The qualitas
+  corpus: A curated collection of java code for empirical studies,'' 11 2010,
+  pp.~336--345.
+
+\bibitem{Terra2013}
+R.~Terra, L.~Miranda, M.~Valente, and R.~Bigonha, ``Qualitas.class corpus: A
+  compiled version of the qualitas corpus,'' \emph{ACM SIGSOFT Software
+  Engineering Notes}, Vol.~38, 08 2013, pp.~1--4.
+
+\bibitem{Bosu_2013}
+M.F.~Bosu and S.G.~MacDonell, ``Data quality in empirical software engineering:
+  a targeted review,'' in \emph{Proceedings of the 17th International
+  Conference on Evaluation and Assessment in Software Engineering},  EASE
+  ’13. ACM, Apr. 2013, p.~171–176. [Online].
+  \url{http://dx.doi.org/10.1145/2460999.2461024}
+
 \end{thebibliography}
