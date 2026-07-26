@@ -20,45 +20,45 @@ Warning--entry type for "madeyski_2020_3666840" isn't style-file defined
 Warning--empty booktitle in Tempero2010
 
 Done.
-You've used 32 entries,
+You've used 42 entries,
             4041 wiz_defined-function locations,
-            1047 strings with 14687 characters,
-and the built_in function-call counts, 23014 in all, are:
-= -- 2064
-> -- 532
-< -- 133
-+ -- 274
-- -- 109
-* -- 1118
-:= -- 3705
-add.period$ -- 65
-call.type$ -- 32
-change.case$ -- 31
-chr.to.int$ -- 213
-cite$ -- 33
-duplicate$ -- 1794
-empty$ -- 1680
-format.name$ -- 139
-if$ -- 5259
+            1110 strings with 17020 characters,
+and the built_in function-call counts, 29734 in all, are:
+= -- 2659
+> -- 700
+< -- 176
++ -- 362
+- -- 143
+* -- 1443
+:= -- 4821
+add.period$ -- 84
+call.type$ -- 42
+change.case$ -- 42
+chr.to.int$ -- 291
+cite$ -- 43
+duplicate$ -- 2298
+empty$ -- 2153
+format.name$ -- 182
+if$ -- 6762
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 314
-newline$ -- 119
-num.names$ -- 32
-pop$ -- 587
+int.to.str$ -- 42
+missing$ -- 415
+newline$ -- 149
+num.names$ -- 42
+pop$ -- 775
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2030
+skip$ -- 2611
 stack$ -- 0
-substring$ -- 702
-swap$ -- 1442
-text.length$ -- 62
+substring$ -- 913
+swap$ -- 1847
+text.length$ -- 79
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 32
+type$ -- 42
 warning$ -- 1
-while$ -- 83
-width$ -- 34
-write$ -- 355
+while$ -- 107
+width$ -- 44
+write$ -- 458
 (There were 3 warnings)

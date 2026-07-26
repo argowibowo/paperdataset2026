@@ -59,10 +59,27 @@ A.~Wibowo, A.E.~Permanasari, and T.B.~Adji, ``A decade of code smells
   \emph{2025 17th International Conference on Information Technology and
   Electrical Engineering (ICITEE)}, 2025, pp.~1--6.
 
+\bibitem{Madeyski2017}
+L.~Madeyski and B.~Kitchenham, ``{Would wider adoption of reproducible research
+  be beneficial for empirical software engineering research?}'' \emph{Journal
+  of Intelligent and Fuzzy Systems}, Vol.~32, No.~2, 2017, pp.~1509--1521.
+
 \bibitem{Wibowo2026}
 A.~Wibowo, A.~Erna, and T.~Bharata, ``{Enhanced code smell detection using
   random forest optimized with particle swarm variants},'' \emph{Results in
   Engineering}, Vol.~29, No.~September 2025, 2026, p.~109729.
+
+\bibitem{Bishop2026}
+G.~Bishop, S.~Chakraborty, H.~Zhou, J.~Dehlinger, L.~Deng et~al., ``On-demand
+  generation of high-quality software engineering datasets using large language
+  models and ontologies,'' \emph{Automated Software Engineering}, Vol.~33,
+  No.~3, 2026, p.~73. [Online].
+  \url{https://doi.org/10.1007/s10515-026-00617-w}
+
+\bibitem{Destefanis2026}
+G.~Destefanis, L.~Yousefi, M.~Shepperd, A.~Tucker, S.~Swift et~al., ``{An audit
+  of machine learning experiments on software defect prediction},''
+  \emph{Empirical Software Engineering}, Vol.~31, No.~4, 2026.
 
 \bibitem{zhang2026sacscodesmelldataset}
 H.~Zhang and T.~Kishi, ``Sacs: A code smell dataset using semi-automatic
@@ -111,6 +128,20 @@ Y.~Zhang, C.~Ge, H.~Liu, and K.~Zheng, ``Code smell detection based on
   supervised learning models: A survey,'' \emph{Neurocomputing}, Vol.~565,
   2024, p.~127014. [Online].
   \url{https://www.sciencedirect.com/science/article/pii/S0925231223011372}
+
+\bibitem{pypi_kopyt}
+K.~Contributors, ``kopyt: A python library available on pypi,''
+  \url{https://pypi.org/project/kopyt/}, 2024, accessed: 2026-07-26.
+
+\bibitem{kotlin_spec}
+M.~Akhin, M.~Belyaev et~al., \emph{Kotlin Language Specification: Control- and
+  Data-Flow Analysis}, JetBrains / JetBrains Research, 2020, accessed:
+  2026-07-26. [Online].
+  \url{https://kotlinlang.org/spec/control--and-data-flow-analysis.html}
+
+\bibitem{chen2023acerastbasedgraphgenerator}
+A.~Chen, Y.~Yan, and D.~Poshyvanyk, ``Acer: An ast-based call graph generator
+  framework,'' 2023. [Online]. \url{https://arxiv.org/abs/2308.15669}
 
 \bibitem{WibowoICITDA2025}
 A.~Wibowo, A.E.~Permanasari, T.B.~Adji, and A.~Wibowo, ``Custom rule-based
@@ -188,6 +219,30 @@ E.~Tempero, C.~Anslow, J.~Dietrich, T.~Han, J.~Li et~al., ``The qualitas
 R.~Terra, L.~Miranda, M.~Valente, and R.~Bigonha, ``Qualitas.class corpus: A
   compiled version of the qualitas corpus,'' \emph{ACM SIGSOFT Software
   Engineering Notes}, Vol.~38, 08 2013, pp.~1--4.
+
+\bibitem{Santana2024}
+A.~Santana, E.~Figueiredo, J.~Alves~Pereira, and A.~Garcia, ``An exploratory
+  evaluation of code smell agglomerations,'' \emph{Software Quality Journal},
+  Vol.~32, No.~4, 2024, pp.~1375--1412. [Online].
+  \url{https://doi.org/10.1007/s11219-024-09680-6}
+
+\bibitem{Gonzalez-Barahona2012}
+J.M.~Gonz{\'{a}}lez-Barahona and G.~Robles, ``{On the reproducibility of
+  empirical software engineering studies based on data retrieved from
+  development repositories},'' \emph{Empirical Software Engineering}, Vol.~17,
+  No.~1-2, 2012, pp.~75--89.
+
+\bibitem{Gonzalez-Barahona2023}
+J.M.~Gonzalez-Barahona and G.~Robles, ``{Revisiting the reproducibility of
+  empirical software engineering studies based on data retrieved from
+  development repositories},'' \emph{Information and Software Technology},
+  Vol.~164, No.~August, 2023, p.~107318. [Online].
+  \url{https://doi.org/10.1016/j.infsof.2023.107318}
+
+\bibitem{lefeuvre2023fingerprintingbuildinglargereproducible}
+R.~Lefeuvre, J.~Galasso, B.~Combemale, H.~Sahraoui, and S.~Zacchiroli,
+  ``Fingerprinting and building large reproducible datasets,'' 2023. [Online].
+  \url{https://arxiv.org/abs/2306.11391}
 
 \bibitem{Bosu_2013}
 M.F.~Bosu and S.G.~MacDonell, ``Data quality in empirical software engineering:
