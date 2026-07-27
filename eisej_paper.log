@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  26 JUL 2026 18:14
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  27 JUL 2026 17:08
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -1295,10 +1295,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [15]
-
-LaTeX Warning: Reference `list:proceed smell' on page 16 undefined on input lin
-e 583.
-
 Package microtype Info: Setting up font `OT1/lmr/m/it/10.95' on input line 594.
 
 Package microtype Info: ... Loading protrusion list `OT1-it'.
@@ -1351,7 +1347,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [17]
 
 [18]
-<fig/Figure4_Boxplot.png, id=663, 1004.553pt x 425.4294pt>
+<fig/Figure4_Boxplot.png, id=664, 1004.553pt x 425.4294pt>
 File: fig/Figure4_Boxplot.png Graphic file (type png)
 <use fig/Figure4_Boxplot.png>
 Package luatex.def Info: fig/Figure4_Boxplot.png  used on input line 729.
@@ -1362,7 +1358,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [19]
-<fig/Figure4_LOC_Histogram.png, id=674, 571.1739pt x 353.1594pt>
+<fig/Figure4_LOC_Histogram.png, id=675, 571.1739pt x 353.1594pt>
 File: fig/Figure4_LOC_Histogram.png Graphic file (type png)
 <use fig/Figure4_LOC_Histogram.png>
 Package luatex.def Info: fig/Figure4_LOC_Histogram.png  used on input line 745.
@@ -1374,7 +1370,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [20<./fig/Figure4_Boxplot.png>]
-<fig/Figure4_CYCLO_Histogram.png, id=683, 571.1739pt x 353.1594pt>
+<fig/Figure4_CYCLO_Histogram.png, id=684, 571.1739pt x 353.1594pt>
 File: fig/Figure4_CYCLO_Histogram.png Graphic file (type png)
 <use fig/Figure4_CYCLO_Histogram.png>
 Package luatex.def Info: fig/Figure4_CYCLO_Histogram.png  used on input line 75
@@ -1386,7 +1382,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [21<./fig/Figure4_LOC_Histogram.png><./fig/Figure4_CYCLO_Histogram.png>]
-<fig/Figure4_Heatmap.png, id=695, 957.5775pt x 876.3942pt>
+<fig/Figure4_Heatmap.png, id=696, 957.5775pt x 876.3942pt>
 File: fig/Figure4_Heatmap.png Graphic file (type png)
 <use fig/Figure4_Heatmap.png>
 Package luatex.def Info: fig/Figure4_Heatmap.png  used on input line 784.
@@ -1394,7 +1390,7 @@ Package luatex.def Info: fig/Figure4_Heatmap.png  used on input line 784.
 
 
 [22<./fig/Figure4_Heatmap.png>]
-<fig/Figure4_PieChart.png, id=705, 410.2527pt x 425.4294pt>
+<fig/Figure4_PieChart.png, id=706, 410.2527pt x 425.4294pt>
 File: fig/Figure4_PieChart.png Graphic file (type png)
 <use fig/Figure4_PieChart.png>
 Package luatex.def Info: fig/Figure4_PieChart.png  used on input line 817.
@@ -1432,16 +1428,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [31] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260726181405 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260727170851 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
 (./eisej_paper.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1451,7 +1444,7 @@ Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24933 strings out of 475664
+ 24932 strings out of 475664
  476958,1373583 words of node,token memory allocated
  731 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
@@ -1459,7 +1452,7 @@ rn, 3 glyph, 23 attribute, 58 glue_spec, 23 attribute_list, 2 shape, 1 write, 13
  pdf_action nodes
    avail lists: 1:6,2:5129,3:692,4:6984,5:6578,6:187,7:16072,8:67,9:20264,10:28,
 11:1038
- 47003 multiletter control sequences out of 65536+600000
+ 47002 multiletter control sequences out of 65536+600000
  67 fonts using 5521519 bytes
  86i,18n,89p,2242b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
@@ -1489,9 +1482,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASUS/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/ASUS/AppData/
 Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (31 pages, 1098297 bytes).
+Output written on eisej_paper.pdf (31 pages, 1098358 bytes).
 
-PDF statistics: 935 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 936 PDF objects out of 1000 (max. 8388607)
  312 named destinations out of 1000 (max. 131072)
  417 words of extra memory for PDF output out of 10000 (max. 100000000)
 

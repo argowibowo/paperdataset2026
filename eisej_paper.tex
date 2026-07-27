@@ -580,7 +580,7 @@ The next method analyzed is the \texttt{proceed()} method, which is executed dur
 	}
 \end{lstlisting}
 
-Based on the code structure in Listing \ref{list:proceed smell}, there is a very unhealthy dependency pattern:
+Based on the code structure in Listing \ref{lst:proceed_smell}, there is a very unhealthy dependency pattern:
 \begin{enumerate}
 	\item \textbf{High Fan-Out and ATFD (Access to Foreign Data):} The \texttt{proceed()} method instantiates more than 10 different ViewModels. This violates the Clean Architecture constraint, which states that a single view/fragment should only communicate with one or a few relevant ViewModels.
 	\item \textbf{Indication of Feature Envy:} This class appears to be more interested in interacting with the data and lifecycle of another class (external ViewModels) than in executing its own internal logic. Reliance on multiple LiveData observers increases the risk of memory leaks and makes the code very difficult to test through unit testing.
