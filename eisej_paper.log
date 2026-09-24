@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  27 JUL 2026 17:08
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2026.7.8)  28 JUL 2026 13:26
  restricted system commands enabled.
 **eisej_paper.tex
 (./eisej_paper.tex
@@ -1394,21 +1394,21 @@ Package luatex.def Info: fig/Figure4_Heatmap.png  used on input line 784.
 File: fig/Figure4_PieChart.png Graphic file (type png)
 <use fig/Figure4_PieChart.png>
 Package luatex.def Info: fig/Figure4_PieChart.png  used on input line 817.
-(luatex.def)             Requested size: 426.79134pt x 442.57893pt.
+(luatex.def)             Requested size: 384.10959pt x 398.31975pt.
 
+
+[23<./fig/Figure4_PieChart.png>]
+
+[24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[23]
-
-[24<./fig/Figure4_PieChart.png>]
-
 [25]
 
-[26]
+[26] (./eisej_paper.bbl
 
-[27] (./eisej_paper.bbl
+[27]
 Package microtype Info: Setting up font `TU/lmr/m/it/10' on input line 25.
 Package microtype Info: ... Loading protrusion list `LMR-it'.
 Package microtype Info: ... Applying non-selected expansion (no list).
@@ -1419,16 +1419,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[29]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[29])
 
-
-
-[30])
-
-[31] 
+[30] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20260727170851 3AB7276EEF8726DC7FF0
+runsystem(latexminted cleantemp  --timestamp 20260728132620 3AB7276EEF8726DC7FF0
 580FA8E02505)...(Command execution disabled via shell_escape='p').
 (./eisej_paper.aux)
  ***********
@@ -1444,13 +1439,13 @@ Package rerunfilecheck Info: File `eisej_paper.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24932 strings out of 475664
+ 24931 strings out of 475664
  476958,1373583 words of node,token memory allocated
  731 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 3 glyph, 23 attribute, 58 glue_spec, 23 attribute_list, 2 shape, 1 write, 13
  pdf_action nodes
-   avail lists: 1:6,2:5129,3:692,4:6984,5:6578,6:187,7:16072,8:67,9:20264,10:28,
+   avail lists: 1:6,2:5129,3:728,4:6984,5:6578,6:187,7:16072,8:67,9:20264,10:28,
 11:1038
  47002 multiletter control sequences out of 65536+600000
  67 fonts using 5521519 bytes
@@ -1482,9 +1477,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ASUS/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ASUS/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/ASUS/AppData/
 Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eisej_paper.pdf (31 pages, 1098358 bytes).
+Output written on eisej_paper.pdf (30 pages, 1097216 bytes).
 
-PDF statistics: 936 PDF objects out of 1000 (max. 8388607)
- 312 named destinations out of 1000 (max. 131072)
+PDF statistics: 929 PDF objects out of 1000 (max. 8388607)
+ 311 named destinations out of 1000 (max. 131072)
  417 words of extra memory for PDF output out of 10000 (max. 100000000)
 
