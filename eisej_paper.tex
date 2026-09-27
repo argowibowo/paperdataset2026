@@ -21,8 +21,8 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \hypersetup{
-    urlbordercolor = black,
-    pdfborderstyle={/S/U/W 1},
+	urlbordercolor = black,
+	pdfborderstyle={/S/U/W 1},
 }
 
 \usepackage{lipsum} % <-- nieużywane
@@ -94,62 +94,62 @@
 
 \lstset{style=kotlinstyle}
 
- \begin{document}
-%% Uncomment if you use two separate bibliography files.
-%\nociteS{*}
-
-\title{Building and Validating a Primary Dataset for Machine Learning-Based Code Smell Detection in Kotlin Applications}
-
-
-\shortauthorshead{Wibowo et al.}
-
-\eIsubmitted{1 Aug 2026} 
-\eIrevised{1 Sep 2026} 
-\eIaccepted{1 Oct 2026}
-\eIpublished{1 Nov 2026} 
-
-\EIauthorI
-   {Argo}
-   {Wibowo}
-   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia, Department of Information System, Universitas Kristen Duta Wacana, Indonesia}
-   {argowibowo528951@mail.ugm.ac.id, argo@staff.ukdw.ac.id}
-   {0009-0000-2689-5461} % ORCiD ID
-   {} %  if star present means corresponding author
-
-\EIauthorII
-   {Adhistya}
-   {Erna Permanasari}
-   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
-   {adhistya@ugm.ac.id}
-   {0000-0002-2663-4074}
-   {*} %  if star present means corresponding author
-   
-\EIauthorIII
-   {Teguh}
-   {Bharata Adji}
-   {Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
-   {adji@ugm.ac.id}
-   {0000-0001-7856-1498}
-   {} % if star present means corresponding author
- 
- \keywordset{Kotlin, Software Metric, Abstract Syntax Tree, Code Smell, Long Method, Feature Envy} 
-
-\begin{abstract}[en] 
-% DO NOT remove sections Context, Objective etc.
-% Structured abstract is obligatory !!!
-	\textbf{Context}:
-	Reliable software metric datasets are fundamental for developing accurate machine learning models for code smell detection. Although numerous benchmark datasets have been constructed for Java, publicly available datasets for Kotlin remain scarce due to the limited availability of language-specific metric extraction tools capable of accurately handling Kotlin syntax and structural characteristics. \\
-	\textbf{Objective}: 
-	This study proposes a language-aware Abstract Syntax Tree (AST)-based extraction pipeline for constructing a validated software metric dataset from Kotlin applications to support machine learning-based detection of Long Method and Feature Envy code smells. \\
-	\textbf{Method}: 
-	The proposed pipeline employs the Kopyt framework to traverse Kotlin ASTs and automatically extract method-level and class-level software metrics from multiple open-source Kotlin repositories. The resulting dataset was manualy labeled using experts. Metric correctness was evaluated through three complementary verification strategies: manual source code inspection, independent AST-based verification using the Detekt framework, and algorithm-level verification for representative coupling metrics. Dataset quality was further assessed through missing value analysis, duplicate detection, descriptive statistics, correlation analysis, and class distribution analysis. \\
-	\textbf{Results}: 
-	The proposed approach successfully produced a validated Kotlin software metric dataset containing representative metrics spanning software size, complexity, cohesion, coupling, method interaction, and class design. The verification results demonstrated high agreement between the proposed extraction pipeline and the corresponding verification methods, confirming the correctness of the extracted metrics. Furthermore, dataset quality assessment showed that the constructed dataset is complete, free from missing and duplicate records, and preserves the natural distribution of code smell instances while exhibiting meaningful statistical characteristics suitable for empirical analysis. \\
-	\textbf{Conclusions}: 
-	The proposed AST-based extraction pipeline provides a reliable and reproducible approach for constructing Kotlin software metric datasets. The resulting validated dataset offers a trustworthy foundation for future machine learning-based code smell detection on Kotlin applications. \\
+\begin{document}
+	%% Uncomment if you use two separate bibliography files.
+	%\nociteS{*}
+	
+	\title{Building and Validating a Primary Dataset for Machine Learning-Based Code Smell Detection in Kotlin Applications}
+	
+	
+	\shortauthorshead{Wibowo et al.}
+	
+	\eIsubmitted{1 Aug 2026} 
+	\eIrevised{1 Sep 2026} 
+	\eIaccepted{1 Oct 2026}
+	\eIpublished{1 Nov 2026} 
+	
+	\EIauthorI
+	{Argo}
+	{Wibowo}
+	{Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia, Department of Information System, Universitas Kristen Duta Wacana, Indonesia}
+	{argowibowo528951@mail.ugm.ac.id, argo@staff.ukdw.ac.id}
+	{0009-0000-2689-5461} % ORCiD ID
+	{} %  if star present means corresponding author
+	
+	\EIauthorII
+	{Adhistya}
+	{Erna Permanasari}
+	{Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
+	{adhistya@ugm.ac.id}
+	{0000-0002-2663-4074}
+	{*} %  if star present means corresponding author
+	
+	\EIauthorIII
+	{Teguh}
+	{Bharata Adji}
+	{Department of Electrical and Information Engineering, Universitas Gadjah Mada, Indonesia}
+	{adji@ugm.ac.id}
+	{0000-0001-7856-1498}
+	{} % if star present means corresponding author
+	
+	\keywordset{Kotlin, Software Metric, Abstract Syntax Tree, Code Smell, Long Method, Feature Envy} 
+	
+	\begin{abstract}[en] 
+		% DO NOT remove sections Context, Objective etc.
+		% Structured abstract is obligatory !!!
+		\textbf{Context}:
+		Reliable software metric datasets are fundamental for developing accurate machine learning models for code smell detection. Although numerous benchmark datasets have been constructed for Java, publicly available datasets for Kotlin remain scarce due to the limited availability of language-specific metric extraction tools capable of accurately handling Kotlin syntax and structural characteristics. \\
+		\textbf{Objective}: 
+		This study proposes a language-aware Abstract Syntax Tree (AST)-based extraction pipeline for constructing a validated software metric dataset from Kotlin applications to support machine learning-based detection of Long Method and Feature Envy code smells. \\
+		\textbf{Method}: 
+		The proposed pipeline employs the Kopyt framework to traverse Kotlin ASTs and automatically extract method-level and class-level software metrics from multiple open-source Kotlin repositories. The resulting dataset was manualy labeled using experts. Metric correctness was evaluated through three complementary verification strategies: manual source code inspection, independent AST-based verification using the Detekt framework, and algorithm-level verification for representative coupling metrics. Dataset quality was further assessed through missing value analysis, duplicate detection, descriptive statistics, correlation analysis, and class distribution analysis. \\
+		\textbf{Results}: 
+		The proposed approach successfully produced a validated Kotlin software metric dataset containing representative metrics spanning software size, complexity, cohesion, coupling, method interaction, and class design. The verification results demonstrated high agreement between the proposed extraction pipeline and the corresponding verification methods, confirming the correctness of the extracted metrics. Furthermore, dataset quality assessment showed that the constructed dataset is complete, free from missing and duplicate records, and preserves the natural distribution of code smell instances while exhibiting meaningful statistical characteristics suitable for empirical analysis. \\
+		\textbf{Conclusions}: 
+		The proposed AST-based extraction pipeline provides a reliable and reproducible approach for constructing Kotlin software metric datasets. The resulting validated dataset offers a trustworthy foundation for future machine learning-based code smell detection on Kotlin applications. \\
 	\end{abstract}
-
-\maketitle 
+	
+	\maketitle 
  
 
 \section{Introduction}\label{sec:Introduction}
@@ -164,9 +164,9 @@ The effectiveness of machine learning models, however, depends heavily on the qu
 
 Despite the growing adoption of Kotlin as the preferred programming language for modern Android application development, publicly available datasets specifically designed for Kotlin-based code smell detection remain scarce. Existing code smell datasets are predominantly constructed from Java open-source projects, with systematic literature reviews identifying Java as the primary language represented in publicly available datasets \cite{Zakeri_Nasrabadi_2023}\cite{app14146149}\cite{Alomari2025}\cite{11316404}\cite{madeyski_2020_3666840}. Consequently these datasets do not adequately capture the language-specific syntax and structural characteristics of Kotlin applications, limiting their applicability for Kotlin-oriented software quality research. Furthermore, currently available Kotlin datasets generally lack comprehensive classical software metrics, validated Abstract Syntax Tree (AST)-based metric extraction pipelines, and detailed documentation to support reproducibility. Some existing studies also rely on regular-expression-based techniques or parsers with limited support for Kotlin syntax, potentially reducing the accuracy and consistency of the extracted metrics. Consequently, the absence of a validated and reproducible Kotlin software metrics dataset limits the development, evaluation, and fair comparison of machine learning-based code smell detection methods. Although sophisticated learning algorithms have been proposed, their performance remains highly dependent on the quality of the underlying datasets. Existing studies have primarily focused on improving code smell classification performance through feature engineering, model optimization, and learning algorithms \cite{Zakeri_Nasrabadi_2023}\cite{ZHANG2024112131}, whereas comparatively less attention has been devoted to dataset construction, dataset validation, and reproducible metric extraction processes \cite{ZHANG2024127014}. Recent surveys have identified dataset quality, annotation reliability, and validation mechanisms as important yet underexplored challenges that directly affect the reliability and reproducibility of machine learning-based code smell detection \cite{zhang2026sacscodesmelldataset}.
 
-This study constructs a primary software metrics dataset for Kotlin applications using an AST-based metric extraction pipeline implemented with Kopyt. Kopyt is an open-source parser implemented in pure Python that parses Kotlin source code into an Abstract Syntax Tree (AST) \cite{pypi_kopyt}. The parser represents Kotlin language constructs as hierarchical AST nodes, enabling systematic traversal of classes, functions, declarations, statements, and expressions for static code analysis and software metric extraction \cite{kotlin_spec}. Unlike text-based parsing approaches, AST traversal preserves the syntactic structure of Kotlin programs, allowing software metrics to be computed directly from language constructs rather than textual patterns \cite{chen2023acerastbasedgraphgenerator}. The results obtained from previous study are that the Detekt program can detect various Kotlin-based programming codes well but still has a percentage difference of 48.75\% with manual calculations for some advanced metric categories \cite{WibowoICITDA2025}. The proposed pipeline extracts a comprehensive set of classical software metrics, assigns code smell labels, and produces a machine learning-ready dataset. The study further validates the correctness of the extracted metrics, analyzes the statistical characteristics and quality of the dataset, and demonstrates its applicability through baseline machine learning experiments. The remainder of this paper is organized as follows. Section 2 reviews related work on software metrics, code smell detection, and existing datasets. Section 3 describes the dataset construction methodology, including repository selection, metric extraction. Section 4 presents comprehensive dataset validation and statistical analyses, while Sections 5 discuss the findings and threats to validity. At the end sections 6 describe dataset availability and conclude the paper.
+This study constructs a primary software metrics dataset for Kotlin applications using an AST-based metric extraction pipeline implemented with Kopyt. Kopyt is an open-source parser implemented in pure Python that parses Kotlin source code into an Abstract Syntax Tree (AST) \cite{pypi_kopyt}. The parser represents Kotlin language constructs as hierarchical AST nodes, enabling systematic traversal of classes, functions, declarations, statements, and expressions for static code analysis and software metric extraction \cite{kotlin_spec}. Unlike text-based parsing approaches, AST traversal preserves the syntactic structure of Kotlin programs, allowing software metrics to be computed directly from language constructs rather than textual patterns \cite{chen2023acerastbasedgraphgenerator}. The results obtained from previous study are that the Detekt program can detect various Kotlin-based programming codes well but still has a percentage difference of 48.75\% with manual calculations for some advanced metric categories \cite{WibowoICITDA2025}. The proposed pipeline extracts a comprehensive set of classical software metrics, constructs method-level datasets, assigns Long Method and Feature Envy labels according to the adopted labeling procedure, and validates the resulting metric values and dataset quality. After cleaning malformed records, the reconciled Long Method and Feature Envy datasets contain the same 71,259 method-level instances and 89 attributes, including 82 software metrics. The remainder of this paper is organized as follows. Section 2 reviews related work on software metrics, code smell detection, and existing datasets. Section 3 describes the dataset construction methodology, including repository selection, source-code collection, metric extraction, data cleaning, and code smell labeling. Section 4 presents metric verification and dataset quality and statistical analyses. Section 5 discusses the findings and threats to validity, while Section 6 concludes the paper.
 
-This paper makes three main contributions. First, it introduces a primary software metrics dataset for Kotlin applications with code smell labels to support machine learning research. Second, it proposes a reproducible AST-based software metric extraction pipeline using Kopyt that accurately extracts classical software metrics without relying on regular expressions. Third, it performs comprehensive dataset validation through metric verification, statistical analysis, class distribution analysis, and quality assessment. Finally it provides dataset and facilitate future research on machine learning-based code smell detection for Kotlin applications.
+This paper makes four main contributions. First, it constructs a Kotlin software metrics dataset containing 82 software metrics and code smell labels for Long Method and Feature Envy detection. Second, it proposes a reproducible AST-based software metric extraction pipeline using Kopyt to extract method-level and class-level metrics from Kotlin source code. Third, it provides multi-level metric verification through manual source-code inspection, independent AST-based verification using Detekt, and algorithm-level verification of coupling metrics. Fourth, it provides a systematic dataset-quality and statistical assessment, including malformed-record detection, missing-value analysis, duplicate analysis, class-distribution analysis, and correlation analysis, thereby supporting reproducible future research on Kotlin code smell detection.
 
 \section{Background and Related Work}\label{sec:Background}
 \subsection{Code Smell Detection and Software Metrics}
@@ -235,7 +235,7 @@ The first step in dataset development was selecting open-source Kotlin projects 
 
 \subsection{Data Collection}
 
-Once a repository is selected, all source code is collected and processed through the dataset development pipeline. The process begins with cloning the repository, followed by parsing Kotlin files using the Kopyt library to create an Abstract Syntax Tree (AST). The AST structure is then used as the basis for extracting software metrics for each analyzed code entity. Next, each entity is assigned a code smell label based on the detection rules used before all information is compiled into a final dataset. This dataset development pipeline is designed to be automated so that the extraction process can be carried out consistently across all analyzed repositories.
+Once a repository is selected, all source code is collected and processed through the dataset development pipeline. The process begins with cloning the repository, followed by parsing Kotlin files using the Kopyt library to create an Abstract Syntax Tree (AST). The AST structure is then used as the basis for extracting software metrics for each analyzed method and its enclosing class. The extracted records are subsequently subjected to data-quality checks and code smell labeling before being compiled into the final datasets. The pipeline is designed to preserve the same method-level observations across the Long Method and Feature Envy labeling tasks, enabling direct comparison of the two code smell labels after data cleaning.
 
 \subsection{Metric Extraction}
 
@@ -258,11 +258,13 @@ One of the main goals of this research is to produce a software metrics extracti
 
 \subsection{Code Smell Labeling}
 
-After all software metrics have been successfully extracted, each code entity is assigned a code smell label to form a classification dataset. The labeling process is performed using predefined detection rules based on the characteristics of each code smell type. The labeling results are then verified to ensure consistency between the obtained software metrics values ​​and the resulting code smell categories. This stage aims to produce accurate labels so that the dataset can be used reliably in the development and evaluation of machine learning models.
+After metric extraction and data-quality processing, each retained method instance is assigned code smell labels for Long Method and Feature Envy. The labeling procedure must be reported explicitly because the validity of the resulting classification targets depends on the source and reproducibility of the labels. In the present dataset, the final common dataset contains 71,259 method instances, with 232 Long Method instances and 250 Feature Envy instances.
+
+The exact label-generation mechanism should be described here using the actual procedure employed in the study. In particular, the final manuscript should state whether the labels were obtained through expert annotation, predefined detection rules, previously trained machine learning models, or a combination of these procedures. Only one verified description should be used consistently throughout the Abstract, Methodology, Results, Discussion, and Conclusions.
 
 \subsection{Dataset Schema}
 
-The final stage is organizing the dataset into an organized and user-friendly structure. The dataset contains project identity attributes, information about the classes or methods analyzed, all extracted software metrics, and code smell labels that are the target classification targets. Each attribute is documented along with its data type to facilitate interpretation and use of the dataset by other researchers. With a well-structured and documented schema, the dataset is not only ready for use in machine learning experiments but also supports reproducibility and further research development.
+The final datasets are organized at the method-instance level. Each row represents one retained Kotlin method and contains 89 attributes: 82 software metrics, six metadata attributes (\texttt{instance\_id}, extraction date, project, package, class, and method), and one code smell label. The Long Method dataset uses \texttt{is\_long\_method} as its target attribute, whereas the Feature Envy dataset uses \texttt{is\_feature\_envy}. After data cleaning, both datasets contain the same 71,259 method instances, which enables direct analysis of the relationship between the two code smell labels.
 
 \section{Results}\label{sec:Results}
 
@@ -655,42 +657,52 @@ The high overall agreement obtained from the verification indicates that the pro
 \end{table}
 
 \subsection{Dataset Quality Assessment}
-\subsubsection{Missing Value Analysis}
+\subsubsection{Data Cleaning and Missing Value Analysis}
 
-The quality assessment in Table \ref{tab:dataset_missing_value} indicates that the extracted dataset contains 71,623 instances and 81 software metric attributes. A total of 31,304 missing values were identified during the initial inspection. Further investigation revealed that these missing values originated from a small number of incomplete extraction records rather than systematic extraction failures. Removing incomplete records is sufficient to obtain a fully complete dataset for subsequent analyses.
+The raw Long Method export contains 71,623 records and 31,304 missing values. Detailed inspection showed that these missing values were concentrated in 364 malformed CSV records rather than representing 364 independently incomplete method observations. The malformed records contained the remaining fields as a single comma-separated string because of invalid quoting. All 364 malformed records were excluded from the final dataset. The Feature Envy export contains 71,261 records; two additional malformed records were identified through structural inspection and were also excluded. After cleaning, both datasets contain the same 71,259 method-level instances.
+
+The final dataset contains 89 attributes, comprising 82 software metrics, six metadata attributes, and one code smell label. No missing values remain in the cleaned dataset.
 
 \begin{table}[htbp]
 	\centering
-	\caption{Summary of Dataset Properties}
-	\label{tab:dataset_missing_value}
+	\caption{Summary of Final Dataset Properties}
+	\label{tab:dataset_final_properties}
 	\vspace{0.2cm}
-	
-	\begin{tabularx}{\textwidth}{>{\hsize=1.4\hsize\raggedright\arraybackslash}X >{\hsize=0.6\hsize\raggedleft\arraybackslash}X}
+
+	\begin{tabularx}{\textwidth}{
+			>{\hsize=1.4\hsize\raggedright\arraybackslash}X
+			>{\hsize=0.6\hsize\raggedleft\arraybackslash}X}
 		\toprule
 		\textbf{Item} & \textbf{Value} \\
 		\midrule
-		Total instances & 71,623 \\
+		Initial Long Method records & 71,623 \\
+		Malformed Long Method records removed & 364 \\
+		Initial Feature Envy records & 71,261 \\
+		Malformed Feature Envy records removed & 2 \\
+		\textbf{Final common instances} & \textbf{71,259} \\
 		Total attributes & 89 \\
-		Missing values & 31,304 \\
+		Software metrics & 82 \\
+		Missing values after cleaning & 0 \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
 \subsubsection{Duplicate Analysis}
 
-Table \ref{tab:dataset_duplicate_analysis} show that no duplicate records were identified in the constructed dataset, indicating that each extracted instance represents a unique observation.
+Table \ref{tab:dataset_duplicate_analysis} shows that no duplicate complete records were identified in either cleaned dataset. In addition, the \texttt{instance\_id} values are unique within each exported dataset. Because malformed records were removed before the final reconciliation, duplicate analysis was performed on the cleaned records.
 
 \begin{table}[htbp]
 	\centering
 	\caption{Duplicate Record Analysis}
 	\label{tab:dataset_duplicate_analysis}
 	\vspace{0.2cm}
-	
+
 	\begin{tabularx}{\textwidth}{>{\hsize=1.4\hsize\raggedright\arraybackslash}X >{\hsize=0.6\hsize\raggedleft\arraybackslash}X}
 		\toprule
 		\textbf{Item} & \textbf{Value} \\
 		\midrule
-		Duplicate rows & 0 \\
+		Duplicate complete rows & 0 \\
+		Duplicate \texttt{instance\_id} values & 0 \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -727,9 +739,18 @@ Several software metrics exhibit extreme values. These outliers correspond to na
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{fig/Figure4_Boxplot.png}
-	\caption{LOC Histogram}
-	\label{fig:boxplot_metric}
+	\caption{Boxplot of Representative Software Metrics (Long Method Dataset)}
+	\label{fig:boxplot_metric_lm}
 \end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure_FEwithinstance_Boxplot.png}
+	\caption{Boxplot of Representative Software Metrics (Feature Envy Dataset)}
+	\label{fig:boxplot_metric_fe}
+\end{figure}
+
+Both boxplot visualizations exhibit similar distributional patterns across the two datasets. The majority of representative software metrics are concentrated near zero, with a limited number of extreme values corresponding to complex methods. The similarity between the Long Method and Feature Envy boxplots is consistent with the reconciliation analysis showing that both final datasets contain the same 71,259 method-level instances and share the same extracted metric observations, while differing in their respective code smell labels.
 
 \subsection{Statistical Analysis}
 \subsubsection{Descriptive Statistics}
@@ -738,21 +759,39 @@ Most software metrics exhibit right-skewed distributions where the median is con
 
 \subsubsection{Distribution Analysis}
 
-Histogram analysis further confirms the skewed nature of software metric distributions. Most methods contain relatively small metric values, whereas only a limited number of methods exhibit extremely large values associated with complex implementations.
+Histogram analysis in Figure \ref{fig:LOC_histogram_lm}\ref{fig:CYCLO_histogram_lm}\ref{fig:LOC_histogram_fe}\ref{fig:CYCLO_histogram_fe} further confirms the skewed nature of software metric distributions. Most methods contain relatively small metric values, whereas only a limited number of methods exhibit extremely large values associated with complex implementations. The distribution analysis is performed for both the Long Method and Feature Envy datasets to verify that both datasets exhibit consistent statistical characteristics.
+
+The distribution of code-smell labels shows a highly imbalanced class structure in both datasets. Among the 71,259 valid method-level instances, 232 instances (0.33\%) are labeled as Long Method (LM), while 71,027 instances (99.67\%) are labeled as non-Long Method. Similarly, 250 instances (0.35\%) are labeled as Feature Envy (FE), whereas 71,009 instances (99.65\%) are labeled as non-Feature Envy. Thus, positive instances account for less than 1\% of the observations for both code smells. This distribution reflects the relatively sparse occurrence of the two code smells at the method level in the analyzed dataset, but it also introduces a substantial class-imbalance issue for subsequent statistical analysis and machine-learning experiments. In particular, evaluation procedures based only on overall accuracy may provide an overly optimistic assessment because a classifier can obtain high accuracy by predominantly predicting the majority class. Therefore, class-sensitive evaluation measures and appropriate validation strategies should be considered when the dataset is used for code-smell detection or predictive modeling.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{fig/Figure4_LOC_Histogram.png}
-	\caption{LOC Histogram}
-	\label{fig:LOC_histogram}
+	\caption{LOC Histogram (Long Method Dataset)}
+	\label{fig:LOC_histogram_lm}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{fig/Figure4_CYCLO_Histogram.png}
-	\caption{Cyclomatic Complexity Histogram}
-	\label{fig:LOC_histogram}
+	\caption{Cyclomatic Complexity Histogram (Long Method Dataset)}
+	\label{fig:CYCLO_histogram_lm}
 \end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure_FEwithinstance_LOC_Histogram.png}
+	\caption{LOC Histogram (Feature Envy Dataset)}
+	\label{fig:LOC_histogram_fe}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{fig/Figure_FE_CYCLO_Histogram.png}
+	\caption{Cyclomatic Complexity Histogram (Feature Envy Dataset)}
+	\label{fig:CYCLO_histogram_fe}
+\end{figure}
+
+The LOC and Cyclomatic Complexity histograms for both datasets exhibit highly similar right-skewed distributions. In the Long Method dataset, the mean LOC is 7.73 with a median of 5.0, while the Feature Envy dataset shows a comparable mean LOC of 7.73 with a median of 5.0. Similarly, Cyclomatic Complexity distributions in both datasets show a mean of approximately 1.84 with a median of 1.0. These consistent patterns across both datasets confirm that the underlying metric extraction process produces stable and reproducible results regardless of the code smell labeling applied.
 
 \subsection{Correlation Analysis}
 
@@ -788,35 +827,71 @@ The correlation analysis reveals that several software metrics are strongly corr
 
 \subsection{Class Distribution}
 
-The dataset exhibits a highly imbalanced class distribution, with Long Method instances accounting for only 0.32\% of the entire dataset. This imbalance reflects the natural occurrence of code smells in real-world software projects, where the majority of methods represent normal implementations.
+After data cleaning, the Long Method and Feature Envy datasets contain the same 71,259 method-level instances. The Long Method dataset contains 232 positive instances (0.33\%), whereas the Feature Envy dataset contains 250 positive instances (0.35\%). The two labels are not mutually exclusive: 13 method instances are labeled with both code smells.
 
 \begin{table}[htbp]
 	\centering
-	\caption{Distribution of Code Smell Classes}
+	\caption{Class Distribution of Long Method and Feature Envy}
 	\label{tab:class_distribution}
 	\vspace{0.2cm}
-	
+
 	\begin{tabularx}{\textwidth}{
-			>{\hsize=1.4\hsize\raggedright\arraybackslash}X 
-			>{\hsize=0.8\hsize\raggedleft\arraybackslash}X 
-			>{\hsize=0.8\hsize\raggedleft\arraybackslash}X
-		}
+			>{\hsize=1.2\hsize\raggedright\arraybackslash}X
+			>{\hsize=0.7\hsize\raggedleft\arraybackslash}X
+			>{\hsize=0.7\hsize\raggedleft\arraybackslash}X
+			>{\hsize=0.7\hsize\raggedleft\arraybackslash}X
+			>{\hsize=0.7\hsize\raggedleft\arraybackslash}X}
 		\toprule
-		\textbf{Class} & \textbf{Count} & \textbf{Percentage} \\
+		\textbf{Class} & \textbf{LM Count} & \textbf{LM \%} & \textbf{FE Count} & \textbf{FE \%} \\
 		\midrule
-		Non-smell & 71,391 & 99.68\% \\
-		Long Method & 232 & 0.32\% \\
+		Non-smell & 71,027 & 99.67\% & 71,009 & 99.65\% \\
+		Smell & 232 & 0.33\% & 250 & 0.35\% \\
 		\midrule
-		\textbf{Total} & \textbf{71,623} & \textbf{100.00\%} \\
+		\textbf{Total} & \textbf{71,259} & \textbf{100.00\%} & \textbf{71,259} & \textbf{100.00\%} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
+To further characterize the relationship between the two code smell labels, the common dataset can be partitioned into four mutually exclusive categories: methods without either smell, Long Method only, Feature Envy only, and methods exhibiting both smells. To examine the co-occurrence of Long Method and Feature Envy, the two labels were analyzed jointly over the same 71,259 method-level observations. The results show that 70,790 methods (99.34\%) are labeled as neither Long Method nor Feature Envy. A total of 219 methods (0.31\%) are labeled as Long Method only, while 237 methods (0.33\%) are labeled as Feature Envy only. Only 13 methods (0.02\%) are simultaneously labeled as both Long Method and Feature Envy. These results indicate that the two code smells are largely non-overlapping at the instance level in this dataset. Although both smells represent method-level design problems, their simultaneous occurrence is rare, with only 13 out of 71,259 methods receiving both labels. Consequently, the two labels should not be treated as interchangeable indicators of the same phenomenon. The joint distribution also provides an important basis for subsequent analyses that investigate the relationship between different code smells, particularly when constructing multi-label or multi-smell prediction models.
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Joint Distribution of Long Method and Feature Envy Labels}
+	\label{tab:joint_smell_distribution}
+	\vspace{0.2cm}
+
+	\begin{tabularx}{\textwidth}{
+			>{\hsize=1.5\hsize\raggedright\arraybackslash}X
+			>{\hsize=0.8\hsize\raggedleft\arraybackslash}X
+			>{\hsize=0.8\hsize\raggedleft\arraybackslash}X}
+		\toprule
+		\textbf{Category} & \textbf{Count} & \textbf{Percentage} \\
+		\midrule
+		Neither Long Method nor Feature Envy & 70,790 & 99.34\% \\
+		Long Method only & 219 & 0.31\% \\
+		Feature Envy only & 237 & 0.33\% \\
+		Both Long Method and Feature Envy & 13 & 0.02\% \\
+		\midrule
+		\textbf{Total} & \textbf{71,259} & \textbf{100.00\%} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+The joint distribution shows that only 13 method instances are shared by the two smell classes. This overlap should be considered when the two labels are analyzed jointly or when machine learning models are evaluated independently for each target.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{fig/Figure4_PieChart.png}
-	\caption{Class Distribution}
-	\label{fig:class_distribution}
+	\includegraphics[width=0.5\linewidth]{fig/Figure4_PieChart.png}
+	\caption{Long Method Class Distribution}
+	\label{fig:class_distribution_lm}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{fig/Figure_FE_PieChart}
+	\caption{Feature Envy Class Distribution}
+	\label{fig:class_distribution_fe}
 \end{figure}
 
 \section{Discussion}\label{sec:Discussion}
@@ -831,11 +906,13 @@ Unlike previous dataset construction approaches that typically rely on a single 
 
 \subsection{Quality of the Constructed Dataset}
 
-The quality assessment demonstrates that the constructed dataset satisfies several important characteristics required for empirical software engineering research. Data preprocessing successfully eliminated missing values, duplicate records, and invalid metric values prior to the labeling process. Consequently, every instance in the final dataset contains a complete set of software metrics that can be directly utilized for machine learning experiments without additional cleaning procedures.
+The quality assessment demonstrates that the final datasets satisfy several important characteristics required for empirical software engineering research. The raw Long Method export contained 71,623 records, including 364 malformed records that produced 31,304 apparent missing values because of malformed CSV quoting. Structural inspection of the Feature Envy export identified two additional malformed records. After these records were excluded, the Long Method and Feature Envy datasets were reconciled to the same 71,259 method-level instances, with no missing values or duplicate complete records remaining.
 
-Descriptive analysis also indicates that the extracted software metrics exhibit diverse value distributions reflecting the natural variability of Kotlin source code. Although several representative metrics contain extreme values, these observations correspond to genuinely large or structurally complex methods rather than extraction errors. Therefore, the identified outliers represent meaningful characteristics of real-world software projects instead of anomalies introduced during data collection.
+The final dataset contains 89 attributes, including 82 software metrics and seven non-metric attributes consisting of six metadata fields and one code smell label. This distinction is important because the number of dataset attributes should not be interpreted as the number of extracted software metrics.
 
-The class distribution further reveals an imbalance between smell and non-smell instances. However, such imbalance is expected because code smells naturally occur less frequently than normal methods in production software. Preserving this distribution enables the dataset to better represent realistic software engineering scenarios and provides a more challenging benchmark for future machine learning models.
+Descriptive analysis indicates that the extracted software metrics exhibit diverse and right-skewed distributions reflecting the variability of Kotlin source code. Although several representative metrics contain extreme values, these observations correspond to genuinely large or structurally complex methods rather than automatically indicating extraction errors. Such observations should therefore be interpreted in the context of the metric definitions and the underlying source code.
+
+The class distribution is highly imbalanced for both code smells. Long Method represents 0.33\% of the final common dataset, while Feature Envy represents 0.35\%. This imbalance should be considered when the dataset is used for supervised learning because accuracy alone may be dominated by the majority class. Evaluation measures such as precision, recall, F1-score, and precision--recall analysis are therefore more informative for future classification experiments.
 
 \subsection{Characteristics of Representative Software Metrics}
 
@@ -847,11 +924,13 @@ The existence of only five overlapping metrics between the representative featur
 
 \subsection{Implications for Machine Learning-Based Code Smell Detection}
 
-The verified dataset provides a reliable foundation for future machine learning-based code smell detection research. Since every representative metric has been validated using complementary verification strategies, the resulting feature values can be considered trustworthy input for supervised learning algorithms. Reducing measurement errors during feature extraction is particularly important because noisy software metrics may significantly degrade classification performance and reduce model generalization.
+The verified dataset provides a reproducible foundation for future machine learning-based code smell detection research. The final common dataset contains the same 71,259 method-level instances for both Long Method and Feature Envy, while maintaining separate target labels. This structure enables researchers to compare models for the two smell types without introducing differences in the underlying set of analyzed methods.
 
-Furthermore, the dataset supports a wide range of machine learning techniques beyond the Random Forest classifier employed during dataset labeling. The extracted metrics can be utilized by ensemble learning algorithms, gradient boosting models, deep neural networks, automated machine learning frameworks, and feature selection techniques. Consequently, the proposed dataset contributes not only to Long Method and Feature Envy detection but also to broader empirical studies involving software quality assessment and defect prediction.
+The severe class imbalance should be explicitly considered in future experiments. Because positive instances represent less than 1\% of the final dataset for both smell types, a classifier may achieve high overall accuracy while providing poor detection of positive instances. Consequently, future studies should report class-sensitive evaluation measures and should clearly distinguish between data-level balancing, algorithm-level cost sensitivity, and threshold adjustment.
 
-Another important implication is the reproducibility of the proposed extraction pipeline. Because the entire extraction process is implemented directly on Kotlin Abstract Syntax Trees, future researchers can reproduce the dataset construction process, extend the implemented software metrics, or apply the pipeline to additional Kotlin repositories without modifying the underlying extraction methodology.
+The dataset also supports a range of machine learning techniques beyond any single classifier used in the labeling procedure, if applicable. The extracted metrics can be utilized by ensemble learning algorithms, gradient boosting models, automated machine learning frameworks, and feature selection techniques. However, future models should be evaluated independently from the procedure used to generate the code smell labels in order to avoid circular evaluation.
+
+Another important implication is the reproducibility of the proposed extraction pipeline. Because the extraction process is implemented directly on Kotlin Abstract Syntax Trees, future researchers can reproduce the dataset construction process, extend the implemented software metrics, or apply the pipeline to additional Kotlin repositories without changing the underlying extraction methodology.
 
 \subsection{Comparison with Previous Dataset Construction Approaches}
 
@@ -863,27 +942,27 @@ The additional verification performed using an independent AST implementation fu
 
 \subsection{Threats to Validity}
 
-Several limitations should be considered when interpreting the results of this study. Regarding internal validity, although multiple verification strategies were employed, implementation errors may still exist for software metrics that were not included among the representative verification set. Nevertheless, the selected metrics represent the most influential features identified by previous feature selection studies and cover multiple software quality dimensions.
+Several limitations should be considered when interpreting the results of this study. Regarding internal validity, although multiple verification strategies were employed, implementation errors may still exist for software metrics that were not included among the representative verification set. In addition, the data-quality analysis identified malformed CSV records in the exported datasets. These records were removed before the final reconciliation, but their presence indicates that the data-export process itself is a potential source of error and should be controlled in future releases.
 
-Regarding construct validity, the implemented software metrics follow widely accepted formal definitions reported in previous software engineering literature. Manual verification, independent AST-based verification, and algorithm-level validation collectively reduce the possibility that the extracted metrics deviate from their intended definitions.
+Regarding construct validity, the implemented software metrics follow the formal definitions adopted in this study. Manual verification, independent AST-based verification, and algorithm-level validation collectively reduce the possibility that the extracted metrics deviate from their intended definitions. However, the independent verification results were not uniformly identical: one evaluated metric achieved only 68\% agreement with Detekt. This discrepancy indicates that some metric definitions or implementation details may require further investigation.
 
-With respect to external validity, the constructed dataset consists exclusively of Kotlin open-source projects. Consequently, the reported findings may not be directly generalizable to other programming languages such as Java, Scala, or Swift. Future work may extend the proposed extraction pipeline to additional JVM-based languages in order to investigate the generalizability of the approach.
+The validity of the code smell labels is another important consideration. The manuscript must explicitly document the actual label-generation mechanism and its provenance. Expert annotation, predefined detection rules, and previously trained machine learning models represent different forms of ground truth and have different implications for reproducibility and validity. Therefore, the final manuscript should use one consistent description of the labeling procedure and report the information required to reproduce it.
 
-Finally, conclusion validity may be affected by the naturally imbalanced distribution of smell and non-smell instances. Although this distribution accurately reflects real-world software repositories, future studies may investigate balancing techniques or cost-sensitive learning algorithms to further evaluate the effectiveness of machine learning models trained using the proposed dataset.
+With respect to external validity, the constructed dataset consists exclusively of Kotlin open-source projects. Consequently, the reported findings may not be directly generalizable to other programming languages such as Java, Scala, or Swift. Moreover, the Feature Envy positives are concentrated in a limited number of projects: 250 positive instances occur in 12 projects, with 179 instances (71.6\% of all Feature Envy positives) originating from a single project. This concentration may introduce project-specific characteristics into the positive class.
 
+Finally, conclusion validity may be affected by the severe class imbalance of both smell labels. Only 232 of the 71,259 final instances are labeled Long Method, while 250 are labeled Feature Envy. Future machine learning studies should therefore use class-sensitive evaluation procedures and, where appropriate, repository-level validation to reduce the risk that project-specific characteristics dominate the reported performance.
 
 \section{Conclusions}\label{sec:Conclusions}
 
-This study presented an AST-based software metric extraction pipeline for constructing a machine learning-ready dataset to support Kotlin code smell detection. The proposed approach utilizes the Kopyt framework to traverse Kotlin Abstract Syntax Trees and automatically extract software metrics at both the method and class levels. Using the proposed pipeline, a comprehensive dataset was successfully constructed from multiple open-source Kotlin repositories and subsequently labeled for Long Method and Feature Envy detection using previously trained Random Forest classification models.
+This study presented an AST-based software metric extraction pipeline for constructing a validated dataset to support Kotlin code smell detection. The proposed approach utilizes the Kopyt framework to traverse Kotlin Abstract Syntax Trees and extract software metrics at the method and class levels. The resulting dataset contains 89 attributes, including 82 software metrics, six metadata attributes, and a code smell label.
 
-To ensure the reliability of the constructed dataset, three complementary verification strategies were employed. Manual source code inspection was used to validate directly observable software metrics, an independent AST-based implementation using the Detekt framework verified structurally complex metrics, and algorithm-level verification confirmed the correctness of coupling-related metric implementations. The verification results demonstrated a consistently high level of agreement between the proposed extraction pipeline and the corresponding verification methods, providing strong evidence that the extracted metrics conform to their formal definitions.
+Data-quality reconciliation identified malformed records in the raw exports. The initial Long Method export contained 71,623 records, including 364 malformed records associated with 31,304 apparent missing values. The Feature Envy export contained 71,261 records, of which two were identified as malformed during structural inspection. After cleaning and reconciliation, both code smell datasets contain the same 71,259 method-level instances with no missing values or duplicate complete records.
 
-Further dataset quality assessment showed that the resulting dataset contains complete software metric information without missing or duplicate records while preserving the natural distribution of code smell instances observed in real-world Kotlin projects. Statistical analysis and correlation analysis also indicate that the representative metrics capture complementary software quality characteristics, including software size, complexity, cohesion, coupling, method interaction, and class design, thereby providing informative features for machine learning-based code smell detection.
+The final common dataset contains 232 Long Method instances (0.33\%) and 250 Feature Envy instances (0.35\%). Thirteen method instances are labeled with both code smells, while 219 are Long Method only and 237 are Feature Envy only. These results demonstrate that the two code smell targets can be analyzed on a common set of Kotlin method instances while preserving their distinct labeling characteristics.
 
-Overall, the proposed dataset contributes a reproducible and validated benchmark for empirical software engineering research on Kotlin applications. Unlike existing datasets that primarily target Java systems, this work provides a Kotlin-specific dataset constructed through a language-aware AST traversal approach and supported by comprehensive metric verification. The resulting dataset is expected to facilitate future studies involving software quality assessment, code smell detection, feature selection, and machine learning model development for modern Kotlin software systems.
+To ensure the reliability of the extracted metrics, three complementary verification strategies were employed. Manual source-code inspection was used to validate directly observable software metrics, an independent AST-based implementation using the Detekt framework verified structurally complex metrics, and algorithm-level verification examined coupling-related metric implementations. Most evaluated metrics showed high agreement, although one metric exhibited substantially lower agreement and should be investigated further.
 
-Future work will focus on extending the extraction pipeline to support additional software metrics and code smell types, expanding the dataset using a larger collection of Kotlin repositories, and evaluating advanced machine learning and deep learning techniques for automated code smell detection. Furthermore, integrating semantic program analysis and cross-language software metric extraction may improve the applicability of the proposed framework to broader software engineering research.
-
+Overall, the proposed pipeline and cleaned dataset provide a reproducible foundation for empirical studies of Kotlin software quality and code smell detection. Future work should expand the repository population, independently validate the code smell labels, investigate the remaining metric discrepancies, and evaluate machine learning models using class-sensitive and repository-aware validation procedures.
 
 \subsection*{Acknowledgment}
 
